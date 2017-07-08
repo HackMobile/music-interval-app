@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UIImageView{
+extension UIImageView {
     
-    func setImageFromURl(stringImageUrl url: String){
+    func setImageFromURl(stringImageUrl url: String) {
         
         if let url = NSURL(string: url) {
             if let data = NSData(contentsOf: url as URL) {

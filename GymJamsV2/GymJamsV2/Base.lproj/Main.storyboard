@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,7 +41,7 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="Tgf-6e-9oM" kind="show" id="n5E-pD-kee"/>
+                                    <segue destination="ppa-Uc-xWW" kind="show" id="n5E-pD-kee"/>
                                 </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CIA-tW-q9p">
@@ -105,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r1U-Fs-kUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1900" y="35.532233883058474"/>
+            <point key="canvasLocation" x="2839.1999999999998" y="35.532233883058474"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -158,21 +158,22 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="Aqm-jq-mR4" id="iiX-kx-Ago"/>
-                        <segue destination="Tgf-6e-9oM" kind="show" identifier="logInSegue" id="B8M-Iz-Rzu"/>
+                        <segue destination="ppa-Uc-xWW" kind="show" identifier="logInSegue" id="B8M-Iz-Rzu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
         </scene>
-        <!--Playlist Table View Controller-->
+        <!--Playlists-->
         <scene sceneID="eDE-aG-qmC">
             <objects>
                 <tableViewController id="Tgf-6e-9oM" customClass="PlaylistTableViewController" customModule="GymJamsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="bOr-bR-v0e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlaylistTableViewCell" rowHeight="90" id="akM-B5-gp0" customClass="PlaylistTableViewCell" customModule="GymJamsV2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
@@ -187,7 +188,7 @@
                                                 <constraint firstAttribute="width" secondItem="c3F-oP-fj0" secondAttribute="height" multiplier="286:21" id="uXj-Vw-VPe"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="FNI-cw-UMv">
@@ -204,6 +205,7 @@
                                         <constraint firstItem="c3F-oP-fj0" firstAttribute="centerY" secondItem="4yA-gz-VWs" secondAttribute="centerY" id="yld-LE-o2Y"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="coverArt" destination="FNI-cw-UMv" id="hif-wY-x7Z"/>
                                     <outlet property="nameLabel" destination="c3F-oP-fj0" id="Zqn-gx-Zhr"/>
@@ -216,10 +218,36 @@
                             <outlet property="delegate" destination="Tgf-6e-9oM" id="5HY-MZ-H80"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Playlists" id="JyC-at-Pdc">
+                        <barButtonItem key="rightBarButtonItem" title="Now Playing" id="Hm5-Hv-HNs">
+                            <connections>
+                                <segue destination="lIy-YK-1Vx" kind="presentation" id="Brf-as-OKH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RuM-Lz-fk0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="843.5" y="35.5"/>
+            <point key="canvasLocation" x="1781.5999999999999" y="34.632683658170919"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lXL-OM-pTB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ppa-Uc-xWW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fDM-om-CfC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tgf-6e-9oM" kind="relationship" relationship="rootViewController" id="mMs-KU-3tg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TlB-6P-9Hh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842.39999999999998" y="34.632683658170919"/>
         </scene>
     </scenes>
     <resources>
@@ -227,6 +255,7 @@
         <image name="icon" width="1000" height="1113"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Brf-as-OKH"/>
         <segue reference="n5E-pD-kee"/>
     </inferredMetricsTieBreakers>
 </document>
