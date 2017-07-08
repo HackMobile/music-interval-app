@@ -10,6 +10,8 @@ import UIKit
 
 class PlayerViewController: UIViewController {
     
+    var timer_ = Timer()
+    
     @IBAction func playButtonPressed(_ sender: Any) {
         
         if (player?.playbackState.isPlaying)! {
@@ -55,15 +57,21 @@ class PlayerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        timerLabel.text = String(counter)
         
         player?.setShuffle(true, callback: {(error) in
             if error != nil {
-                print("Error: couldn't shuffle");
+                print("Error: couldn't shuffle")
             } else {
                 print ("Shuffling")
             }
         });
         // Do any additional setup after loading the view.
+        timer_ = Timer.scheduledTimer(timeInterval: 0.5, target:self, selector: #selector(PlayerViewController.updateCounter), userInfo: nil, repeats: true)
+    }
+    
+    func updateCounter() {
+        timerLabel.text = String(counter)
     }
 
     override func didReceiveMemoryWarning() {
