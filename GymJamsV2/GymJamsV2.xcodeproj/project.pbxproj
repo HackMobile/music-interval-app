@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DA11B9D1F10B19400655FC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA11B9C1F10B19400655FC7 /* AppDelegate.swift */; };
+		9DA11B9F1F10B19400655FC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA11B9E1F10B19400655FC7 /* ViewController.swift */; };
+		9DA11BA21F10B19400655FC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA11BA01F10B19400655FC7 /* Main.storyboard */; };
+		9DA11BA51F10B19400655FC7 /* GymJamsV2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DA11BA31F10B19400655FC7 /* GymJamsV2.xcdatamodeld */; };
+		9DA11BA71F10B19400655FC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA11BA61F10B19400655FC7 /* Assets.xcassets */; };
+		9DA11BAA1F10B19400655FC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA11BA81F10B19400655FC7 /* LaunchScreen.storyboard */; };
+		9DA11BB41F10B20B00655FC7 /* BridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA11BB31F10B20B00655FC7 /* BridgeViewController.m */; };
+		9DA11BB81F10B25800655FC7 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA11BB51F10B25800655FC7 /* SpotifyAudioPlayback.framework */; };
+		9DA11BB91F10B25800655FC7 /* SpotifyAudioPlayback.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA11BB51F10B25800655FC7 /* SpotifyAudioPlayback.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9DA11BBA1F10B25800655FC7 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA11BB61F10B25800655FC7 /* SpotifyAuthentication.framework */; };
+		9DA11BBB1F10B25800655FC7 /* SpotifyAuthentication.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA11BB61F10B25800655FC7 /* SpotifyAuthentication.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9DA11BBC1F10B25800655FC7 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA11BB71F10B25800655FC7 /* SpotifyMetadata.framework */; };
+		9DA11BBD1F10B25800655FC7 /* SpotifyMetadata.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA11BB71F10B25800655FC7 /* SpotifyMetadata.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9DA11BBE1F10B25800655FC7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9DA11BB91F10B25800655FC7 /* SpotifyAudioPlayback.framework in Embed Frameworks */,
+				9DA11BBD1F10B25800655FC7 /* SpotifyMetadata.framework in Embed Frameworks */,
+				9DA11BBB1F10B25800655FC7 /* SpotifyAuthentication.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9DA11B991F10B19400655FC7 /* GymJamsV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymJamsV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA11B9C1F10B19400655FC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9DA11B9E1F10B19400655FC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DA11BA11F10B19400655FC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DA11BA41F10B19400655FC7 /* GymJamsV2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GymJamsV2.xcdatamodel; sourceTree = "<group>"; };
+		9DA11BA61F10B19400655FC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DA11BA91F10B19400655FC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9DA11BAB1F10B19400655FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DA11BB11F10B20B00655FC7 /* GymJamsV2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GymJamsV2-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		9DA11BB21F10B20B00655FC7 /* BridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeViewController.h; sourceTree = "<group>"; };
+		9DA11BB31F10B20B00655FC7 /* BridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeViewController.m; sourceTree = "<group>"; };
+		9DA11BB51F10B25800655FC7 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		9DA11BB61F10B25800655FC7 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		9DA11BB71F10B25800655FC7 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DA11B961F10B19400655FC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA11BB81F10B25800655FC7 /* SpotifyAudioPlayback.framework in Frameworks */,
+				9DA11BBC1F10B25800655FC7 /* SpotifyMetadata.framework in Frameworks */,
+				9DA11BBA1F10B25800655FC7 /* SpotifyAuthentication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9DA11B901F10B19400655FC7 = {
+			isa = PBXGroup;
+			children = (
+				9DA11BB51F10B25800655FC7 /* SpotifyAudioPlayback.framework */,
+				9DA11BB61F10B25800655FC7 /* SpotifyAuthentication.framework */,
+				9DA11BB71F10B25800655FC7 /* SpotifyMetadata.framework */,
+				9DA11B9B1F10B19400655FC7 /* GymJamsV2 */,
+				9DA11B9A1F10B19400655FC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DA11B9A1F10B19400655FC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DA11B991F10B19400655FC7 /* GymJamsV2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DA11B9B1F10B19400655FC7 /* GymJamsV2 */ = {
+			isa = PBXGroup;
+			children = (
+				9DA11BB21F10B20B00655FC7 /* BridgeViewController.h */,
+				9DA11BB31F10B20B00655FC7 /* BridgeViewController.m */,
+				9DA11B9C1F10B19400655FC7 /* AppDelegate.swift */,
+				9DA11B9E1F10B19400655FC7 /* ViewController.swift */,
+				9DA11BA01F10B19400655FC7 /* Main.storyboard */,
+				9DA11BA61F10B19400655FC7 /* Assets.xcassets */,
+				9DA11BA81F10B19400655FC7 /* LaunchScreen.storyboard */,
+				9DA11BAB1F10B19400655FC7 /* Info.plist */,
+				9DA11BA31F10B19400655FC7 /* GymJamsV2.xcdatamodeld */,
+				9DA11BB11F10B20B00655FC7 /* GymJamsV2-Bridging-Header.h */,
+			);
+			path = GymJamsV2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DA11B981F10B19400655FC7 /* GymJamsV2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DA11BAE1F10B19400655FC7 /* Build configuration list for PBXNativeTarget "GymJamsV2" */;
+			buildPhases = (
+				9DA11B951F10B19400655FC7 /* Sources */,
+				9DA11B961F10B19400655FC7 /* Frameworks */,
+				9DA11B971F10B19400655FC7 /* Resources */,
+				9DA11BBE1F10B25800655FC7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GymJamsV2;
+			productName = GymJamsV2;
+			productReference = 9DA11B991F10B19400655FC7 /* GymJamsV2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DA11B911F10B19400655FC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Kevin Nguyen";
+				TargetAttributes = {
+					9DA11B981F10B19400655FC7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = R5DXE64YJU;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9DA11B941F10B19400655FC7 /* Build configuration list for PBXProject "GymJamsV2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DA11B901F10B19400655FC7;
+			productRefGroup = 9DA11B9A1F10B19400655FC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DA11B981F10B19400655FC7 /* GymJamsV2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DA11B971F10B19400655FC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA11BAA1F10B19400655FC7 /* LaunchScreen.storyboard in Resources */,
+				9DA11BA71F10B19400655FC7 /* Assets.xcassets in Resources */,
+				9DA11BA21F10B19400655FC7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DA11B951F10B19400655FC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA11B9F1F10B19400655FC7 /* ViewController.swift in Sources */,
+				9DA11BB41F10B20B00655FC7 /* BridgeViewController.m in Sources */,
+				9DA11B9D1F10B19400655FC7 /* AppDelegate.swift in Sources */,
+				9DA11BA51F10B19400655FC7 /* GymJamsV2.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9DA11BA01F10B19400655FC7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DA11BA11F10B19400655FC7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9DA11BA81F10B19400655FC7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DA11BA91F10B19400655FC7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DA11BAC1F10B19400655FC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9DA11BAD1F10B19400655FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DA11BAF1F10B19400655FC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = R5DXE64YJU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GymJamsV2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KevinNguyen.GymJamsV2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GymJamsV2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9DA11BB01F10B19400655FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = R5DXE64YJU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GymJamsV2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KevinNguyen.GymJamsV2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GymJamsV2-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DA11B941F10B19400655FC7 /* Build configuration list for PBXProject "GymJamsV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA11BAC1F10B19400655FC7 /* Debug */,
+				9DA11BAD1F10B19400655FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DA11BAE1F10B19400655FC7 /* Build configuration list for PBXNativeTarget "GymJamsV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA11BAF1F10B19400655FC7 /* Debug */,
+				9DA11BB01F10B19400655FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9DA11BA31F10B19400655FC7 /* GymJamsV2.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9DA11BA41F10B19400655FC7 /* GymJamsV2.xcdatamodel */,
+			);
+			currentVersion = 9DA11BA41F10B19400655FC7 /* GymJamsV2.xcdatamodel */;
+			path = GymJamsV2.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9DA11B911F10B19400655FC7 /* Project object */;
+}

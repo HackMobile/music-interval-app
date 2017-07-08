@@ -35,6 +35,9 @@
                             <constraint firstItem="Nyc-6U-FH6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5" id="j8X-3J-LLg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="Nyc-6U-FH6" id="zbt-3j-LbX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

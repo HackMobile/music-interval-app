@@ -19,16 +19,11 @@ class ViewController: UIViewController {
     let clientId = "7961aed494fc44f09442f5c523738196"
     let callbackURL = "gym-jams-login://callback"
 
+    @IBOutlet weak var loginButton: UIButton!
+    
     @IBAction func loginButtonPressed(_ sender: Any) {
         print("hi")
-        if UIApplication.shared.canOpenURL(loginURL!) {
-            
-            UIApplication.shared.open(loginURL!, options: [:], completionHandler: nil)
-            if (auth?.canHandle(auth?.redirectURL))! {
-                // To do - build in error handling
-            }
-        }
-        
+        UIApplication.shared.open(loginURL!, options: [:], completionHandler: nil)
     }
     
     override func viewDidLoad() {
