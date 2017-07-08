@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UIImageView{
+extension UIImageView {
     
-    func setImageFromURl(stringImageUrl url: String){
+    func setImageFromURl(stringImageUrl url: String) {
         
         if let url = NSURL(string: url) {
             if let data = NSData(contentsOf: url as URL) {
@@ -28,6 +28,7 @@ var player: SPTAudioStreamingController? = nil
 var timer: Timer = Timer()
 
 var counter: Int = 30 // Default time interval
+var sliderVal: Int = 30
 
 
 
@@ -122,7 +123,7 @@ class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlayb
                 return
             }
         }
-        counter = 30;
+        counter = sliderVal;
         timer.invalidate()
         setTimer()
     }
@@ -138,7 +139,7 @@ class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlayb
                     print("skipping")
                 }
             })
-            counter = 30
+            counter = sliderVal
         }
     }
     

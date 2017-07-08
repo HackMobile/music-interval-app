@@ -11,7 +11,14 @@ import UIKit
 class PlayerViewController: UIViewController, SPTAudioStreamingPlaybackDelegate, SPTAudioStreamingDelegate{
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var sliderValueLabel: UILabel!
     @IBOutlet weak var updateAlbum: UILabel!
+    @IBAction func sliderValueChanged(_ sender: UISlider) {
+        var currentValue = Int(sender.value)
+        
+        sliderValueLabel.text = "\(currentValue)"
+        sliderVal = currentValue
+    }
     @IBOutlet weak var updateName: UILabel!
     
     func audioStreaming(_ audioStreaming: SPTAudioStreamingController!, didChange metadata: SPTPlaybackMetadata!) {
@@ -62,7 +69,7 @@ class PlayerViewController: UIViewController, SPTAudioStreamingPlaybackDelegate,
                 print ("Skipping Previous")
             }
         });
-        counter = 30
+        counter = sliderVal
     }
     
     @IBAction func skipButtonPressed(_ sender: Any) {
@@ -73,7 +80,7 @@ class PlayerViewController: UIViewController, SPTAudioStreamingPlaybackDelegate,
                 print ("Skipping next")
             }
         });
-        counter = 30
+        counter = sliderVal
     }
     
     @IBOutlet weak var timerLabel: UILabel!
