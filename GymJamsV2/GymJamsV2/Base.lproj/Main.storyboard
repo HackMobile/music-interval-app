@@ -43,6 +43,10 @@
                                     <action selector="loginBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDY-lE-X4J"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="9Sz-mG-UbG">
+                                <rect key="frame" x="67" y="175" width="240" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="WMa-F9-WKx" secondAttribute="trailing" id="1aH-lJ-2hV"/>
@@ -65,5 +69,6 @@
     </scenes>
     <resources>
         <image name="background" width="1000" height="636"/>
+        <image name="icon" width="1000" height="1113"/>
     </resources>
 </document>
