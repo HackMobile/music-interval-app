@@ -8,10 +8,19 @@
 
 import UIKit
 
-class PlayerViewController: UIViewController {
+class PlayerViewController: UIViewController, SPTAudioStreamingPlaybackDelegate, SPTAudioStreamingDelegate{
+    
+    func audioStreaming(_ audioStreaming: SPTAudioStreamingController!, didChange metadata: SPTPlaybackMetadata!) {
+        player?.seek(to: 30, callback: {(error) in
+            if error != nil {
+                print("Error: couldn't skip");
+            } else {
+                print ("Skipping Previous")
+            }
+        });
+    }
     
     @IBAction func playButtonPressed(_ sender: Any) {
-        
         if (player?.playbackState.isPlaying)! {
             player?.setIsPlaying(false, callback: {(error) in
                 if error != nil {
@@ -63,6 +72,10 @@ class PlayerViewController: UIViewController {
                 print ("Shuffling")
             }
         });
+        
+        player!.playbackDelegate = self
+        player!.delegate = self as SPTAudioStreamingDelegate
+        
         // Do any additional setup after loading the view.
     }
 

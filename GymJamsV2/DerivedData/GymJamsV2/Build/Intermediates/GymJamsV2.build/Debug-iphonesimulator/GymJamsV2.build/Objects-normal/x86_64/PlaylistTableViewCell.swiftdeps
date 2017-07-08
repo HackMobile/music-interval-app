@@ -7,11 +7,13 @@ provides-member:
 - ["C9GymJamsV221PlaylistTableViewCell", ""]
 provides-dynamic-lookup:
 - "awakeFromNib"
+- "coverArt"
 - "nameLabel"
 - "setSelected"
 depends-top-level:
 - "Bool"
 - "PlaylistTableViewCell"
+- "UIImageView"
 - "UILabel"
 - "UITableViewCell"
 depends-member:
@@ -48,8 +50,10 @@ depends-member:
 - !private ["PSo8NSCoding", "setSelected"]
 - ["PSo8NSCoding", ""]
 - ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "awakeFromNib"]
+- ["CSo8NSObject", "coverArt"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "nameLabel"]
 - ["CSo8NSObject", "setSelected"]
@@ -58,8 +62,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "setSelected"]
 - ["PSo16NSObjectProtocol", ""]
 - ["C9GymJamsV221PlaylistTableViewCell", "Bool"]
+- ["C9GymJamsV221PlaylistTableViewCell", "UIImageView"]
 - ["C9GymJamsV221PlaylistTableViewCell", "UILabel"]
 - ["C9GymJamsV221PlaylistTableViewCell", "awakeFromNib"]
+- ["C9GymJamsV221PlaylistTableViewCell", "coverArt"]
 - ["C9GymJamsV221PlaylistTableViewCell", "deinit"]
 - ["C9GymJamsV221PlaylistTableViewCell", "init"]
 - ["C9GymJamsV221PlaylistTableViewCell", "nameLabel"]
@@ -97,8 +103,10 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "setSelected"]
 - ["PSo27UIGestureRecognizerDelegate", ""]
 - ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "awakeFromNib"]
+- ["CSo11UIResponder", "coverArt"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "nameLabel"]
 - ["CSo11UIResponder", "setSelected"]
@@ -107,8 +115,10 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "setSelected"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - ["CSo15UITableViewCell", "Bool"]
+- ["CSo15UITableViewCell", "UIImageView"]
 - ["CSo15UITableViewCell", "UILabel"]
 - ["CSo15UITableViewCell", "awakeFromNib"]
+- ["CSo15UITableViewCell", "coverArt"]
 - ["CSo15UITableViewCell", "init"]
 - ["CSo15UITableViewCell", "nameLabel"]
 - ["CSo15UITableViewCell", "setSelected"]
@@ -118,8 +128,10 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "setSelected"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "Bool"]
+- ["CSo6UIView", "UIImageView"]
 - ["CSo6UIView", "UILabel"]
 - ["CSo6UIView", "awakeFromNib"]
+- ["CSo6UIView", "coverArt"]
 - ["CSo6UIView", "init"]
 - ["CSo6UIView", "nameLabel"]
 - ["CSo6UIView", "setSelected"]
@@ -225,4 +237,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.apinotesc"
-interface-hash: "3b8cc1944bb2bb34ac8722900fa4fe1f"
+interface-hash: "db95966659559a703c989af00a611dc0"

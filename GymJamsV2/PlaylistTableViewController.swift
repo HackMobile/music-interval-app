@@ -109,7 +109,7 @@ class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlayb
         print(playlistUris[indexPath.row])
         let uri: String = playlistUris[indexPath.row].absoluteString
         print("uri: " + uri)
-        player?.playSpotifyURI(uri, startingWith: 0, startingWithPosition: 30) { error in
+        player?.playSpotifyURI(uri, startingWith: 1, startingWithPosition: 0) { error in
             print("inside audio callback")
             if error != nil {
                 print("*** failed to play: \(String(describing: error))")
