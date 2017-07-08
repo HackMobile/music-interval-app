@@ -9,6 +9,8 @@
 import UIKit
 
 var player: SPTAudioStreamingController? = nil
+var timer: Timer = Timer()
+
 
 class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlaybackDelegate, SPTAudioStreamingDelegate {
 
