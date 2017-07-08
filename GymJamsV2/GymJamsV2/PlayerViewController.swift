@@ -9,6 +9,28 @@
 import UIKit
 
 class PlayerViewController: UIViewController {
+    
+    @IBAction func playButtonPressed(_ sender: Any) {
+        
+        if (player?.playbackState.isPlaying)! {
+            player?.setIsPlaying(false, callback: {(error) in
+                if error != nil {
+                    print("Error: couldn't skip");
+                } else {
+                    print ("Skipping Previous")
+                }
+            });
+        } else {
+            player?.setIsPlaying(true, callback: {(error) in
+                if error != nil {
+                    print("Error: couldn't skip");
+                } else {
+                    print ("Skipping Previous")
+                }
+            });
+        }
+    }
+    
     @IBAction func prevButtonPressed(_ sender: Any) {
         player?.skipPrevious({(error) in
             if error != nil {
