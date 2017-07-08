@@ -92,14 +92,10 @@
 		9DA11B9B1F10B19400655FC7 /* GymJamsV2 */ = {
 			isa = PBXGroup;
 			children = (
-
-				E13F8FAC1F10D97900A7E900 /* PlaylistTableViewController.swift */,
-				9DA11BB21F10B20B00655FC7 /* BridgeViewController.h */,
-				9DA11BB31F10B20B00655FC7 /* BridgeViewController.m */,
-
 				9DA11B9C1F10B19400655FC7 /* AppDelegate.swift */,
 				9DA11B9E1F10B19400655FC7 /* ViewController.swift */,
 				9DA11BA01F10B19400655FC7 /* Main.storyboard */,
+				E13F8FAC1F10D97900A7E900 /* PlaylistTableViewController.swift */,
 				E13F8FA81F10D08500A7E900 /* PlaylistTableViewCell.swift */,
 				9DA11BA61F10B19400655FC7 /* Assets.xcassets */,
 				9DA11BA81F10B19400655FC7 /* LaunchScreen.storyboard */,

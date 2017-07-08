@@ -8,6 +8,8 @@
 
 import UIKit
 
+var sesh: SPTSession?
+
 class ViewController: UIViewController, SPTAudioStreamingPlaybackDelegate, SPTAudioStreamingDelegate {
     
     var auth = SPTAuth.defaultInstance()!
@@ -41,6 +43,13 @@ class ViewController: UIViewController, SPTAudioStreamingPlaybackDelegate, SPTAu
             let sessionDataObj = sessionObj as! Data
             let firstTimeSession = NSKeyedUnarchiver.unarchiveObject(with: sessionDataObj) as! SPTSession
             self.session = firstTimeSession
+            
+            // Set the session global variable
+            sesh = self.session
+            
+            //print(SPTAuth.defaultInstance().session.accessToken)
+            //print(SPTAuth.defaultInstance().session.canonicalUsername)
+            
             performSegue(withIdentifier: "logInSegue", sender: nil)
             //initializePlayer(authSession: session)
         }

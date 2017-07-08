@@ -14,15 +14,24 @@ class PlaylistTableViewController: UITableViewController {
     
     var playlists = [String]()
     
-    private func loadPlaylists() {
-        let playlist1 = "Good Kid m.a.a.d. city"
-        let playlist2 = "Done"
-        playlists += [playlist1,playlist2]
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        loadPlaylists();
+        SPTPlaylistList.playlists(forUser: sesh!.canonicalUsername, withAccessToken: sesh!.accessToken, callback: { (error, results) -> Void in
+            if (error != nil) {
+                print(error!)
+            } else {
+                let playLists = results as! SPTListPage
+                for playList in playLists.items {
+                    if let playlist = playList as? SPTPartialPlaylist {
+                        print(playlist.name)
+                        self.playlists.append(playlist.name)
+                        print(playlist.uri)
+                    }
+                }
+                self.tableView.reloadData()
+            }
+        })
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
