@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,9 +21,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="KEF-6p-Ow7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="KEF-6p-Ow7">
                                 <rect key="frame" x="181" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMa-F9-WKx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqm-jq-mR4">
                                 <rect key="frame" x="25" y="517" width="325" height="50"/>
                                 <color key="backgroundColor" red="0.41568627450980389" green="0.8901960784313725" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
@@ -38,10 +43,6 @@
                                     <action selector="loginBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDY-lE-X4J"/>
                                 </connections>
                             </button>
-                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMa-F9-WKx">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="WMa-F9-WKx" secondAttribute="trailing" id="1aH-lJ-2hV"/>
@@ -49,12 +50,8 @@
                             <constraint firstAttribute="trailing" secondItem="Aqm-jq-mR4" secondAttribute="trailing" constant="25" id="5fc-60-bDZ"/>
                             <constraint firstItem="WMa-F9-WKx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7i3-ev-zrp"/>
                             <constraint firstItem="WMa-F9-WKx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EPh-o7-XBK"/>
-                            <constraint firstAttribute="trailing" secondItem="KEF-6p-Ow7" secondAttribute="trailing" id="Qa5-Cu-Q5q"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Aqm-jq-mR4" secondAttribute="bottom" constant="100" id="RhD-qW-0LJ"/>
-                            <constraint firstItem="KEF-6p-Ow7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZTa-Ep-diJ"/>
                             <constraint firstAttribute="bottom" secondItem="WMa-F9-WKx" secondAttribute="bottom" id="aVR-JO-H24"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KEF-6p-Ow7" secondAttribute="bottom" id="vJj-yz-0d8"/>
-                            <constraint firstItem="KEF-6p-Ow7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="z6p-oR-4GJ"/>
                         </constraints>
                     </view>
                     <connections>

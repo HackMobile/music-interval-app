@@ -19,7 +19,6 @@ provides-dynamic-lookup:
 - "updateAfterFirstLogin"
 - "viewDidLoad"
 depends-top-level:
-- !private "!="
 - !private "=="
 - !private "AnyObject"
 - !private "Array"
@@ -76,13 +75,16 @@ depends-member:
 - !private ["Ps9AnyObject", "auth"]
 - !private ["Ps9AnyObject", "canHandle"]
 - !private ["Ps9AnyObject", "clientID"]
+- !private ["Ps9AnyObject", "cornerRadius"]
 - !private ["Ps9AnyObject", "default"]
 - ["Ps9AnyObject", "defaultInstance"]
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "initializePlayer"]
+- !private ["Ps9AnyObject", "layer"]
 - !private ["Ps9AnyObject", "login"]
+- !private ["Ps9AnyObject", "loginBtn"]
 - !private ["Ps9AnyObject", "loginUrl"]
 - !private ["Ps9AnyObject", "object"]
 - !private ["Ps9AnyObject", "openURL"]
@@ -104,6 +106,9 @@ depends-member:
 - !private ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["CSo7CALayer", "cornerRadius"]
+- !private ["PSo15CALayerDelegate", "layer"]
+- !private ["PSo13CAMediaTiming", "cornerRadius"]
 - !private ["Ps7CVarArg", "NSKeyedUnarchiver"]
 - !private ["Ps7CVarArg", "NSNotification"]
 - !private ["Ps7CVarArg", "Name"]
@@ -135,13 +140,16 @@ depends-member:
 - !private ["Ps7CVarArg", "auth"]
 - !private ["Ps7CVarArg", "canHandle"]
 - !private ["Ps7CVarArg", "clientID"]
+- !private ["Ps7CVarArg", "cornerRadius"]
 - !private ["Ps7CVarArg", "default"]
 - ["Ps7CVarArg", "defaultInstance"]
 - !private ["Ps7CVarArg", "delegate"]
 - !private ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "initializePlayer"]
+- !private ["Ps7CVarArg", "layer"]
 - !private ["Ps7CVarArg", "login"]
+- !private ["Ps7CVarArg", "loginBtn"]
 - !private ["Ps7CVarArg", "loginUrl"]
 - !private ["Ps7CVarArg", "object"]
 - !private ["Ps7CVarArg", "openURL"]
@@ -194,13 +202,16 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "auth"]
 - !private ["Ps28CustomDebugStringConvertible", "canHandle"]
 - !private ["Ps28CustomDebugStringConvertible", "clientID"]
+- !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - !private ["Ps28CustomDebugStringConvertible", "default"]
 - ["Ps28CustomDebugStringConvertible", "defaultInstance"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "initializePlayer"]
+- !private ["Ps28CustomDebugStringConvertible", "layer"]
 - !private ["Ps28CustomDebugStringConvertible", "login"]
+- !private ["Ps28CustomDebugStringConvertible", "loginBtn"]
 - !private ["Ps28CustomDebugStringConvertible", "loginUrl"]
 - !private ["Ps28CustomDebugStringConvertible", "object"]
 - !private ["Ps28CustomDebugStringConvertible", "openURL"]
@@ -257,13 +268,16 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "auth"]
 - !private ["Ps23CustomStringConvertible", "canHandle"]
 - !private ["Ps23CustomStringConvertible", "clientID"]
+- !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - !private ["Ps23CustomStringConvertible", "default"]
 - ["Ps23CustomStringConvertible", "defaultInstance"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "initializePlayer"]
+- !private ["Ps23CustomStringConvertible", "layer"]
 - !private ["Ps23CustomStringConvertible", "login"]
+- !private ["Ps23CustomStringConvertible", "loginBtn"]
 - !private ["Ps23CustomStringConvertible", "loginUrl"]
 - !private ["Ps23CustomStringConvertible", "object"]
 - !private ["Ps23CustomStringConvertible", "openURL"]
@@ -316,13 +330,16 @@ depends-member:
 - !private ["Ps9Equatable", "auth"]
 - !private ["Ps9Equatable", "canHandle"]
 - !private ["Ps9Equatable", "clientID"]
+- !private ["Ps9Equatable", "cornerRadius"]
 - !private ["Ps9Equatable", "default"]
 - ["Ps9Equatable", "defaultInstance"]
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "initializePlayer"]
+- !private ["Ps9Equatable", "layer"]
 - !private ["Ps9Equatable", "login"]
+- !private ["Ps9Equatable", "loginBtn"]
 - !private ["Ps9Equatable", "loginUrl"]
 - !private ["Ps9Equatable", "object"]
 - !private ["Ps9Equatable", "openURL"]
@@ -343,7 +360,6 @@ depends-member:
 - !private ["Ps9Equatable", "updateAfterFirstLogin"]
 - !private ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
-- !private ["Ps5Error", "localizedDescription"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
@@ -380,13 +396,16 @@ depends-member:
 - !private ["Ps8Hashable", "auth"]
 - !private ["Ps8Hashable", "canHandle"]
 - !private ["Ps8Hashable", "clientID"]
+- !private ["Ps8Hashable", "cornerRadius"]
 - !private ["Ps8Hashable", "default"]
 - ["Ps8Hashable", "defaultInstance"]
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "initializePlayer"]
+- !private ["Ps8Hashable", "layer"]
 - !private ["Ps8Hashable", "login"]
+- !private ["Ps8Hashable", "loginBtn"]
 - !private ["Ps8Hashable", "loginUrl"]
 - !private ["Ps8Hashable", "object"]
 - !private ["Ps8Hashable", "openURL"]
@@ -439,9 +458,12 @@ depends-member:
 - ["PSo8NSCoding", "audioStreamingDidSkipToNextTrack"]
 - ["PSo8NSCoding", "audioStreamingDidSkipToPreviousTrack"]
 - !private ["PSo8NSCoding", "auth"]
+- !private ["PSo8NSCoding", "cornerRadius"]
 - !private ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "initializePlayer"]
+- !private ["PSo8NSCoding", "layer"]
+- !private ["PSo8NSCoding", "loginBtn"]
 - !private ["PSo8NSCoding", "loginUrl"]
 - !private ["PSo8NSCoding", "player"]
 - !private ["PSo8NSCoding", "print"]
@@ -481,6 +503,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "initializePlayer"]
+- !private ["PSo26NSExtensionRequestHandling", "loginBtn"]
 - !private ["PSo26NSExtensionRequestHandling", "loginUrl"]
 - !private ["PSo26NSExtensionRequestHandling", "player"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
@@ -528,12 +551,14 @@ depends-member:
 - ["CSo8NSObject", "auth"]
 - !private ["CSo8NSObject", "canHandle"]
 - !private ["CSo8NSObject", "clientID"]
+- !private ["CSo8NSObject", "cornerRadius"]
 - !private ["CSo8NSObject", "default"]
 - ["CSo8NSObject", "defaultInstance"]
 - !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "initializePlayer"]
+- !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "login"]
 - ["CSo8NSObject", "loginBtn"]
 - ["CSo8NSObject", "loginBtnPressed"]
@@ -587,13 +612,16 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "auth"]
 - !private ["PSo16NSObjectProtocol", "canHandle"]
 - !private ["PSo16NSObjectProtocol", "clientID"]
+- !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - !private ["PSo16NSObjectProtocol", "default"]
 - ["PSo16NSObjectProtocol", "defaultInstance"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "initializePlayer"]
+- !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "login"]
+- !private ["PSo16NSObjectProtocol", "loginBtn"]
 - !private ["PSo16NSObjectProtocol", "loginUrl"]
 - !private ["PSo16NSObjectProtocol", "object"]
 - !private ["PSo16NSObjectProtocol", "openURL"]
@@ -655,6 +683,7 @@ depends-member:
 - ["PSo25SPTAudioStreamingDelegate", "audioStreamingDidSkipToPreviousTrack"]
 - !private ["PSo25SPTAudioStreamingDelegate", "auth"]
 - !private ["PSo25SPTAudioStreamingDelegate", "initializePlayer"]
+- !private ["PSo25SPTAudioStreamingDelegate", "loginBtn"]
 - !private ["PSo25SPTAudioStreamingDelegate", "loginUrl"]
 - !private ["PSo25SPTAudioStreamingDelegate", "player"]
 - !private ["PSo25SPTAudioStreamingDelegate", "print"]
@@ -689,6 +718,7 @@ depends-member:
 - ["PSo33SPTAudioStreamingPlaybackDelegate", "audioStreamingDidSkipToPreviousTrack"]
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "auth"]
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "initializePlayer"]
+- !private ["PSo33SPTAudioStreamingPlaybackDelegate", "loginBtn"]
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "loginUrl"]
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "player"]
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "print"]
@@ -706,6 +736,8 @@ depends-member:
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo21UIAppearanceContainer", "NSKeyedUnarchiver"]
 - !private ["PSo21UIAppearanceContainer", "NSNotification"]
 - !private ["PSo21UIAppearanceContainer", "NotificationCenter"]
@@ -735,6 +767,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "initializePlayer"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- !private ["PSo21UIAppearanceContainer", "loginBtn"]
 - !private ["PSo21UIAppearanceContainer", "loginUrl"]
 - !private ["PSo21UIAppearanceContainer", "player"]
 - !private ["PSo21UIAppearanceContainer", "print"]
@@ -745,6 +779,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo13UIApplication", "openURL"]
 - !private ["CSo13UIApplication", "shared"]
+- !private ["CSo8UIButton", "layer"]
 - !private ["PSo18UIContentContainer", "NSKeyedUnarchiver"]
 - !private ["PSo18UIContentContainer", "NSNotification"]
 - !private ["PSo18UIContentContainer", "NotificationCenter"]
@@ -774,6 +809,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "initializePlayer"]
+- !private ["PSo18UIContentContainer", "loginBtn"]
 - !private ["PSo18UIContentContainer", "loginUrl"]
 - !private ["PSo18UIContentContainer", "player"]
 - !private ["PSo18UIContentContainer", "print"]
@@ -782,6 +818,9 @@ depends-member:
 - !private ["PSo18UIContentContainer", "updateAfterFirstLogin"]
 - !private ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "layer"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo18UIFocusEnvironment", "NSKeyedUnarchiver"]
 - !private ["PSo18UIFocusEnvironment", "NSNotification"]
 - !private ["PSo18UIFocusEnvironment", "NotificationCenter"]
@@ -811,6 +850,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "initializePlayer"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
+- !private ["PSo18UIFocusEnvironment", "loginBtn"]
 - !private ["PSo18UIFocusEnvironment", "loginUrl"]
 - !private ["PSo18UIFocusEnvironment", "player"]
 - !private ["PSo18UIFocusEnvironment", "print"]
@@ -819,6 +860,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "updateAfterFirstLogin"]
 - !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "layer"]
 - !private ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "Data"]
 - !private ["CSo11UIResponder", "NSKeyedUnarchiver"]
@@ -853,6 +895,7 @@ depends-member:
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "initializePlayer"]
+- !private ["CSo11UIResponder", "layer"]
 - ["CSo11UIResponder", "loginBtn"]
 - ["CSo11UIResponder", "loginBtnPressed"]
 - ["CSo11UIResponder", "loginUrl"]
@@ -893,6 +936,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "initializePlayer"]
+- !private ["PSo30UIResponderStandardEditActions", "layer"]
+- !private ["PSo30UIResponderStandardEditActions", "loginBtn"]
 - !private ["PSo30UIResponderStandardEditActions", "loginUrl"]
 - !private ["PSo30UIResponderStandardEditActions", "openURL"]
 - !private ["PSo30UIResponderStandardEditActions", "player"]
@@ -932,6 +977,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "initializePlayer"]
+- !private ["PSo16UIStateRestoring", "loginBtn"]
 - !private ["PSo16UIStateRestoring", "loginUrl"]
 - !private ["PSo16UIStateRestoring", "player"]
 - !private ["PSo16UIStateRestoring", "print"]
@@ -969,6 +1015,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "initializePlayer"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- !private ["PSo18UITraitEnvironment", "loginBtn"]
 - !private ["PSo18UITraitEnvironment", "loginUrl"]
 - !private ["PSo18UITraitEnvironment", "player"]
 - !private ["PSo18UITraitEnvironment", "print"]
@@ -977,6 +1025,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "updateAfterFirstLogin"]
 - !private ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "layer"]
 - !private ["CSo16UIViewController", "AnyObject"]
 - !private ["CSo16UIViewController", "Data"]
 - !private ["CSo16UIViewController", "NSKeyedUnarchiver"]
@@ -1068,6 +1117,7 @@ depends-member:
 - ["C9GymJamsV214ViewController", "setup"]
 - ["C9GymJamsV214ViewController", "updateAfterFirstLogin"]
 - ["C9GymJamsV214ViewController", "viewDidLoad"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
@@ -1109,13 +1159,16 @@ depends-member:
 - !private ["Ps9_Hashable", "auth"]
 - !private ["Ps9_Hashable", "canHandle"]
 - !private ["Ps9_Hashable", "clientID"]
+- !private ["Ps9_Hashable", "cornerRadius"]
 - !private ["Ps9_Hashable", "default"]
 - ["Ps9_Hashable", "defaultInstance"]
 - !private ["Ps9_Hashable", "delegate"]
 - !private ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "initializePlayer"]
+- !private ["Ps9_Hashable", "layer"]
 - !private ["Ps9_Hashable", "login"]
+- !private ["Ps9_Hashable", "loginBtn"]
 - !private ["Ps9_Hashable", "loginUrl"]
 - !private ["Ps9_Hashable", "object"]
 - !private ["Ps9_Hashable", "openURL"]
@@ -1142,6 +1195,9 @@ depends-member:
 depends-nominal:
 - "Ps9AnyObject"
 - !private "Sb"
+- !private "CSo7CALayer"
+- !private "PSo15CALayerDelegate"
+- !private "PSo13CAMediaTiming"
 - "Ps7CVarArg"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
@@ -1149,7 +1205,6 @@ depends-nominal:
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
-- !private "Ps5Error"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps26ExpressibleByStringLiteral"
@@ -1180,18 +1235,27 @@ depends-nominal:
 - !private "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - !private "CSo13UIApplication"
+- !private "CSo8UIButton"
 - "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
 - "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
 - "CSo16UIViewController"
 - !private "V10Foundation3URL"
 - !private "CSo12UserDefaults"
 - "C9GymJamsV214ViewController"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
