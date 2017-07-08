@@ -8,12 +8,25 @@
 
 import UIKit
 
+extension UIImageView{
+    
+    func setImageFromURl(stringImageUrl url: String){
+        
+        if let url = NSURL(string: url) {
+            if let data = NSData(contentsOf: url as URL) {
+                self.image = UIImage(data: data as Data)
+            }
+        }
+    }
+}
+
 class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlaybackDelegate, SPTAudioStreamingDelegate {
 
     // Mark: properties
     
     var playlists = [String]()
     var playlistUris = [URL]()
+    var images = [String]()
     
     var player: SPTAudioStreamingController?
     
@@ -29,10 +42,18 @@ class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlayb
                     if let playlist = playList as? SPTPartialPlaylist {
                         self.playlists.append(playlist.name)
                         self.playlistUris.append(playlist.uri)
+                        if (playlist.smallestImage != nil) {
+                            self.images.append(playlist.smallestImage.imageURL.absoluteString)
+                        }
+                        else {
+                            
+                            self.images.append("");
+                        }
                     }
                 }
                 self.tableView.reloadData()
             }
+            
         })
         
         initializePlayer(authSession: sesh!)
@@ -62,6 +83,7 @@ class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlayb
     }
 
     
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "PlaylistTableViewCell"
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? PlaylistTableViewCell else {
@@ -69,8 +91,12 @@ class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlayb
         }
         let playlist = playlists[indexPath.row]
         cell.nameLabel.text = playlist
+        if ((images[indexPath.row]) != "") {
+            cell.coverArt.setImageFromURl(stringImageUrl: (images[indexPath.row]))
+        }
+        
+        //cell.coverArt.ima =
         // Configure the cell...
-
         return cell
     }
     
@@ -98,6 +124,42 @@ class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlayb
             self.player!.login(withAccessToken: authSession.accessToken)
         }
     }
+    
+    let imageCache = NSCache<AnyObject, AnyObject>()
+    var returnImage:UIImage = UIImage()
+    
+    func returnImageUsingCacheWithURLString(url: NSURL) -> (UIImage) {
+        
+        // First check if there is an image in the cache
+        if let cachedImage = imageCache.object(forKey: url) as? UIImage {
+            
+            return cachedImage
+        }
+            
+        else {
+            // Otherwise download image using the url location in Google Firebase
+            URLSession.shared.dataTask(with: url as URL, completionHandler: { (data, response, error) in
+                
+                if error != nil {
+                    print(error)
+                }
+                else {
+                    DispatchQueue.main.async(execute: {
+                        
+                        // Cache to image so it doesn't need to be reloaded everytime the user scrolls and table cells are re-used.
+                        if let downloadedImage = UIImage(data: data!) {
+                            
+                            self.imageCache.setObject(downloadedImage, forKey: url)
+                            self.returnImage = downloadedImage
+                            
+                        }
+                    })
+                }
+            }).resume()
+            return returnImage
+        }
+    }
+
     
 
     /*
@@ -146,3 +208,4 @@ class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlayb
     */
 
 }
+
