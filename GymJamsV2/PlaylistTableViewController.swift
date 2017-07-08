@@ -20,10 +20,14 @@ extension UIImageView{
     }
 }
 
+func setTimer() {
+    timer = Timer.scheduledTimer(timeInterval: 1, target:PlaylistTableViewController(), selector: #selector(PlaylistTableViewController.updateCounter), userInfo: nil, repeats: true)
+}
+
 var player: SPTAudioStreamingController? = nil
 var timer: Timer = Timer()
 
-var counter: Int = 45 // Default time interval
+var counter: Int = 30 // Default time interval
 
 
 
@@ -118,9 +122,9 @@ class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlayb
                 return
             }
         }
-        counter = 45;
-        timer = Timer.scheduledTimer(timeInterval: 1, target:self, selector: #selector(PlaylistTableViewController.updateCounter), userInfo: nil, repeats: true)
-        
+        counter = 30;
+        timer.invalidate()
+        setTimer()
     }
     
     func updateCounter() {
@@ -134,7 +138,7 @@ class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlayb
                     print("skipping")
                 }
             })
-            counter = 45
+            counter = 30
         }
     }
     
