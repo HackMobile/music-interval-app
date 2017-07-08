@@ -51,6 +51,14 @@
                                         <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAb-dU-2M6">
+                                        <rect key="frame" x="143" y="534" width="88" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="play"/>
+                                        <connections>
+                                            <action selector="playButtonPressed:" destination="lIy-YK-1Vx" eventType="touchUpInside" id="KVp-ln-2fS"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -65,15 +73,6 @@
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="ppa-Uc-xWW" kind="show" id="n5E-pD-kee"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAb-dU-2M6">
-                                <rect key="frame" x="143" y="547" width="88" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Play/Pause"/>
-                                <connections>
-                                    <action selector="playButtonPressed:" destination="lIy-YK-1Vx" eventType="touchUpInside" id="KVp-ln-2fS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYQ-0r-QLP">
@@ -269,6 +268,7 @@
     <resources>
         <image name="background" width="1000" height="636"/>
         <image name="icon" width="1000" height="1113"/>
+        <image name="play" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Brf-as-OKH"/>
