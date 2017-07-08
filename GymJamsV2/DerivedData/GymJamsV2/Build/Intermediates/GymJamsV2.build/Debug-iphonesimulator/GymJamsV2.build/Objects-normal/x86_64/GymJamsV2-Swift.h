@@ -136,6 +136,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import Foundation;
 #endif
 
+#import "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/GymJamsV2-Bridging-Header.h"
+
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIWindow;
@@ -167,7 +169,7 @@ SWIFT_CLASS("_TtC9GymJamsV211AppDelegate")
 @class NSCoder;
 
 SWIFT_CLASS("_TtC9GymJamsV214ViewController")
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <SPTAudioStreamingDelegate, SPTAudioStreamingPlaybackDelegate>
 @property (nonatomic, strong) SPTAuth * _Nonnull auth;
 @property (nonatomic, strong) SPTSession * _Null_unspecified session;
 @property (nonatomic, strong) SPTAudioStreamingController * _Nullable player;

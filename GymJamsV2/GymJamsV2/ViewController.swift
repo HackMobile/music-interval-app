@@ -31,6 +31,7 @@ class ViewController: UIViewController, SPTAudioStreamingPlaybackDelegate, SPTAu
         setup()
         // NotificationCenter.default.addObserver(self, selector: #selector(ViewController.updateAfterFirstLogin)
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.updateAfterFirstLogin), name: NSNotification.Name(rawValue: "loginSuccessful"), object: nil)
+        loginBtn.layer.cornerRadius = 25
     }
     
     func updateAfterFirstLogin () {
@@ -59,10 +60,8 @@ class ViewController: UIViewController, SPTAudioStreamingPlaybackDelegate, SPTAu
         // after a user authenticates a session, the SPTAudioStreamingController is then initialized and this method called
         print("logged in")
         self.player?.playSpotifyURI("spotify:track:58s6EuEYJdlb0kO7awm3Vp", startingWith: 0, startingWithPosition: 0, callback: { (error) in
-            if (error != nil) {
+            if (error == nil) {
                 print("playing!")
-            } else {
-                print(error?.localizedDescription)
             }
         })
     }

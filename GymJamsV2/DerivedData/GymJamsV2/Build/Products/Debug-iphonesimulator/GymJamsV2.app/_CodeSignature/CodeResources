@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		op/HSkn7ZfZcQfHux8IjgwhAGTI=
+		yQ5XckpL/pkcbOjhtXlHGJh7EiI=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		X8EuS9F3omNtoUhCE/nJVFXHeRo=
+		Mb8HnRZJ3VR0JOXGLuf48jbUX4Q=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		thE+9XjE/7IBk7tOUs4aZFyBNQc=
+		yQxjRKeVFz1pldICfLqe9bF4GNY=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		IpKUeuuCpTEhN8xbTMiyeKfwTjY=
+		e7HT4nTsrW2l35iOX+FOhmtuvlI=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		YDrDMq4aPqItboo0UKDvRFpzCO8=
+		Hj1AaulGU9B3wZNdxC05SfOtmnY=
 		</data>
 		<key>Frameworks/SpotifyAudioPlayback.framework/Info.plist</key>
 		<data>
@@ -178,7 +178,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		H3kYZFhrpLlJ/99pGSIM7kYe6C8=
+		CM+9erkw+maEByIBDqjF9s8LFC8=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -195,22 +195,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			op/HSkn7ZfZcQfHux8IjgwhAGTI=
+			yQ5XckpL/pkcbOjhtXlHGJh7EiI=
 			</data>
 			<key>hash2</key>
 			<data>
-			eiTGtUfNTqvKw36DT4wcWSN3LgRd+te1Ozwz6fdCsBo=
+			gGbSWq1kXOAC1GT4TbSJLyqSjmdrPfI5Vg1QpMmmfqE=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			X8EuS9F3omNtoUhCE/nJVFXHeRo=
+			Mb8HnRZJ3VR0JOXGLuf48jbUX4Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			cN6gt2PLQfU35PC8Cf7SBt1tYFcOkZDHJd7YiTSJBXg=
+			GJecBOMPySnuc27VkWHfMYwHyRQ8MFAa6T1s0URo964=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -228,22 +228,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			thE+9XjE/7IBk7tOUs4aZFyBNQc=
+			yQxjRKeVFz1pldICfLqe9bF4GNY=
 			</data>
 			<key>hash2</key>
 			<data>
-			JXIS7wEqULSSo5DGtSwl8uw1zJUc3w6qS+NTGoOCPFQ=
+			WqjmjUFqA7E1C51L/gkvFaTJyaVVjWsz5MHecqdK8HM=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IpKUeuuCpTEhN8xbTMiyeKfwTjY=
+			e7HT4nTsrW2l35iOX+FOhmtuvlI=
 			</data>
 			<key>hash2</key>
 			<data>
-			4+akV6TC3rB4X/tugwlxG0IWwVL50pMrm5on3EG4pxo=
+			aPVwRxXJ8VZWhyFgCsuUxTUwlKpeQirCOTeZugS4WBk=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -261,11 +261,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YDrDMq4aPqItboo0UKDvRFpzCO8=
+			Hj1AaulGU9B3wZNdxC05SfOtmnY=
 			</data>
 			<key>hash2</key>
 			<data>
-			wOFi/89lVTzLHxQJ9IX59GUoJMrDML9r3QXDSpXlQO4=
+			t6bHuKHdvO+K1AlBLxI2AzCwJX4Vv6/D7jZxvJqbo5s=
 			</data>
 		</dict>
 		<key>Frameworks/SpotifyAudioPlayback.framework/Info.plist</key>

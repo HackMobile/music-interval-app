@@ -25,17 +25,37 @@
                                 <rect key="frame" x="181" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMa-F9-WKx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqm-jq-mR4">
-                                <rect key="frame" x="124" y="318.5" width="126" height="30"/>
-                                <state key="normal" title="Login With Spotify"/>
+                                <rect key="frame" x="25" y="517" width="325" height="50"/>
+                                <color key="backgroundColor" red="0.41568627450980389" green="0.8901960784313725" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gbc-Ea-ch0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="LOGIN WITH SPOTIFY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="loginBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDY-lE-X4J"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="9Sz-mG-UbG">
+                                <rect key="frame" x="67" y="175" width="240" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Aqm-jq-mR4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8lL-ok-Ktv"/>
-                            <constraint firstItem="Aqm-jq-mR4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RMh-Up-ccX"/>
+                            <constraint firstAttribute="trailing" secondItem="WMa-F9-WKx" secondAttribute="trailing" id="1aH-lJ-2hV"/>
+                            <constraint firstItem="Aqm-jq-mR4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="41d-KA-oye"/>
+                            <constraint firstAttribute="trailing" secondItem="Aqm-jq-mR4" secondAttribute="trailing" constant="25" id="5fc-60-bDZ"/>
+                            <constraint firstItem="WMa-F9-WKx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7i3-ev-zrp"/>
+                            <constraint firstItem="WMa-F9-WKx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EPh-o7-XBK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Aqm-jq-mR4" secondAttribute="bottom" constant="100" id="RhD-qW-0LJ"/>
+                            <constraint firstAttribute="bottom" secondItem="WMa-F9-WKx" secondAttribute="bottom" id="aVR-JO-H24"/>
                         </constraints>
                     </view>
                     <connections>
@@ -93,5 +113,6 @@
     </scenes>
     <resources>
         <image name="background" width="1000" height="636"/>
+        <image name="icon" width="1000" height="1113"/>
     </resources>
 </document>

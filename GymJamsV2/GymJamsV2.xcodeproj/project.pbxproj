@@ -13,7 +13,6 @@
 		9DA11BA51F10B19400655FC7 /* GymJamsV2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DA11BA31F10B19400655FC7 /* GymJamsV2.xcdatamodeld */; };
 		9DA11BA71F10B19400655FC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA11BA61F10B19400655FC7 /* Assets.xcassets */; };
 		9DA11BAA1F10B19400655FC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA11BA81F10B19400655FC7 /* LaunchScreen.storyboard */; };
-		9DA11BB41F10B20B00655FC7 /* BridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA11BB31F10B20B00655FC7 /* BridgeViewController.m */; };
 		9DA11BB81F10B25800655FC7 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA11BB51F10B25800655FC7 /* SpotifyAudioPlayback.framework */; };
 		9DA11BB91F10B25800655FC7 /* SpotifyAudioPlayback.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA11BB51F10B25800655FC7 /* SpotifyAudioPlayback.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9DA11BBA1F10B25800655FC7 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA11BB61F10B25800655FC7 /* SpotifyAuthentication.framework */; };
@@ -50,8 +49,6 @@
 		9DA11BA91F10B19400655FC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DA11BAB1F10B19400655FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DA11BB11F10B20B00655FC7 /* GymJamsV2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GymJamsV2-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		9DA11BB21F10B20B00655FC7 /* BridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeViewController.h; sourceTree = "<group>"; };
-		9DA11BB31F10B20B00655FC7 /* BridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeViewController.m; sourceTree = "<group>"; };
 		9DA11BB51F10B25800655FC7 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
 		9DA11BB61F10B25800655FC7 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
 		9DA11BB71F10B25800655FC7 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
@@ -95,9 +92,11 @@
 		9DA11B9B1F10B19400655FC7 /* GymJamsV2 */ = {
 			isa = PBXGroup;
 			children = (
+
 				E13F8FAC1F10D97900A7E900 /* PlaylistTableViewController.swift */,
 				9DA11BB21F10B20B00655FC7 /* BridgeViewController.h */,
 				9DA11BB31F10B20B00655FC7 /* BridgeViewController.m */,
+
 				9DA11B9C1F10B19400655FC7 /* AppDelegate.swift */,
 				9DA11B9E1F10B19400655FC7 /* ViewController.swift */,
 				9DA11BA01F10B19400655FC7 /* Main.storyboard */,
@@ -189,7 +188,6 @@
 				E13F8FA91F10D08500A7E900 /* PlaylistTableViewCell.swift in Sources */,
 				E13F8FAD1F10D97900A7E900 /* PlaylistTableViewController.swift in Sources */,
 				9DA11B9F1F10B19400655FC7 /* ViewController.swift in Sources */,
-				9DA11BB41F10B20B00655FC7 /* BridgeViewController.m in Sources */,
 				9DA11B9D1F10B19400655FC7 /* AppDelegate.swift in Sources */,
 				9DA11BA51F10B19400655FC7 /* GymJamsV2.xcdatamodeld in Sources */,
 			);
