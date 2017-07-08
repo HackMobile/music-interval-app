@@ -167,6 +167,8 @@ SWIFT_CLASS("_TtC9GymJamsV211AppDelegate")
 
 SWIFT_CLASS("_TtC9GymJamsV220PlayerViewController")
 @interface PlayerViewController : UIViewController
+- (IBAction)prevButtonPressed:(id _Nonnull)sender;
+- (IBAction)skipButtonPressed:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -184,7 +186,6 @@ SWIFT_CLASS("_TtC9GymJamsV221PlaylistTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class SPTAudioStreamingController;
 @class UITableView;
 @class SPTSession;
 
@@ -192,7 +193,6 @@ SWIFT_CLASS("_TtC9GymJamsV227PlaylistTableViewController")
 @interface PlaylistTableViewController : UITableViewController <SPTAudioStreamingDelegate, SPTAudioStreamingPlaybackDelegate>
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull playlists;
 @property (nonatomic, copy) NSArray<NSURL *> * _Nonnull playlistUris;
-@property (nonatomic, strong) SPTAudioStreamingController * _Nullable player;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
