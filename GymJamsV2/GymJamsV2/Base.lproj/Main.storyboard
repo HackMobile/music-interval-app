@@ -90,6 +90,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="timerLabel" destination="Grc-9C-l2o" id="NHR-BW-e9z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r1U-Fs-kUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
