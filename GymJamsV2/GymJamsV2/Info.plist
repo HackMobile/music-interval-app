@@ -25,7 +25,7 @@
 			<string>com.KevinNguyen.GymJamsV2</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>gym-jams-login://callback</string>
+				<string>gym-jams-login</string>
 			</array>
 		</dict>
 	</array>
@@ -46,6 +46,10 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>gym-jams-login://callback</string>
 	</array>
 </dict>
 </plist>
