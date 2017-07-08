@@ -19,6 +19,7 @@
 		9DA11BBB1F10B25800655FC7 /* SpotifyAuthentication.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA11BB61F10B25800655FC7 /* SpotifyAuthentication.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9DA11BBC1F10B25800655FC7 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA11BB71F10B25800655FC7 /* SpotifyMetadata.framework */; };
 		9DA11BBD1F10B25800655FC7 /* SpotifyMetadata.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA11BB71F10B25800655FC7 /* SpotifyMetadata.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9DA11BC11F11047E00655FC7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA11BC01F11047E00655FC7 /* AVFoundation.framework */; };
 		E13F8FA91F10D08500A7E900 /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13F8FA81F10D08500A7E900 /* PlaylistTableViewCell.swift */; };
 		E13F8FAD1F10D97900A7E900 /* PlaylistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13F8FAC1F10D97900A7E900 /* PlaylistTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		9DA11BB51F10B25800655FC7 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
 		9DA11BB61F10B25800655FC7 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
 		9DA11BB71F10B25800655FC7 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
+		9DA11BC01F11047E00655FC7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E13F8FA81F10D08500A7E900 /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
 		E13F8FAC1F10D97900A7E900 /* PlaylistTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaylistTableViewController.swift; path = ../PlaylistTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA11BC11F11047E00655FC7 /* AVFoundation.framework in Frameworks */,
 				9DA11BB81F10B25800655FC7 /* SpotifyAudioPlayback.framework in Frameworks */,
 				9DA11BBC1F10B25800655FC7 /* SpotifyMetadata.framework in Frameworks */,
 				9DA11BBA1F10B25800655FC7 /* SpotifyAuthentication.framework in Frameworks */,
@@ -78,6 +81,7 @@
 				9DA11BB71F10B25800655FC7 /* SpotifyMetadata.framework */,
 				9DA11B9B1F10B19400655FC7 /* GymJamsV2 */,
 				9DA11B9A1F10B19400655FC7 /* Products */,
+				9DA11BBF1F11047E00655FC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +108,14 @@
 				9DA11BB11F10B20B00655FC7 /* GymJamsV2-Bridging-Header.h */,
 			);
 			path = GymJamsV2;
+			sourceTree = "<group>";
+		};
+		9DA11BBF1F11047E00655FC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DA11BC01F11047E00655FC7 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
