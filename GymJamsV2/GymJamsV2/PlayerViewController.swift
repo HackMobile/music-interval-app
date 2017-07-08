@@ -26,19 +26,21 @@ class PlayerViewController: UIViewController, SPTAudioStreamingPlaybackDelegate,
         if (player?.playbackState.isPlaying)! {
             player?.setIsPlaying(false, callback: {(error) in
                 if error != nil {
-                    print("Error: couldn't skip");
+                    print("Error: couldn't pause");
                 } else {
-                    print ("Skipping Previous")
+                    print ("Pausing")
                 }
             });
+            timer.invalidate()
         } else {
             player?.setIsPlaying(true, callback: {(error) in
                 if error != nil {
-                    print("Error: couldn't skip");
+                    print("Error: couldn't start");
                 } else {
-                    print ("Skipping Previous")
+                    print ("Starting")
                 }
             });
+            setTimer()
         }
     }
     
@@ -50,6 +52,7 @@ class PlayerViewController: UIViewController, SPTAudioStreamingPlaybackDelegate,
                 print ("Skipping Previous")
             }
         });
+        counter = 30
     }
     
     @IBAction func skipButtonPressed(_ sender: Any) {
@@ -60,6 +63,7 @@ class PlayerViewController: UIViewController, SPTAudioStreamingPlaybackDelegate,
                 print ("Skipping next")
             }
         });
+        counter = 30
     }
     
     @IBOutlet weak var timerLabel: UILabel!
