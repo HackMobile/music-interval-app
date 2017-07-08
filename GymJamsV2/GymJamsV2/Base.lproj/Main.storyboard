@@ -59,6 +59,14 @@
                                             <action selector="playButtonPressed:" destination="lIy-YK-1Vx" eventType="touchUpInside" id="KVp-ln-2fS"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igd-Jb-Qi5">
+                                        <rect key="frame" x="260" y="500" width="85" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Next" image="forward"/>
+                                        <connections>
+                                            <action selector="skipButtonPressed:" destination="lIy-YK-1Vx" eventType="touchUpInside" id="Eal-zX-fVp"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -75,22 +83,12 @@
                                     <segue destination="ppa-Uc-xWW" kind="show" id="n5E-pD-kee"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYQ-0r-QLP">
-                                <rect key="frame" x="16" y="521" width="81" height="66"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYQ-0r-QLP">
+                                <rect key="frame" x="25" y="500" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Previous"/>
+                                <state key="normal" title="Previous" image="forward 2"/>
                                 <connections>
                                     <action selector="prevButtonPressed:" destination="lIy-YK-1Vx" eventType="touchUpInside" id="8Wc-Sk-TTK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igd-Jb-Qi5">
-                                <rect key="frame" x="278" y="521" width="81" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="skipButtonPressed:" destination="lIy-YK-1Vx" eventType="touchUpInside" id="Eal-zX-fVp"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Album" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNj-GK-tWs">
@@ -267,6 +265,8 @@
     </scenes>
     <resources>
         <image name="background" width="1000" height="636"/>
+        <image name="forward" width="512" height="512"/>
+        <image name="forward 2" width="512" height="512"/>
         <image name="icon" width="1000" height="1113"/>
         <image name="play" width="512" height="512"/>
     </resources>

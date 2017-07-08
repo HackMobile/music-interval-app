@@ -33,7 +33,11 @@ class PlayerViewController: UIViewController, SPTAudioStreamingPlaybackDelegate,
         updateAlbum.text = metadata.currentTrack?.artistName;
         
         var cover = metadata.currentTrack?.albumCoverArtURL;
-        imageView.setImageFromURl(stringImageUrl: cover!)
+        
+        if (cover != nil) {
+            imageView.setImageFromURl(stringImageUrl: cover!)
+        }
+        
         imageView.reloadInputViews()
     }
     
