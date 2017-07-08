@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		270121251F107C1F0020BC87 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270121241F107C1F0020BC87 /* SpotifyAudioPlayback.framework */; };
-		270121271F107C310020BC87 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270121261F107C310020BC87 /* SpotifyAuthentication.framework */; };
-		270121291F107C400020BC87 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270121281F107C400020BC87 /* SpotifyMetadata.framework */; };
 		270121591F107D830020BC87 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270121581F107D830020BC87 /* AVFoundation.framework */; };
 		9D45DB851F106F08000BE38E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45DB841F106F08000BE38E /* AppDelegate.swift */; };
 		9D45DB871F106F08000BE38E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45DB861F106F08000BE38E /* ViewController.swift */; };
@@ -17,55 +14,13 @@
 		9D45DB8D1F106F08000BE38E /* GymJams.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D45DB8B1F106F08000BE38E /* GymJams.xcdatamodeld */; };
 		9D45DB8F1F106F08000BE38E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D45DB8E1F106F08000BE38E /* Assets.xcassets */; };
 		9D45DB921F106F08000BE38E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D45DB901F106F08000BE38E /* LaunchScreen.storyboard */; };
+		9D45DB9F1F1081C4000BE38E /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D45DB9E1F1081C4000BE38E /* SpotifyMetadata.framework */; };
+		9D45DBA21F1081E2000BE38E /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D45DBA01F1081E2000BE38E /* SpotifyAudioPlayback.framework */; };
+		9D45DBA31F1081E2000BE38E /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D45DBA11F1081E2000BE38E /* SpotifyAuthentication.framework */; };
+		9D45DBA71F10823D000BE38E /* BridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D45DBA61F10823D000BE38E /* BridgeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		270121241F107C1F0020BC87 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAudioPlayback.framework; path = "../../ios-sdk-master/SpotifyAudioPlayback.framework"; sourceTree = "<group>"; };
-		270121261F107C310020BC87 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAuthentication.framework; path = "../../ios-sdk-master/SpotifyAuthentication.framework"; sourceTree = "<group>"; };
-		270121281F107C400020BC87 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyMetadata.framework; path = "../../ios-sdk-master/SpotifyMetadata.framework"; sourceTree = "<group>"; };
-		2701212B1F107CF40020BC87 /* SpotifyAudioPlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpotifyAudioPlayback.h; path = "../../../ios-sdk-master/SpotifyAudioPlayback.framework/Headers/SpotifyAudioPlayback.h"; sourceTree = "<group>"; };
-		2701212C1F107CF40020BC87 /* SpPlaybackEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpPlaybackEvent.h; path = "../../../ios-sdk-master/SpotifyAudioPlayback.framework/Headers/SpPlaybackEvent.h"; sourceTree = "<group>"; };
-		2701212D1F107CF40020BC87 /* SPTAudioPlaybackTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTAudioPlaybackTypes.h; path = "../../../ios-sdk-master/SpotifyAudioPlayback.framework/Headers/SPTAudioPlaybackTypes.h"; sourceTree = "<group>"; };
-		2701212E1F107CF40020BC87 /* SPTAudioStreamingController_ErrorCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTAudioStreamingController_ErrorCodes.h; path = "../../../ios-sdk-master/SpotifyAudioPlayback.framework/Headers/SPTAudioStreamingController_ErrorCodes.h"; sourceTree = "<group>"; };
-		2701212F1F107CF40020BC87 /* SPTAudioStreamingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTAudioStreamingController.h; path = "../../../ios-sdk-master/SpotifyAudioPlayback.framework/Headers/SPTAudioStreamingController.h"; sourceTree = "<group>"; };
-		270121301F107CF40020BC87 /* SPTCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTCircularBuffer.h; path = "../../../ios-sdk-master/SpotifyAudioPlayback.framework/Headers/SPTCircularBuffer.h"; sourceTree = "<group>"; };
-		270121311F107CF40020BC87 /* SPTCoreAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTCoreAudioController.h; path = "../../../ios-sdk-master/SpotifyAudioPlayback.framework/Headers/SPTCoreAudioController.h"; sourceTree = "<group>"; };
-		270121321F107CF40020BC87 /* SPTDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTDiskCache.h; path = "../../../ios-sdk-master/SpotifyAudioPlayback.framework/Headers/SPTDiskCache.h"; sourceTree = "<group>"; };
-		270121331F107CF40020BC87 /* SPTDiskCaching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTDiskCaching.h; path = "../../../ios-sdk-master/SpotifyAudioPlayback.framework/Headers/SPTDiskCaching.h"; sourceTree = "<group>"; };
-		270121341F107CF40020BC87 /* SPTPlaybackMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTPlaybackMetadata.h; path = "../../../ios-sdk-master/SpotifyAudioPlayback.framework/Headers/SPTPlaybackMetadata.h"; sourceTree = "<group>"; };
-		270121351F107CF40020BC87 /* SPTPlaybackState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTPlaybackState.h; path = "../../../ios-sdk-master/SpotifyAudioPlayback.framework/Headers/SPTPlaybackState.h"; sourceTree = "<group>"; };
-		270121371F107D190020BC87 /* SpotifyAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpotifyAuthentication.h; path = "../../../ios-sdk-master/SpotifyAuthentication.framework/Headers/SpotifyAuthentication.h"; sourceTree = "<group>"; };
-		270121381F107D190020BC87 /* SPTAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTAuth.h; path = "../../../ios-sdk-master/SpotifyAuthentication.framework/Headers/SPTAuth.h"; sourceTree = "<group>"; };
-		270121391F107D190020BC87 /* SPTAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTAuthViewController.h; path = "../../../ios-sdk-master/SpotifyAuthentication.framework/Headers/SPTAuthViewController.h"; sourceTree = "<group>"; };
-		2701213A1F107D190020BC87 /* SPTConnectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTConnectButton.h; path = "../../../ios-sdk-master/SpotifyAuthentication.framework/Headers/SPTConnectButton.h"; sourceTree = "<group>"; };
-		2701213B1F107D190020BC87 /* SPTEmbeddedImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTEmbeddedImages.h; path = "../../../ios-sdk-master/SpotifyAuthentication.framework/Headers/SPTEmbeddedImages.h"; sourceTree = "<group>"; };
-		2701213C1F107D190020BC87 /* SPTSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTSession.h; path = "../../../ios-sdk-master/SpotifyAuthentication.framework/Headers/SPTSession.h"; sourceTree = "<group>"; };
-		2701213D1F107D190020BC87 /* SPTStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTStoreViewController.h; path = "../../../ios-sdk-master/SpotifyAuthentication.framework/Headers/SPTStoreViewController.h"; sourceTree = "<group>"; };
-		2701213F1F107D360020BC87 /* SpotifyMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpotifyMetadata.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SpotifyMetadata.h"; sourceTree = "<group>"; };
-		270121401F107D360020BC87 /* SPTAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTAlbum.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTAlbum.h"; sourceTree = "<group>"; };
-		270121411F107D360020BC87 /* SPTArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTArtist.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTArtist.h"; sourceTree = "<group>"; };
-		270121421F107D360020BC87 /* SPTBrowse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTBrowse.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTBrowse.h"; sourceTree = "<group>"; };
-		270121431F107D360020BC87 /* SPTFeaturedPlaylistList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTFeaturedPlaylistList.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTFeaturedPlaylistList.h"; sourceTree = "<group>"; };
-		270121441F107D360020BC87 /* SPTFollow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTFollow.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTFollow.h"; sourceTree = "<group>"; };
-		270121451F107D360020BC87 /* SPTImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTImage.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTImage.h"; sourceTree = "<group>"; };
-		270121461F107D360020BC87 /* SPTJSONDecoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTJSONDecoding.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTJSONDecoding.h"; sourceTree = "<group>"; };
-		270121471F107D360020BC87 /* SPTListPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTListPage.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTListPage.h"; sourceTree = "<group>"; };
-		270121481F107D360020BC87 /* SPTMetadataTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTMetadataTypes.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTMetadataTypes.h"; sourceTree = "<group>"; };
-		270121491F107D360020BC87 /* SPTPartialAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTPartialAlbum.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTPartialAlbum.h"; sourceTree = "<group>"; };
-		2701214A1F107D360020BC87 /* SPTPartialArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTPartialArtist.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTPartialArtist.h"; sourceTree = "<group>"; };
-		2701214B1F107D360020BC87 /* SPTPartialObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTPartialObject.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTPartialObject.h"; sourceTree = "<group>"; };
-		2701214C1F107D360020BC87 /* SPTPartialPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTPartialPlaylist.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTPartialPlaylist.h"; sourceTree = "<group>"; };
-		2701214D1F107D360020BC87 /* SPTPartialTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTPartialTrack.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTPartialTrack.h"; sourceTree = "<group>"; };
-		2701214E1F107D360020BC87 /* SPTPlaylistList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTPlaylistList.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTPlaylistList.h"; sourceTree = "<group>"; };
-		2701214F1F107D360020BC87 /* SPTPlaylistSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTPlaylistSnapshot.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTPlaylistSnapshot.h"; sourceTree = "<group>"; };
-		270121501F107D360020BC87 /* SPTPlaylistTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTPlaylistTrack.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTPlaylistTrack.h"; sourceTree = "<group>"; };
-		270121511F107D360020BC87 /* SPTRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTRequest.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTRequest.h"; sourceTree = "<group>"; };
-		270121521F107D360020BC87 /* SPTSavedTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTSavedTrack.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTSavedTrack.h"; sourceTree = "<group>"; };
-		270121531F107D360020BC87 /* SPTSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTSearch.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTSearch.h"; sourceTree = "<group>"; };
-		270121541F107D360020BC87 /* SPTTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTTrack.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTTrack.h"; sourceTree = "<group>"; };
-		270121551F107D360020BC87 /* SPTTrackProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTTrackProvider.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTTrackProvider.h"; sourceTree = "<group>"; };
-		270121561F107D360020BC87 /* SPTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTUser.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTUser.h"; sourceTree = "<group>"; };
-		270121571F107D360020BC87 /* SPTYourMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTYourMusic.h; path = "../../../ios-sdk-master/SpotifyMetadata.framework/Headers/SPTYourMusic.h"; sourceTree = "<group>"; };
 		270121581F107D830020BC87 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9D45DB811F106F08000BE38E /* GymJams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymJams.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D45DB841F106F08000BE38E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +30,12 @@
 		9D45DB8E1F106F08000BE38E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D45DB911F106F08000BE38E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D45DB931F106F08000BE38E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D45DB9E1F1081C4000BE38E /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
+		9D45DBA01F1081E2000BE38E /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		9D45DBA11F1081E2000BE38E /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		9D45DBA41F10823D000BE38E /* GymJams-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GymJams-Bridging-Header.h"; sourceTree = "<group>"; };
+		9D45DBA51F10823D000BE38E /* BridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeViewController.h; sourceTree = "<group>"; };
+		9D45DBA61F10823D000BE38E /* BridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D45DB9F1F1081C4000BE38E /* SpotifyMetadata.framework in Frameworks */,
+				9D45DBA31F1081E2000BE38E /* SpotifyAuthentication.framework in Frameworks */,
 				270121591F107D830020BC87 /* AVFoundation.framework in Frameworks */,
-				270121291F107C400020BC87 /* SpotifyMetadata.framework in Frameworks */,
-				270121271F107C310020BC87 /* SpotifyAuthentication.framework in Frameworks */,
-				270121251F107C1F0020BC87 /* SpotifyAudioPlayback.framework in Frameworks */,
+				9D45DBA21F1081E2000BE38E /* SpotifyAudioPlayback.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,76 +56,12 @@
 		270121231F107C1F0020BC87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D45DB9E1F1081C4000BE38E /* SpotifyMetadata.framework */,
 				270121581F107D830020BC87 /* AVFoundation.framework */,
-				270121281F107C400020BC87 /* SpotifyMetadata.framework */,
-				270121261F107C310020BC87 /* SpotifyAuthentication.framework */,
-				270121241F107C1F0020BC87 /* SpotifyAudioPlayback.framework */,
+				9D45DBA01F1081E2000BE38E /* SpotifyAudioPlayback.framework */,
+				9D45DBA11F1081E2000BE38E /* SpotifyAuthentication.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2701212A1F107CAE0020BC87 /* AudioPlayback */ = {
-			isa = PBXGroup;
-			children = (
-				2701212B1F107CF40020BC87 /* SpotifyAudioPlayback.h */,
-				2701212C1F107CF40020BC87 /* SpPlaybackEvent.h */,
-				2701212D1F107CF40020BC87 /* SPTAudioPlaybackTypes.h */,
-				2701212E1F107CF40020BC87 /* SPTAudioStreamingController_ErrorCodes.h */,
-				2701212F1F107CF40020BC87 /* SPTAudioStreamingController.h */,
-				270121301F107CF40020BC87 /* SPTCircularBuffer.h */,
-				270121311F107CF40020BC87 /* SPTCoreAudioController.h */,
-				270121321F107CF40020BC87 /* SPTDiskCache.h */,
-				270121331F107CF40020BC87 /* SPTDiskCaching.h */,
-				270121341F107CF40020BC87 /* SPTPlaybackMetadata.h */,
-				270121351F107CF40020BC87 /* SPTPlaybackState.h */,
-			);
-			name = AudioPlayback;
-			sourceTree = "<group>";
-		};
-		270121361F107CF90020BC87 /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				270121371F107D190020BC87 /* SpotifyAuthentication.h */,
-				270121381F107D190020BC87 /* SPTAuth.h */,
-				270121391F107D190020BC87 /* SPTAuthViewController.h */,
-				2701213A1F107D190020BC87 /* SPTConnectButton.h */,
-				2701213B1F107D190020BC87 /* SPTEmbeddedImages.h */,
-				2701213C1F107D190020BC87 /* SPTSession.h */,
-				2701213D1F107D190020BC87 /* SPTStoreViewController.h */,
-			);
-			name = Authentication;
-			sourceTree = "<group>";
-		};
-		2701213E1F107D1E0020BC87 /* Metadata */ = {
-			isa = PBXGroup;
-			children = (
-				2701213F1F107D360020BC87 /* SpotifyMetadata.h */,
-				270121401F107D360020BC87 /* SPTAlbum.h */,
-				270121411F107D360020BC87 /* SPTArtist.h */,
-				270121421F107D360020BC87 /* SPTBrowse.h */,
-				270121431F107D360020BC87 /* SPTFeaturedPlaylistList.h */,
-				270121441F107D360020BC87 /* SPTFollow.h */,
-				270121451F107D360020BC87 /* SPTImage.h */,
-				270121461F107D360020BC87 /* SPTJSONDecoding.h */,
-				270121471F107D360020BC87 /* SPTListPage.h */,
-				270121481F107D360020BC87 /* SPTMetadataTypes.h */,
-				270121491F107D360020BC87 /* SPTPartialAlbum.h */,
-				2701214A1F107D360020BC87 /* SPTPartialArtist.h */,
-				2701214B1F107D360020BC87 /* SPTPartialObject.h */,
-				2701214C1F107D360020BC87 /* SPTPartialPlaylist.h */,
-				2701214D1F107D360020BC87 /* SPTPartialTrack.h */,
-				2701214E1F107D360020BC87 /* SPTPlaylistList.h */,
-				2701214F1F107D360020BC87 /* SPTPlaylistSnapshot.h */,
-				270121501F107D360020BC87 /* SPTPlaylistTrack.h */,
-				270121511F107D360020BC87 /* SPTRequest.h */,
-				270121521F107D360020BC87 /* SPTSavedTrack.h */,
-				270121531F107D360020BC87 /* SPTSearch.h */,
-				270121541F107D360020BC87 /* SPTTrack.h */,
-				270121551F107D360020BC87 /* SPTTrackProvider.h */,
-				270121561F107D360020BC87 /* SPTUser.h */,
-				270121571F107D360020BC87 /* SPTYourMusic.h */,
-			);
-			name = Metadata;
 			sourceTree = "<group>";
 		};
 		9D45DB781F106F08000BE38E = {
@@ -187,9 +84,6 @@
 		9D45DB831F106F08000BE38E /* GymJams */ = {
 			isa = PBXGroup;
 			children = (
-				2701213E1F107D1E0020BC87 /* Metadata */,
-				270121361F107CF90020BC87 /* Authentication */,
-				2701212A1F107CAE0020BC87 /* AudioPlayback */,
 				9D45DB841F106F08000BE38E /* AppDelegate.swift */,
 				9D45DB861F106F08000BE38E /* ViewController.swift */,
 				9D45DB881F106F08000BE38E /* Main.storyboard */,
@@ -197,6 +91,9 @@
 				9D45DB901F106F08000BE38E /* LaunchScreen.storyboard */,
 				9D45DB931F106F08000BE38E /* Info.plist */,
 				9D45DB8B1F106F08000BE38E /* GymJams.xcdatamodeld */,
+				9D45DBA51F10823D000BE38E /* BridgeViewController.h */,
+				9D45DBA61F10823D000BE38E /* BridgeViewController.m */,
+				9D45DBA41F10823D000BE38E /* GymJams-Bridging-Header.h */,
 			);
 			path = GymJams;
 			sourceTree = "<group>";
@@ -234,6 +131,7 @@
 					9D45DB801F106F08000BE38E = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = R5DXE64YJU;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -275,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D45DB871F106F08000BE38E /* ViewController.swift in Sources */,
+				9D45DBA71F10823D000BE38E /* BridgeViewController.m in Sources */,
 				9D45DB851F106F08000BE38E /* AppDelegate.swift in Sources */,
 				9D45DB8D1F106F08000BE38E /* GymJams.xcdatamodeld in Sources */,
 			);
@@ -399,12 +298,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = R5DXE64YJU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = GymJams/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KevinNguyen.GymJams;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GymJams/GymJams-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -413,12 +319,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = R5DXE64YJU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = GymJams/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KevinNguyen.GymJams;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GymJams/GymJams-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
