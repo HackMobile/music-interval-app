@@ -167,6 +167,7 @@ SWIFT_CLASS("_TtC9GymJamsV211AppDelegate")
 
 SWIFT_CLASS("_TtC9GymJamsV220PlayerViewController")
 @interface PlayerViewController : UIViewController
+- (IBAction)playButtonPressed:(id _Nonnull)sender;
 - (IBAction)prevButtonPressed:(id _Nonnull)sender;
 - (IBAction)skipButtonPressed:(id _Nonnull)sender;
 - (void)viewDidLoad;

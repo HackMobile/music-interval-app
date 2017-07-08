@@ -7,6 +7,7 @@ provides-member:
 - ["C9GymJamsV220PlayerViewController", ""]
 provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
+- "playButtonPressed"
 - "prevButtonPressed"
 - "skipButtonPressed"
 - "viewDidLoad"
@@ -21,8 +22,11 @@ depends-top-level:
 depends-member:
 - !private ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isPlaying"]
+- !private ["Ps9AnyObject", "playbackState"]
 - !private ["Ps9AnyObject", "player"]
 - !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "setIsPlaying"]
 - !private ["Ps9AnyObject", "setShuffle"]
 - !private ["Ps9AnyObject", "skipNext"]
 - !private ["Ps9AnyObject", "skipPrevious"]
@@ -31,8 +35,11 @@ depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isPlaying"]
+- !private ["Ps7CVarArg", "playbackState"]
 - !private ["Ps7CVarArg", "player"]
 - !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "setIsPlaying"]
 - !private ["Ps7CVarArg", "setShuffle"]
 - !private ["Ps7CVarArg", "skipNext"]
 - !private ["Ps7CVarArg", "skipPrevious"]
@@ -41,8 +48,11 @@ depends-member:
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isPlaying"]
+- !private ["Ps28CustomDebugStringConvertible", "playbackState"]
 - !private ["Ps28CustomDebugStringConvertible", "player"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "setIsPlaying"]
 - !private ["Ps28CustomDebugStringConvertible", "setShuffle"]
 - !private ["Ps28CustomDebugStringConvertible", "skipNext"]
 - !private ["Ps28CustomDebugStringConvertible", "skipPrevious"]
@@ -55,8 +65,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isPlaying"]
+- !private ["Ps23CustomStringConvertible", "playbackState"]
 - !private ["Ps23CustomStringConvertible", "player"]
 - !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "setIsPlaying"]
 - !private ["Ps23CustomStringConvertible", "setShuffle"]
 - !private ["Ps23CustomStringConvertible", "skipNext"]
 - !private ["Ps23CustomStringConvertible", "skipPrevious"]
@@ -65,8 +78,11 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isPlaying"]
+- !private ["Ps9Equatable", "playbackState"]
 - !private ["Ps9Equatable", "player"]
 - !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "setIsPlaying"]
 - !private ["Ps9Equatable", "setShuffle"]
 - !private ["Ps9Equatable", "skipNext"]
 - !private ["Ps9Equatable", "skipPrevious"]
@@ -79,8 +95,11 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isPlaying"]
+- !private ["Ps8Hashable", "playbackState"]
 - !private ["Ps8Hashable", "player"]
 - !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "setIsPlaying"]
 - !private ["Ps8Hashable", "setShuffle"]
 - !private ["Ps8Hashable", "skipNext"]
 - !private ["Ps8Hashable", "skipPrevious"]
@@ -105,9 +124,13 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isPlaying"]
+- ["CSo8NSObject", "playButtonPressed"]
+- !private ["CSo8NSObject", "playbackState"]
 - !private ["CSo8NSObject", "player"]
 - ["CSo8NSObject", "prevButtonPressed"]
 - !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "setIsPlaying"]
 - !private ["CSo8NSObject", "setShuffle"]
 - ["CSo8NSObject", "skipButtonPressed"]
 - !private ["CSo8NSObject", "skipNext"]
@@ -115,8 +138,11 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isPlaying"]
+- !private ["PSo16NSObjectProtocol", "playbackState"]
 - !private ["PSo16NSObjectProtocol", "player"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "setIsPlaying"]
 - !private ["PSo16NSObjectProtocol", "setShuffle"]
 - !private ["PSo16NSObjectProtocol", "skipNext"]
 - !private ["PSo16NSObjectProtocol", "skipPrevious"]
@@ -127,14 +153,18 @@ depends-member:
 - ["C9GymJamsV220PlayerViewController", "deinit"]
 - ["C9GymJamsV220PlayerViewController", "didReceiveMemoryWarning"]
 - ["C9GymJamsV220PlayerViewController", "init"]
+- ["C9GymJamsV220PlayerViewController", "playButtonPressed"]
 - !private ["C9GymJamsV220PlayerViewController", "player"]
 - ["C9GymJamsV220PlayerViewController", "prevButtonPressed"]
 - !private ["C9GymJamsV220PlayerViewController", "print"]
 - ["C9GymJamsV220PlayerViewController", "skipButtonPressed"]
 - ["C9GymJamsV220PlayerViewController", "viewDidLoad"]
+- !private ["CSo27SPTAudioStreamingController", "playbackState"]
+- !private ["CSo27SPTAudioStreamingController", "setIsPlaying"]
 - !private ["CSo27SPTAudioStreamingController", "setShuffle"]
 - !private ["CSo27SPTAudioStreamingController", "skipNext"]
 - !private ["CSo27SPTAudioStreamingController", "skipPrevious"]
+- !private ["CSo16SPTPlaybackState", "isPlaying"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
@@ -158,6 +188,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", ""]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "playButtonPressed"]
 - !private ["CSo11UIResponder", "player"]
 - ["CSo11UIResponder", "prevButtonPressed"]
 - !private ["CSo11UIResponder", "print"]
@@ -183,6 +214,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "playButtonPressed"]
 - !private ["CSo16UIViewController", "player"]
 - ["CSo16UIViewController", "prevButtonPressed"]
 - !private ["CSo16UIViewController", "print"]
@@ -199,8 +231,11 @@ depends-member:
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isPlaying"]
+- !private ["Ps9_Hashable", "playbackState"]
 - !private ["Ps9_Hashable", "player"]
 - !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "setIsPlaying"]
 - !private ["Ps9_Hashable", "setShuffle"]
 - !private ["Ps9_Hashable", "skipNext"]
 - !private ["Ps9_Hashable", "skipPrevious"]
@@ -235,6 +270,7 @@ depends-nominal:
 - !private "CSo8NSString"
 - "C9GymJamsV220PlayerViewController"
 - !private "CSo27SPTAudioStreamingController"
+- !private "CSo16SPTPlaybackState"
 - !private "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
@@ -322,4 +358,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.apinotesc"
-interface-hash: "4c71e35a1a77c5a447b92c558eeae7a0"
+interface-hash: "3ae60e78dad8cf9d42ab485d31a7af99"
