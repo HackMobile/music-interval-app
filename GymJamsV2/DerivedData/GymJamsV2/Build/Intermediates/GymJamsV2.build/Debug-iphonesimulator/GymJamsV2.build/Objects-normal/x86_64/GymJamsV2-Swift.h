@@ -162,25 +162,31 @@ SWIFT_CLASS("_TtC9GymJamsV211AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class SPTAudioStreamingController;
+@class SPTPlaybackMetadata;
+@class UILabel;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC9GymJamsV220PlayerViewController")
-@interface PlayerViewController : UIViewController
+@interface PlayerViewController : UIViewController <SPTAudioStreamingDelegate, SPTAudioStreamingPlaybackDelegate>
+- (void)audioStreaming:(SPTAudioStreamingController * _Null_unspecified)audioStreaming didChangeMetadata:(SPTPlaybackMetadata * _Null_unspecified)metadata;
 - (IBAction)playButtonPressed:(id _Nonnull)sender;
 - (IBAction)prevButtonPressed:(id _Nonnull)sender;
 - (IBAction)skipButtonPressed:(id _Nonnull)sender;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timerLabel;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
+@class UIImageView;
 
 SWIFT_CLASS("_TtC9GymJamsV221PlaylistTableViewCell")
 @interface PlaylistTableViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified coverArt;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
@@ -189,11 +195,14 @@ SWIFT_CLASS("_TtC9GymJamsV221PlaylistTableViewCell")
 
 @class UITableView;
 @class SPTSession;
+@class UIImage;
+@class NSURL;
 
 SWIFT_CLASS("_TtC9GymJamsV227PlaylistTableViewController")
 @interface PlaylistTableViewController : UITableViewController <SPTAudioStreamingDelegate, SPTAudioStreamingPlaybackDelegate>
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull playlists;
 @property (nonatomic, copy) NSArray<NSURL *> * _Nonnull playlistUris;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull images;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
@@ -201,9 +210,17 @@ SWIFT_CLASS("_TtC9GymJamsV227PlaylistTableViewController")
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)initializePlayerWithAuthSession:(SPTSession * _Nonnull)authSession;
+@property (nonatomic, readonly, strong) NSCache<id, id> * _Nonnull imageCache;
+@property (nonatomic, strong) UIImage * _Nonnull returnImage;
+- (UIImage * _Nonnull)returnImageUsingCacheWithURLStringWithUrl:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface UIImageView (SWIFT_EXTENSION(GymJamsV2))
+- (void)setImageFromURlWithStringImageUrl:(NSString * _Nonnull)url;
 @end
 
 @class UIButton;
