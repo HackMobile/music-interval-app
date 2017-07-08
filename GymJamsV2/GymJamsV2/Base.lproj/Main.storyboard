@@ -101,6 +101,8 @@
                     </view>
                     <connections>
                         <outlet property="timerLabel" destination="Grc-9C-l2o" id="NHR-BW-e9z"/>
+                        <outlet property="updateAlbum" destination="QNj-GK-tWs" id="d03-0D-RCi"/>
+                        <outlet property="updateName" destination="WFK-0C-uKs" id="FY2-eS-Ymk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r1U-Fs-kUb" userLabel="First Responder" sceneMemberID="firstResponder"/>

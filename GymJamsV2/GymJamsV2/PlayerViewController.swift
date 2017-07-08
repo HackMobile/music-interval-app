@@ -10,6 +10,9 @@ import UIKit
 
 class PlayerViewController: UIViewController, SPTAudioStreamingPlaybackDelegate, SPTAudioStreamingDelegate{
     
+    @IBOutlet weak var updateAlbum: UILabel!
+    @IBOutlet weak var updateName: UILabel!
+    
     func audioStreaming(_ audioStreaming: SPTAudioStreamingController!, didChange metadata: SPTPlaybackMetadata!) {
         player?.seek(to: 30, callback: {(error) in
             if error != nil {
@@ -18,6 +21,11 @@ class PlayerViewController: UIViewController, SPTAudioStreamingPlaybackDelegate,
                 print ("Skipping Previous")
             }
         });
+        updateName.text = metadata.currentTrack?.name;
+        updateAlbum.text = metadata.currentTrack?.artistName;
+        
+        var cover = metadata.currentTrack?.albumCoverArtURL;
+        
     }
     
     var timer_ = Timer()
