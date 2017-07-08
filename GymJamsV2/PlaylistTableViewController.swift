@@ -28,6 +28,7 @@ var player: SPTAudioStreamingController? = nil
 var timer: Timer = Timer()
 
 var counter: Int = 30 // Default time interval
+var sliderVal: Int = 30
 
 
 
@@ -122,7 +123,7 @@ class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlayb
                 return
             }
         }
-        counter = 30;
+        counter = sliderVal;
         timer.invalidate()
         setTimer()
     }
@@ -138,7 +139,7 @@ class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlayb
                     print("skipping")
                 }
             })
-            counter = 30
+            counter = sliderVal
         }
     }
     
