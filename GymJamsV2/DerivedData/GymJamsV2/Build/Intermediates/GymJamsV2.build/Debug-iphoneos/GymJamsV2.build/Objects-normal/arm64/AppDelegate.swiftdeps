@@ -1,0 +1,765 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AppDelegate"
+provides-nominal:
+- "C9GymJamsV211AppDelegate"
+provides-member:
+- ["C9GymJamsV211AppDelegate", ""]
+provides-dynamic-lookup:
+- "application"
+- "applicationDidBecomeActive"
+- "applicationDidEnterBackground"
+- "applicationWillEnterForeground"
+- "applicationWillResignActive"
+- "applicationWillTerminate"
+- "auth"
+- "persistentContainer"
+- "redirect"
+- "saveContext"
+- "window"
+depends-top-level:
+- !private "!="
+- "AppDelegate"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- !private "NSError"
+- !private "NSKeyedArchiver"
+- "NSPersistentContainer"
+- !private "Notification"
+- !private "NotificationCenter"
+- "SPTAuth"
+- "String"
+- "StringLiteralType"
+- "UIApplication"
+- "UIApplicationDelegate"
+- "UIApplicationLaunchOptionsKey"
+- "UIResponder"
+- "UIWindow"
+- "URL"
+- !private "UserDefaults"
+- !private "fatalError"
+- !private "print"
+depends-member:
+- !private ["Ps9AnyObject", "NSKeyedArchiver"]
+- !private ["Ps9AnyObject", "NSPersistentContainer"]
+- !private ["Ps9AnyObject", "Notification"]
+- !private ["Ps9AnyObject", "NotificationCenter"]
+- ["Ps9AnyObject", "SPTAuth"]
+- !private ["Ps9AnyObject", "URL"]
+- !private ["Ps9AnyObject", "UserDefaults"]
+- ["Ps9AnyObject", "application"]
+- ["Ps9AnyObject", "applicationDidBecomeActive"]
+- ["Ps9AnyObject", "applicationDidEnterBackground"]
+- ["Ps9AnyObject", "applicationDidFinishLaunching"]
+- ["Ps9AnyObject", "applicationDidReceiveMemoryWarning"]
+- ["Ps9AnyObject", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps9AnyObject", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps9AnyObject", "applicationShouldRequestHealthAuthorization"]
+- ["Ps9AnyObject", "applicationSignificantTimeChange"]
+- ["Ps9AnyObject", "applicationWillEnterForeground"]
+- ["Ps9AnyObject", "applicationWillResignActive"]
+- ["Ps9AnyObject", "applicationWillTerminate"]
+- !private ["Ps9AnyObject", "archivedData"]
+- !private ["Ps9AnyObject", "auth"]
+- !private ["Ps9AnyObject", "canHandle"]
+- !private ["Ps9AnyObject", "default"]
+- !private ["Ps9AnyObject", "fatalError"]
+- !private ["Ps9AnyObject", "handleAuthCallback"]
+- !private ["Ps9AnyObject", "hasChanges"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "loadPersistentStores"]
+- !private ["Ps9AnyObject", "persistentContainer"]
+- !private ["Ps9AnyObject", "post"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "redirect"]
+- !private ["Ps9AnyObject", "redirectURL"]
+- !private ["Ps9AnyObject", "save"]
+- !private ["Ps9AnyObject", "saveContext"]
+- !private ["Ps9AnyObject", "sessionUserDefaultsKey"]
+- !private ["Ps9AnyObject", "set"]
+- !private ["Ps9AnyObject", "standard"]
+- !private ["Ps9AnyObject", "synchronize"]
+- !private ["Ps9AnyObject", "userInfo"]
+- !private ["Ps9AnyObject", "viewContext"]
+- ["Ps9AnyObject", "window"]
+- ["Ps9AnyObject", ""]
+- ["C9GymJamsV211AppDelegate", "Bool"]
+- !private ["C9GymJamsV211AppDelegate", "NSError"]
+- !private ["C9GymJamsV211AppDelegate", "NSKeyedArchiver"]
+- ["C9GymJamsV211AppDelegate", "NSPersistentContainer"]
+- !private ["C9GymJamsV211AppDelegate", "Notification"]
+- !private ["C9GymJamsV211AppDelegate", "NotificationCenter"]
+- ["C9GymJamsV211AppDelegate", "SPTAuth"]
+- ["C9GymJamsV211AppDelegate", "String"]
+- ["C9GymJamsV211AppDelegate", "UIApplication"]
+- ["C9GymJamsV211AppDelegate", "UIApplicationLaunchOptionsKey"]
+- ["C9GymJamsV211AppDelegate", "UIWindow"]
+- ["C9GymJamsV211AppDelegate", "URL"]
+- !private ["C9GymJamsV211AppDelegate", "UserDefaults"]
+- ["C9GymJamsV211AppDelegate", "application"]
+- ["C9GymJamsV211AppDelegate", "applicationDidBecomeActive"]
+- ["C9GymJamsV211AppDelegate", "applicationDidEnterBackground"]
+- ["C9GymJamsV211AppDelegate", "applicationDidFinishLaunching"]
+- ["C9GymJamsV211AppDelegate", "applicationDidReceiveMemoryWarning"]
+- ["C9GymJamsV211AppDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["C9GymJamsV211AppDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["C9GymJamsV211AppDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["C9GymJamsV211AppDelegate", "applicationSignificantTimeChange"]
+- ["C9GymJamsV211AppDelegate", "applicationWillEnterForeground"]
+- ["C9GymJamsV211AppDelegate", "applicationWillResignActive"]
+- ["C9GymJamsV211AppDelegate", "applicationWillTerminate"]
+- ["C9GymJamsV211AppDelegate", "auth"]
+- ["C9GymJamsV211AppDelegate", "deinit"]
+- !private ["C9GymJamsV211AppDelegate", "fatalError"]
+- ["C9GymJamsV211AppDelegate", "init"]
+- ["C9GymJamsV211AppDelegate", "persistentContainer"]
+- !private ["C9GymJamsV211AppDelegate", "persistentContainer.storage"]
+- !private ["C9GymJamsV211AppDelegate", "print"]
+- ["C9GymJamsV211AppDelegate", "redirect"]
+- ["C9GymJamsV211AppDelegate", "saveContext"]
+- ["C9GymJamsV211AppDelegate", "window"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7CVarArg", "NSKeyedArchiver"]
+- !private ["Ps7CVarArg", "NSPersistentContainer"]
+- !private ["Ps7CVarArg", "Notification"]
+- !private ["Ps7CVarArg", "NotificationCenter"]
+- ["Ps7CVarArg", "SPTAuth"]
+- !private ["Ps7CVarArg", "URL"]
+- !private ["Ps7CVarArg", "UserDefaults"]
+- ["Ps7CVarArg", "application"]
+- ["Ps7CVarArg", "applicationDidBecomeActive"]
+- ["Ps7CVarArg", "applicationDidEnterBackground"]
+- ["Ps7CVarArg", "applicationDidFinishLaunching"]
+- ["Ps7CVarArg", "applicationDidReceiveMemoryWarning"]
+- ["Ps7CVarArg", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps7CVarArg", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps7CVarArg", "applicationShouldRequestHealthAuthorization"]
+- ["Ps7CVarArg", "applicationSignificantTimeChange"]
+- ["Ps7CVarArg", "applicationWillEnterForeground"]
+- ["Ps7CVarArg", "applicationWillResignActive"]
+- ["Ps7CVarArg", "applicationWillTerminate"]
+- !private ["Ps7CVarArg", "archivedData"]
+- !private ["Ps7CVarArg", "auth"]
+- !private ["Ps7CVarArg", "canHandle"]
+- !private ["Ps7CVarArg", "default"]
+- !private ["Ps7CVarArg", "fatalError"]
+- !private ["Ps7CVarArg", "handleAuthCallback"]
+- !private ["Ps7CVarArg", "hasChanges"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "loadPersistentStores"]
+- !private ["Ps7CVarArg", "persistentContainer"]
+- !private ["Ps7CVarArg", "post"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "redirect"]
+- !private ["Ps7CVarArg", "redirectURL"]
+- !private ["Ps7CVarArg", "save"]
+- !private ["Ps7CVarArg", "saveContext"]
+- !private ["Ps7CVarArg", "sessionUserDefaultsKey"]
+- !private ["Ps7CVarArg", "set"]
+- !private ["Ps7CVarArg", "standard"]
+- !private ["Ps7CVarArg", "synchronize"]
+- !private ["Ps7CVarArg", "userInfo"]
+- !private ["Ps7CVarArg", "viewContext"]
+- ["Ps7CVarArg", "window"]
+- ["Ps7CVarArg", ""]
+- ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "NSKeyedArchiver"]
+- !private ["Ps28CustomDebugStringConvertible", "NSPersistentContainer"]
+- !private ["Ps28CustomDebugStringConvertible", "Name"]
+- !private ["Ps28CustomDebugStringConvertible", "Notification"]
+- !private ["Ps28CustomDebugStringConvertible", "NotificationCenter"]
+- ["Ps28CustomDebugStringConvertible", "SPTAuth"]
+- !private ["Ps28CustomDebugStringConvertible", "URL"]
+- !private ["Ps28CustomDebugStringConvertible", "UserDefaults"]
+- ["Ps28CustomDebugStringConvertible", "application"]
+- ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
+- ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
+- ["Ps28CustomDebugStringConvertible", "applicationDidFinishLaunching"]
+- ["Ps28CustomDebugStringConvertible", "applicationDidReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps28CustomDebugStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps28CustomDebugStringConvertible", "applicationShouldRequestHealthAuthorization"]
+- ["Ps28CustomDebugStringConvertible", "applicationSignificantTimeChange"]
+- ["Ps28CustomDebugStringConvertible", "applicationWillEnterForeground"]
+- ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
+- ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
+- !private ["Ps28CustomDebugStringConvertible", "archivedData"]
+- !private ["Ps28CustomDebugStringConvertible", "auth"]
+- !private ["Ps28CustomDebugStringConvertible", "canHandle"]
+- !private ["Ps28CustomDebugStringConvertible", "default"]
+- !private ["Ps28CustomDebugStringConvertible", "fatalError"]
+- !private ["Ps28CustomDebugStringConvertible", "handleAuthCallback"]
+- !private ["Ps28CustomDebugStringConvertible", "hasChanges"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "loadPersistentStores"]
+- !private ["Ps28CustomDebugStringConvertible", "persistentContainer"]
+- !private ["Ps28CustomDebugStringConvertible", "post"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "redirect"]
+- !private ["Ps28CustomDebugStringConvertible", "redirectURL"]
+- !private ["Ps28CustomDebugStringConvertible", "save"]
+- !private ["Ps28CustomDebugStringConvertible", "saveContext"]
+- !private ["Ps28CustomDebugStringConvertible", "sessionUserDefaultsKey"]
+- !private ["Ps28CustomDebugStringConvertible", "set"]
+- !private ["Ps28CustomDebugStringConvertible", "standard"]
+- !private ["Ps28CustomDebugStringConvertible", "synchronize"]
+- !private ["Ps28CustomDebugStringConvertible", "userInfo"]
+- !private ["Ps28CustomDebugStringConvertible", "viewContext"]
+- ["Ps28CustomDebugStringConvertible", "window"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Name"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "NSKeyedArchiver"]
+- !private ["Ps23CustomStringConvertible", "NSPersistentContainer"]
+- !private ["Ps23CustomStringConvertible", "Name"]
+- !private ["Ps23CustomStringConvertible", "Notification"]
+- !private ["Ps23CustomStringConvertible", "NotificationCenter"]
+- ["Ps23CustomStringConvertible", "SPTAuth"]
+- !private ["Ps23CustomStringConvertible", "URL"]
+- !private ["Ps23CustomStringConvertible", "UserDefaults"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "application"]
+- ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
+- ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
+- ["Ps23CustomStringConvertible", "applicationDidFinishLaunching"]
+- ["Ps23CustomStringConvertible", "applicationDidReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps23CustomStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps23CustomStringConvertible", "applicationShouldRequestHealthAuthorization"]
+- ["Ps23CustomStringConvertible", "applicationSignificantTimeChange"]
+- ["Ps23CustomStringConvertible", "applicationWillEnterForeground"]
+- ["Ps23CustomStringConvertible", "applicationWillResignActive"]
+- ["Ps23CustomStringConvertible", "applicationWillTerminate"]
+- !private ["Ps23CustomStringConvertible", "archivedData"]
+- !private ["Ps23CustomStringConvertible", "auth"]
+- !private ["Ps23CustomStringConvertible", "canHandle"]
+- !private ["Ps23CustomStringConvertible", "default"]
+- !private ["Ps23CustomStringConvertible", "fatalError"]
+- !private ["Ps23CustomStringConvertible", "handleAuthCallback"]
+- !private ["Ps23CustomStringConvertible", "hasChanges"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "loadPersistentStores"]
+- !private ["Ps23CustomStringConvertible", "persistentContainer"]
+- !private ["Ps23CustomStringConvertible", "post"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "redirect"]
+- !private ["Ps23CustomStringConvertible", "redirectURL"]
+- !private ["Ps23CustomStringConvertible", "save"]
+- !private ["Ps23CustomStringConvertible", "saveContext"]
+- !private ["Ps23CustomStringConvertible", "sessionUserDefaultsKey"]
+- !private ["Ps23CustomStringConvertible", "set"]
+- !private ["Ps23CustomStringConvertible", "standard"]
+- !private ["Ps23CustomStringConvertible", "synchronize"]
+- !private ["Ps23CustomStringConvertible", "userInfo"]
+- !private ["Ps23CustomStringConvertible", "viewContext"]
+- ["Ps23CustomStringConvertible", "window"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "NSKeyedArchiver"]
+- !private ["Ps9Equatable", "NSPersistentContainer"]
+- !private ["Ps9Equatable", "Name"]
+- !private ["Ps9Equatable", "Notification"]
+- !private ["Ps9Equatable", "NotificationCenter"]
+- ["Ps9Equatable", "SPTAuth"]
+- !private ["Ps9Equatable", "URL"]
+- !private ["Ps9Equatable", "UserDefaults"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "application"]
+- ["Ps9Equatable", "applicationDidBecomeActive"]
+- ["Ps9Equatable", "applicationDidEnterBackground"]
+- ["Ps9Equatable", "applicationDidFinishLaunching"]
+- ["Ps9Equatable", "applicationDidReceiveMemoryWarning"]
+- ["Ps9Equatable", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps9Equatable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps9Equatable", "applicationShouldRequestHealthAuthorization"]
+- ["Ps9Equatable", "applicationSignificantTimeChange"]
+- ["Ps9Equatable", "applicationWillEnterForeground"]
+- ["Ps9Equatable", "applicationWillResignActive"]
+- ["Ps9Equatable", "applicationWillTerminate"]
+- !private ["Ps9Equatable", "archivedData"]
+- !private ["Ps9Equatable", "auth"]
+- !private ["Ps9Equatable", "canHandle"]
+- !private ["Ps9Equatable", "default"]
+- !private ["Ps9Equatable", "fatalError"]
+- !private ["Ps9Equatable", "handleAuthCallback"]
+- !private ["Ps9Equatable", "hasChanges"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "loadPersistentStores"]
+- !private ["Ps9Equatable", "persistentContainer"]
+- !private ["Ps9Equatable", "post"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "redirect"]
+- !private ["Ps9Equatable", "redirectURL"]
+- !private ["Ps9Equatable", "save"]
+- !private ["Ps9Equatable", "saveContext"]
+- !private ["Ps9Equatable", "sessionUserDefaultsKey"]
+- !private ["Ps9Equatable", "set"]
+- !private ["Ps9Equatable", "standard"]
+- !private ["Ps9Equatable", "synchronize"]
+- !private ["Ps9Equatable", "userInfo"]
+- !private ["Ps9Equatable", "viewContext"]
+- ["Ps9Equatable", "window"]
+- ["Ps9Equatable", ""]
+- !private ["Ps5Error", "userInfo"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "NSKeyedArchiver"]
+- !private ["Ps8Hashable", "NSPersistentContainer"]
+- !private ["Ps8Hashable", "Name"]
+- !private ["Ps8Hashable", "Notification"]
+- !private ["Ps8Hashable", "NotificationCenter"]
+- ["Ps8Hashable", "SPTAuth"]
+- !private ["Ps8Hashable", "URL"]
+- !private ["Ps8Hashable", "UserDefaults"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "application"]
+- ["Ps8Hashable", "applicationDidBecomeActive"]
+- ["Ps8Hashable", "applicationDidEnterBackground"]
+- ["Ps8Hashable", "applicationDidFinishLaunching"]
+- ["Ps8Hashable", "applicationDidReceiveMemoryWarning"]
+- ["Ps8Hashable", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps8Hashable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps8Hashable", "applicationShouldRequestHealthAuthorization"]
+- ["Ps8Hashable", "applicationSignificantTimeChange"]
+- ["Ps8Hashable", "applicationWillEnterForeground"]
+- ["Ps8Hashable", "applicationWillResignActive"]
+- ["Ps8Hashable", "applicationWillTerminate"]
+- !private ["Ps8Hashable", "archivedData"]
+- !private ["Ps8Hashable", "auth"]
+- !private ["Ps8Hashable", "canHandle"]
+- !private ["Ps8Hashable", "default"]
+- !private ["Ps8Hashable", "fatalError"]
+- !private ["Ps8Hashable", "handleAuthCallback"]
+- !private ["Ps8Hashable", "hasChanges"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "loadPersistentStores"]
+- !private ["Ps8Hashable", "persistentContainer"]
+- !private ["Ps8Hashable", "post"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "redirect"]
+- !private ["Ps8Hashable", "redirectURL"]
+- !private ["Ps8Hashable", "save"]
+- !private ["Ps8Hashable", "saveContext"]
+- !private ["Ps8Hashable", "sessionUserDefaultsKey"]
+- !private ["Ps8Hashable", "set"]
+- !private ["Ps8Hashable", "standard"]
+- !private ["Ps8Hashable", "synchronize"]
+- !private ["Ps8Hashable", "userInfo"]
+- !private ["Ps8Hashable", "viewContext"]
+- ["Ps8Hashable", "window"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps25LosslessStringConvertible", "init"]
+- ["Ps10MirrorPath", "init"]
+- !private ["CSo7NSCoder", "archivedData"]
+- !private ["PSo8NSCoding", "hasChanges"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "save"]
+- !private ["PSo8NSCoding", "userInfo"]
+- ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "userInfo"]
+- !private ["CSo7NSError", "userInfo"]
+- !private ["CSo15NSKeyedArchiver", "archivedData"]
+- !private ["PSo9NSLocking", "hasChanges"]
+- !private ["PSo9NSLocking", "save"]
+- !private ["CSo22NSManagedObjectContext", "hasChanges"]
+- !private ["CSo22NSManagedObjectContext", "save"]
+- ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "NSKeyedArchiver"]
+- ["CSo8NSObject", "NSPersistentContainer"]
+- !private ["CSo8NSObject", "Notification"]
+- !private ["CSo8NSObject", "NotificationCenter"]
+- ["CSo8NSObject", "SPTAuth"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIApplication"]
+- ["CSo8NSObject", "UIApplicationLaunchOptionsKey"]
+- ["CSo8NSObject", "UIWindow"]
+- ["CSo8NSObject", "URL"]
+- !private ["CSo8NSObject", "UserDefaults"]
+- ["CSo8NSObject", "application"]
+- ["CSo8NSObject", "applicationDidBecomeActive"]
+- ["CSo8NSObject", "applicationDidEnterBackground"]
+- ["CSo8NSObject", "applicationDidFinishLaunching"]
+- ["CSo8NSObject", "applicationDidReceiveMemoryWarning"]
+- ["CSo8NSObject", "applicationProtectedDataDidBecomeAvailable"]
+- ["CSo8NSObject", "applicationProtectedDataWillBecomeUnavailable"]
+- ["CSo8NSObject", "applicationShouldRequestHealthAuthorization"]
+- ["CSo8NSObject", "applicationSignificantTimeChange"]
+- ["CSo8NSObject", "applicationWillEnterForeground"]
+- ["CSo8NSObject", "applicationWillResignActive"]
+- ["CSo8NSObject", "applicationWillTerminate"]
+- !private ["CSo8NSObject", "archivedData"]
+- ["CSo8NSObject", "auth"]
+- !private ["CSo8NSObject", "canHandle"]
+- !private ["CSo8NSObject", "default"]
+- !private ["CSo8NSObject", "fatalError"]
+- !private ["CSo8NSObject", "handleAuthCallback"]
+- !private ["CSo8NSObject", "hasChanges"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "loadPersistentStores"]
+- ["CSo8NSObject", "persistentContainer"]
+- ["CSo8NSObject", "persistentContainer.storage"]
+- !private ["CSo8NSObject", "post"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "redirect"]
+- !private ["CSo8NSObject", "redirectURL"]
+- !private ["CSo8NSObject", "save"]
+- ["CSo8NSObject", "saveContext"]
+- !private ["CSo8NSObject", "sessionUserDefaultsKey"]
+- !private ["CSo8NSObject", "set"]
+- !private ["CSo8NSObject", "standard"]
+- !private ["CSo8NSObject", "synchronize"]
+- !private ["CSo8NSObject", "userInfo"]
+- !private ["CSo8NSObject", "viewContext"]
+- ["CSo8NSObject", "window"]
+- !private ["PSo16NSObjectProtocol", "NSKeyedArchiver"]
+- !private ["PSo16NSObjectProtocol", "NSPersistentContainer"]
+- !private ["PSo16NSObjectProtocol", "Notification"]
+- !private ["PSo16NSObjectProtocol", "NotificationCenter"]
+- ["PSo16NSObjectProtocol", "SPTAuth"]
+- !private ["PSo16NSObjectProtocol", "URL"]
+- !private ["PSo16NSObjectProtocol", "UserDefaults"]
+- ["PSo16NSObjectProtocol", "application"]
+- ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
+- ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
+- ["PSo16NSObjectProtocol", "applicationDidFinishLaunching"]
+- ["PSo16NSObjectProtocol", "applicationDidReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo16NSObjectProtocol", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo16NSObjectProtocol", "applicationShouldRequestHealthAuthorization"]
+- ["PSo16NSObjectProtocol", "applicationSignificantTimeChange"]
+- ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
+- ["PSo16NSObjectProtocol", "applicationWillResignActive"]
+- ["PSo16NSObjectProtocol", "applicationWillTerminate"]
+- !private ["PSo16NSObjectProtocol", "archivedData"]
+- !private ["PSo16NSObjectProtocol", "auth"]
+- !private ["PSo16NSObjectProtocol", "canHandle"]
+- !private ["PSo16NSObjectProtocol", "default"]
+- !private ["PSo16NSObjectProtocol", "fatalError"]
+- !private ["PSo16NSObjectProtocol", "handleAuthCallback"]
+- !private ["PSo16NSObjectProtocol", "hasChanges"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "loadPersistentStores"]
+- !private ["PSo16NSObjectProtocol", "persistentContainer"]
+- !private ["PSo16NSObjectProtocol", "post"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "redirect"]
+- !private ["PSo16NSObjectProtocol", "redirectURL"]
+- !private ["PSo16NSObjectProtocol", "save"]
+- !private ["PSo16NSObjectProtocol", "saveContext"]
+- !private ["PSo16NSObjectProtocol", "sessionUserDefaultsKey"]
+- !private ["PSo16NSObjectProtocol", "set"]
+- !private ["PSo16NSObjectProtocol", "standard"]
+- !private ["PSo16NSObjectProtocol", "synchronize"]
+- !private ["PSo16NSObjectProtocol", "userInfo"]
+- !private ["PSo16NSObjectProtocol", "viewContext"]
+- ["PSo16NSObjectProtocol", "window"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo21NSPersistentContainer", "init"]
+- !private ["CSo21NSPersistentContainer", "loadPersistentStores"]
+- !private ["CSo21NSPersistentContainer", "viewContext"]
+- ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "userInfo"]
+- ["CSo8NSString", "init"]
+- !private ["VCSo14NSNotification4Name", "init"]
+- !private ["V10Foundation12Notification", "Name"]
+- !private ["CSo18NotificationCenter", "default"]
+- !private ["CSo18NotificationCenter", "post"]
+- !private ["Ps16RawRepresentable", "init"]
+- !private ["P10Foundation20ReferenceConvertible", "Name"]
+- !private ["P10Foundation20ReferenceConvertible", "init"]
+- !private ["CSo7SPTAuth", "canHandle"]
+- !private ["CSo7SPTAuth", "handleAuthCallback"]
+- ["CSo7SPTAuth", "init"]
+- !private ["CSo7SPTAuth", "redirectURL"]
+- !private ["CSo7SPTAuth", "sessionUserDefaultsKey"]
+- !private ["Vs12StaticString", "init"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo21UIApplicationDelegate", "NSKeyedArchiver"]
+- !private ["PSo21UIApplicationDelegate", "NSPersistentContainer"]
+- !private ["PSo21UIApplicationDelegate", "Notification"]
+- !private ["PSo21UIApplicationDelegate", "NotificationCenter"]
+- ["PSo21UIApplicationDelegate", "SPTAuth"]
+- !private ["PSo21UIApplicationDelegate", "URL"]
+- !private ["PSo21UIApplicationDelegate", "UserDefaults"]
+- ["PSo21UIApplicationDelegate", "application"]
+- ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
+- ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
+- ["PSo21UIApplicationDelegate", "applicationDidFinishLaunching"]
+- ["PSo21UIApplicationDelegate", "applicationDidReceiveMemoryWarning"]
+- ["PSo21UIApplicationDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo21UIApplicationDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo21UIApplicationDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["PSo21UIApplicationDelegate", "applicationSignificantTimeChange"]
+- ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
+- ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
+- ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- !private ["PSo21UIApplicationDelegate", "auth"]
+- !private ["PSo21UIApplicationDelegate", "fatalError"]
+- !private ["PSo21UIApplicationDelegate", "persistentContainer"]
+- !private ["PSo21UIApplicationDelegate", "print"]
+- !private ["PSo21UIApplicationDelegate", "redirect"]
+- !private ["PSo21UIApplicationDelegate", "saveContext"]
+- ["PSo21UIApplicationDelegate", "window"]
+- ["PSo21UIApplicationDelegate", ""]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "NSError"]
+- !private ["CSo11UIResponder", "NSKeyedArchiver"]
+- ["CSo11UIResponder", "NSPersistentContainer"]
+- !private ["CSo11UIResponder", "Notification"]
+- !private ["CSo11UIResponder", "NotificationCenter"]
+- ["CSo11UIResponder", "SPTAuth"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UIApplication"]
+- ["CSo11UIResponder", "UIApplicationLaunchOptionsKey"]
+- ["CSo11UIResponder", "UIWindow"]
+- ["CSo11UIResponder", "URL"]
+- !private ["CSo11UIResponder", "UserDefaults"]
+- ["CSo11UIResponder", "application"]
+- ["CSo11UIResponder", "applicationDidBecomeActive"]
+- ["CSo11UIResponder", "applicationDidEnterBackground"]
+- ["CSo11UIResponder", "applicationDidFinishLaunching"]
+- ["CSo11UIResponder", "applicationDidReceiveMemoryWarning"]
+- ["CSo11UIResponder", "applicationProtectedDataDidBecomeAvailable"]
+- ["CSo11UIResponder", "applicationProtectedDataWillBecomeUnavailable"]
+- ["CSo11UIResponder", "applicationShouldRequestHealthAuthorization"]
+- ["CSo11UIResponder", "applicationSignificantTimeChange"]
+- ["CSo11UIResponder", "applicationWillEnterForeground"]
+- ["CSo11UIResponder", "applicationWillResignActive"]
+- ["CSo11UIResponder", "applicationWillTerminate"]
+- ["CSo11UIResponder", "auth"]
+- !private ["CSo11UIResponder", "fatalError"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "persistentContainer"]
+- ["CSo11UIResponder", "persistentContainer.storage"]
+- !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "redirect"]
+- ["CSo11UIResponder", "saveContext"]
+- ["CSo11UIResponder", "window"]
+- ["CSo11UIResponder", ""]
+- !private ["PSo30UIResponderStandardEditActions", "NSKeyedArchiver"]
+- !private ["PSo30UIResponderStandardEditActions", "NSPersistentContainer"]
+- !private ["PSo30UIResponderStandardEditActions", "Notification"]
+- !private ["PSo30UIResponderStandardEditActions", "NotificationCenter"]
+- ["PSo30UIResponderStandardEditActions", "SPTAuth"]
+- !private ["PSo30UIResponderStandardEditActions", "URL"]
+- !private ["PSo30UIResponderStandardEditActions", "UserDefaults"]
+- ["PSo30UIResponderStandardEditActions", "application"]
+- ["PSo30UIResponderStandardEditActions", "applicationDidBecomeActive"]
+- ["PSo30UIResponderStandardEditActions", "applicationDidEnterBackground"]
+- ["PSo30UIResponderStandardEditActions", "applicationDidFinishLaunching"]
+- ["PSo30UIResponderStandardEditActions", "applicationDidReceiveMemoryWarning"]
+- ["PSo30UIResponderStandardEditActions", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo30UIResponderStandardEditActions", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo30UIResponderStandardEditActions", "applicationShouldRequestHealthAuthorization"]
+- ["PSo30UIResponderStandardEditActions", "applicationSignificantTimeChange"]
+- ["PSo30UIResponderStandardEditActions", "applicationWillEnterForeground"]
+- ["PSo30UIResponderStandardEditActions", "applicationWillResignActive"]
+- ["PSo30UIResponderStandardEditActions", "applicationWillTerminate"]
+- !private ["PSo30UIResponderStandardEditActions", "auth"]
+- !private ["PSo30UIResponderStandardEditActions", "fatalError"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "persistentContainer"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "redirect"]
+- !private ["PSo30UIResponderStandardEditActions", "saveContext"]
+- ["PSo30UIResponderStandardEditActions", "window"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["V10Foundation3URL", "init"]
+- !private ["CSo12UserDefaults", "set"]
+- !private ["CSo12UserDefaults", "standard"]
+- !private ["CSo12UserDefaults", "synchronize"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "init"]
+- ["Ps33_ExpressibleByStringInterpolation", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "NSKeyedArchiver"]
+- !private ["Ps9_Hashable", "NSPersistentContainer"]
+- !private ["Ps9_Hashable", "Name"]
+- !private ["Ps9_Hashable", "Notification"]
+- !private ["Ps9_Hashable", "NotificationCenter"]
+- ["Ps9_Hashable", "SPTAuth"]
+- !private ["Ps9_Hashable", "URL"]
+- !private ["Ps9_Hashable", "UserDefaults"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "application"]
+- ["Ps9_Hashable", "applicationDidBecomeActive"]
+- ["Ps9_Hashable", "applicationDidEnterBackground"]
+- ["Ps9_Hashable", "applicationDidFinishLaunching"]
+- ["Ps9_Hashable", "applicationDidReceiveMemoryWarning"]
+- ["Ps9_Hashable", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps9_Hashable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps9_Hashable", "applicationShouldRequestHealthAuthorization"]
+- ["Ps9_Hashable", "applicationSignificantTimeChange"]
+- ["Ps9_Hashable", "applicationWillEnterForeground"]
+- ["Ps9_Hashable", "applicationWillResignActive"]
+- ["Ps9_Hashable", "applicationWillTerminate"]
+- !private ["Ps9_Hashable", "archivedData"]
+- !private ["Ps9_Hashable", "auth"]
+- !private ["Ps9_Hashable", "canHandle"]
+- !private ["Ps9_Hashable", "default"]
+- !private ["Ps9_Hashable", "fatalError"]
+- !private ["Ps9_Hashable", "handleAuthCallback"]
+- !private ["Ps9_Hashable", "hasChanges"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "loadPersistentStores"]
+- !private ["Ps9_Hashable", "persistentContainer"]
+- !private ["Ps9_Hashable", "post"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "redirect"]
+- !private ["Ps9_Hashable", "redirectURL"]
+- !private ["Ps9_Hashable", "save"]
+- !private ["Ps9_Hashable", "saveContext"]
+- !private ["Ps9_Hashable", "sessionUserDefaultsKey"]
+- !private ["Ps9_Hashable", "set"]
+- !private ["Ps9_Hashable", "standard"]
+- !private ["Ps9_Hashable", "synchronize"]
+- !private ["Ps9_Hashable", "userInfo"]
+- !private ["Ps9_Hashable", "viewContext"]
+- ["Ps9_Hashable", "window"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "Name"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps20_SwiftNewtypeWrapper", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "C9GymJamsV211AppDelegate"
+- !private "Sb"
+- "Ps7CVarArg"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps5Error"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- !private "CSo7NSCoder"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- !private "CSo7NSError"
+- !private "CSo15NSKeyedArchiver"
+- !private "PSo9NSLocking"
+- !private "CSo22NSManagedObjectContext"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo21NSPersistentContainer"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- !private "VCSo14NSNotification4Name"
+- !private "V10Foundation12Notification"
+- !private "CSo18NotificationCenter"
+- !private "Ps16RawRepresentable"
+- !private "P10Foundation20ReferenceConvertible"
+- "CSo7SPTAuth"
+- !private "Vs12StaticString"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- "PSo21UIApplicationDelegate"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "V10Foundation3URL"
+- !private "CSo12UserDefaults"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps34_ExpressibleByFileReferenceLiteral"
+- "Ps33_ExpressibleByStringInterpolation"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
+- !private "Ps20_SwiftNewtypeWrapper"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/GymJamsV2-Bridging-Header.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAuthentication.framework/Headers/SpotifyAuthentication.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAuthentication.framework/Headers/SPTAuth.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAuthentication.framework/Headers/SPTSession.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAuthentication.framework/Headers/SPTConnectButton.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAuthentication.framework/Headers/SPTAuthViewController.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAuthentication.framework/Headers/SPTStoreViewController.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/StoreKit.apinotesc"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAuthentication.framework/Headers/SPTEmbeddedImages.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SpotifyAudioPlayback.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SPTCircularBuffer.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SPTCoreAudioController.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AudioToolbox.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SPTAudioStreamingController.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SPTAudioPlaybackTypes.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SPTDiskCache.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SPTDiskCaching.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SPTPlaybackMetadata.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SpPlaybackEvent.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SPTPlaybackState.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SPTAudioStreamingController_ErrorCodes.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SpotifyMetadata.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTJSONDecoding.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTRequest.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTPartialObject.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTAlbum.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTTrackProvider.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTPartialAlbum.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTArtist.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTPartialArtist.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTPartialPlaylist.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTImage.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTPartialTrack.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTPlaylistList.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTPlaylistSnapshot.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTMetadataTypes.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTListPage.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTTrack.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTPlaylistTrack.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTSavedTrack.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTUser.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTFeaturedPlaylistList.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTFollow.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTBrowse.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTYourMusic.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTSearch.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.apinotesc"
+interface-hash: "0c99de104a10578768d9d7e832d72f9c"

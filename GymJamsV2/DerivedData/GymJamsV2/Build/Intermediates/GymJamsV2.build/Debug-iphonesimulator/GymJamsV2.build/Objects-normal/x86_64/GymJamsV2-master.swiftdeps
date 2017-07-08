@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.51 clang-802.0.41)"
+options: "c6954f7a8ac342b89539796451b60196"
+build_time: [552816560, 446734000]
+inputs:
+  "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/GymJamsV2/ViewController.swift": [552813951, 0]
+  "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/GymJamsV2/AppDelegate.swift": [552816560, 0]
