@@ -13,8 +13,6 @@ var auth = SPTAuth.defaultInstance()!
 var session:SPTSession!
 var loginUrl: URL?
 
-var player: SPTAudioStreamingController?
-
 class ViewController: UIViewController {
     
     @IBOutlet weak var loginBtn: UIButton!
