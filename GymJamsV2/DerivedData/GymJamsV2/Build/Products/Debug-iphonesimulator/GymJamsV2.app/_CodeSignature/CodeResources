@@ -22,7 +22,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		HIjX/a8nAoo0TO0rHByQx9v5W0o=
+		T9dEAyvOmyJ0dYdE4IKnwMOFNc0=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -30,15 +30,15 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/Tgf-6e-9oM-view-bOr-bR-v0e.nib</key>
 		<data>
-		xeXX5NzyNLM2Ph7YxkLgd4s/+u4=
+		kB2vC7ay8VSuA7UkeOMJH9hJ3eg=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UITableViewController-Tgf-6e-9oM.nib</key>
 		<data>
-		LJ08yRtNtRFIN3iJS+ry9Tk2Tr0=
+		ZF0tqIZGG9XdmZHlJAHrulxN1co=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		dbvfOyysiGXCeYTVX768zxqP+UE=
+		hWqDQKGztns4VUDpZGnVRXdBEL8=
 		</data>
 		<key>Frameworks/SpotifyAudioPlayback.framework/Info.plist</key>
 		<data>
@@ -247,11 +247,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HIjX/a8nAoo0TO0rHByQx9v5W0o=
+			T9dEAyvOmyJ0dYdE4IKnwMOFNc0=
 			</data>
 			<key>hash2</key>
 			<data>
-			lpIFCKLk3GqvEDQW0JQPzW40oo4vudj0lphWGNZDQac=
+			uIDGsJXthAUT3z7SMAQhbQ5ELhIUPA7x/GMmIJVbsHE=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -269,33 +269,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xeXX5NzyNLM2Ph7YxkLgd4s/+u4=
+			kB2vC7ay8VSuA7UkeOMJH9hJ3eg=
 			</data>
 			<key>hash2</key>
 			<data>
-			JpUS/PiuqO8zKND5mez+DTMyZYvUvmPgDs2yROF2TG0=
+			85fFJ7FPO6szBE/vUp9r+GZj5Nin0LuAi0ajryh0XKk=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UITableViewController-Tgf-6e-9oM.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LJ08yRtNtRFIN3iJS+ry9Tk2Tr0=
+			ZF0tqIZGG9XdmZHlJAHrulxN1co=
 			</data>
 			<key>hash2</key>
 			<data>
-			bnpgMhxtYQ6+7eijUvRmlvU0fUqIYVdSaDKxUTCcT3U=
+			U/VyMWD3UEo4wfWiq7t/AEtDt/NSXfmgxy6t22cC/uI=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dbvfOyysiGXCeYTVX768zxqP+UE=
+			hWqDQKGztns4VUDpZGnVRXdBEL8=
 			</data>
 			<key>hash2</key>
 			<data>
-			QOo1fAk8Y1XRyC4j3/aNajdli/f32F6XyjAicWouRC4=
+			eau498czV5fvFwi8xw3kvb5n5jgbCw5/4zf6pfwWUL8=
 			</data>
 		</dict>
 		<key>Frameworks/SpotifyAudioPlayback.framework/Info.plist</key>

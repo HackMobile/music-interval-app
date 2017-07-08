@@ -10,12 +10,10 @@ import UIKit
 
 class PlayerViewController: UIViewController {
     
-    var player
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        player = SPTAudioStreamingController(clientId: kClientId)
+        //player = SPTAudioStreamingController(clientId: kClientId)
         
         // Do any additional setup after loading the view.
     }

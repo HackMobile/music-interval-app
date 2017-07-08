@@ -184,37 +184,35 @@ SWIFT_CLASS("_TtC9GymJamsV221PlaylistTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class SPTAudioStreamingController;
 @class UITableView;
+@class SPTSession;
 
 SWIFT_CLASS("_TtC9GymJamsV227PlaylistTableViewController")
-@interface PlaylistTableViewController : UITableViewController
+@interface PlaylistTableViewController : UITableViewController <SPTAudioStreamingDelegate, SPTAudioStreamingPlaybackDelegate>
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull playlists;
+@property (nonatomic, copy) NSArray<NSURL *> * _Nonnull playlistUris;
+@property (nonatomic, strong) SPTAudioStreamingController * _Nullable player;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)initializePlayerWithAuthSession:(SPTSession * _Nonnull)authSession;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class SPTSession;
-@class SPTAudioStreamingController;
 @class UIButton;
 
 SWIFT_CLASS("_TtC9GymJamsV214ViewController")
-@interface ViewController : UIViewController <SPTAudioStreamingDelegate, SPTAudioStreamingPlaybackDelegate>
-@property (nonatomic, strong) SPTAuth * _Nonnull auth;
-@property (nonatomic, strong) SPTSession * _Null_unspecified session;
-@property (nonatomic, strong) SPTAudioStreamingController * _Nullable player;
-@property (nonatomic, copy) NSURL * _Nullable loginUrl;
+@interface ViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loginBtn;
 - (IBAction)loginBtnPressed:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)updateAfterFirstLogin;
-- (void)initializePlayerWithAuthSession:(SPTSession * _Nonnull)authSession;
-- (void)audioStreamingDidLogin:(SPTAudioStreamingController * _Null_unspecified)audioStreaming;
 - (void)didReceiveMemoryWarning;
 - (void)setup;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
