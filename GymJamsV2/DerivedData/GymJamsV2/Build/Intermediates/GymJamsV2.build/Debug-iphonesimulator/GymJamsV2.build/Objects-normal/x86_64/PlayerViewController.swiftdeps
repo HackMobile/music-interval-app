@@ -12,6 +12,8 @@ provides-dynamic-lookup:
 - "playButtonPressed"
 - "prevButtonPressed"
 - "skipButtonPressed"
+- "sliderValueChanged"
+- "sliderValueLabel"
 - "timerLabel"
 - "timer_"
 - "updateAlbum"
@@ -23,23 +25,27 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
+- !private "Int"
 - "PlayerViewController"
 - "SPTAudioStreamingController"
 - "SPTAudioStreamingDelegate"
 - "SPTAudioStreamingPlaybackDelegate"
 - "SPTPlaybackMetadata"
 - !private "String"
-- "StringLiteralType"
+- !private "StringLiteralType"
 - "Timer"
 - "UIImageView"
 - "UILabel"
+- "UISlider"
 - "UIViewController"
 - !private "counter"
 - !private "player"
 - !private "print"
 - !private "setTimer"
+- !private "sliderVal"
 - !private "timer"
 depends-member:
+- !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "PlayerViewController"]
 - !private ["Ps9AnyObject", "String"]
 - ["Ps9AnyObject", "Timer"]
@@ -81,6 +87,8 @@ depends-member:
 - !private ["Ps9AnyObject", "setTimer"]
 - !private ["Ps9AnyObject", "skipNext"]
 - !private ["Ps9AnyObject", "skipPrevious"]
+- !private ["Ps9AnyObject", "sliderVal"]
+- !private ["Ps9AnyObject", "sliderValueLabel"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "timer"]
 - !private ["Ps9AnyObject", "timerLabel"]
@@ -88,12 +96,16 @@ depends-member:
 - !private ["Ps9AnyObject", "updateAlbum"]
 - !private ["Ps9AnyObject", "updateCounter"]
 - !private ["Ps9AnyObject", "updateName"]
+- !private ["Ps9AnyObject", "value"]
 - !private ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
+- !private ["Ps17BitwiseOperations", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["PSo15CALayerDelegate", "reloadInputViews"]
 - !private ["PSo15CALayerDelegate", "setImageFromURl"]
 - !private ["PSo15CALayerDelegate", "text"]
+- !private ["PSo15CALayerDelegate", "value"]
+- !private ["Ps7CVarArg", "Int"]
 - !private ["Ps7CVarArg", "PlayerViewController"]
 - !private ["Ps7CVarArg", "String"]
 - ["Ps7CVarArg", "Timer"]
@@ -135,6 +147,8 @@ depends-member:
 - !private ["Ps7CVarArg", "setTimer"]
 - !private ["Ps7CVarArg", "skipNext"]
 - !private ["Ps7CVarArg", "skipPrevious"]
+- !private ["Ps7CVarArg", "sliderVal"]
+- !private ["Ps7CVarArg", "sliderValueLabel"]
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "timer"]
 - !private ["Ps7CVarArg", "timerLabel"]
@@ -142,9 +156,11 @@ depends-member:
 - !private ["Ps7CVarArg", "updateAlbum"]
 - !private ["Ps7CVarArg", "updateCounter"]
 - !private ["Ps7CVarArg", "updateName"]
+- !private ["Ps7CVarArg", "value"]
 - !private ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Int"]
 - !private ["Ps28CustomDebugStringConvertible", "PlayerViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
 - ["Ps28CustomDebugStringConvertible", "Timer"]
@@ -186,6 +202,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "setTimer"]
 - !private ["Ps28CustomDebugStringConvertible", "skipNext"]
 - !private ["Ps28CustomDebugStringConvertible", "skipPrevious"]
+- !private ["Ps28CustomDebugStringConvertible", "sliderVal"]
+- !private ["Ps28CustomDebugStringConvertible", "sliderValueLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "timer"]
 - !private ["Ps28CustomDebugStringConvertible", "timerLabel"]
@@ -193,12 +211,14 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "updateAlbum"]
 - !private ["Ps28CustomDebugStringConvertible", "updateCounter"]
 - !private ["Ps28CustomDebugStringConvertible", "updateName"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
 - !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "Int"]
 - !private ["Ps23CustomStringConvertible", "PlayerViewController"]
 - !private ["Ps23CustomStringConvertible", "String"]
 - ["Ps23CustomStringConvertible", "Timer"]
@@ -241,6 +261,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "setTimer"]
 - !private ["Ps23CustomStringConvertible", "skipNext"]
 - !private ["Ps23CustomStringConvertible", "skipPrevious"]
+- !private ["Ps23CustomStringConvertible", "sliderVal"]
+- !private ["Ps23CustomStringConvertible", "sliderValueLabel"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "timer"]
 - !private ["Ps23CustomStringConvertible", "timerLabel"]
@@ -248,8 +270,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "updateAlbum"]
 - !private ["Ps23CustomStringConvertible", "updateCounter"]
 - !private ["Ps23CustomStringConvertible", "updateName"]
+- !private ["Ps23CustomStringConvertible", "value"]
 - !private ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Int"]
 - !private ["Ps9Equatable", "PlayerViewController"]
 - !private ["Ps9Equatable", "String"]
 - ["Ps9Equatable", "Timer"]
@@ -292,6 +316,8 @@ depends-member:
 - !private ["Ps9Equatable", "setTimer"]
 - !private ["Ps9Equatable", "skipNext"]
 - !private ["Ps9Equatable", "skipPrevious"]
+- !private ["Ps9Equatable", "sliderVal"]
+- !private ["Ps9Equatable", "sliderValueLabel"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "timer"]
 - !private ["Ps9Equatable", "timerLabel"]
@@ -299,12 +325,15 @@ depends-member:
 - !private ["Ps9Equatable", "updateAlbum"]
 - !private ["Ps9Equatable", "updateCounter"]
 - !private ["Ps9Equatable", "updateName"]
+- !private ["Ps9Equatable", "value"]
 - !private ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "Int"]
 - !private ["Ps8Hashable", "PlayerViewController"]
 - !private ["Ps8Hashable", "String"]
 - ["Ps8Hashable", "Timer"]
@@ -347,6 +376,8 @@ depends-member:
 - !private ["Ps8Hashable", "setTimer"]
 - !private ["Ps8Hashable", "skipNext"]
 - !private ["Ps8Hashable", "skipPrevious"]
+- !private ["Ps8Hashable", "sliderVal"]
+- !private ["Ps8Hashable", "sliderValueLabel"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "timer"]
 - !private ["Ps8Hashable", "timerLabel"]
@@ -354,11 +385,16 @@ depends-member:
 - !private ["Ps8Hashable", "updateAlbum"]
 - !private ["Ps8Hashable", "updateCounter"]
 - !private ["Ps8Hashable", "updateName"]
+- !private ["Ps8Hashable", "value"]
 - !private ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
+- !private ["Si", "init"]
+- !private ["Ps7Integer", "init"]
+- !private ["Ps17IntegerArithmetic", "init"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "Int"]
 - !private ["PSo8NSCoding", "PlayerViewController"]
 - !private ["PSo8NSCoding", "String"]
 - ["PSo8NSCoding", "Timer"]
@@ -385,6 +421,8 @@ depends-member:
 - !private ["PSo8NSCoding", "reloadInputViews"]
 - !private ["PSo8NSCoding", "setImageFromURl"]
 - !private ["PSo8NSCoding", "setTimer"]
+- !private ["PSo8NSCoding", "sliderVal"]
+- !private ["PSo8NSCoding", "sliderValueLabel"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "timer"]
 - !private ["PSo8NSCoding", "timerLabel"]
@@ -392,9 +430,11 @@ depends-member:
 - !private ["PSo8NSCoding", "updateAlbum"]
 - !private ["PSo8NSCoding", "updateCounter"]
 - !private ["PSo8NSCoding", "updateName"]
+- !private ["PSo8NSCoding", "value"]
 - !private ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "Int"]
 - !private ["PSo26NSExtensionRequestHandling", "PlayerViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
 - ["PSo26NSExtensionRequestHandling", "Timer"]
@@ -419,6 +459,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "player"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "setTimer"]
+- !private ["PSo26NSExtensionRequestHandling", "sliderVal"]
+- !private ["PSo26NSExtensionRequestHandling", "sliderValueLabel"]
 - !private ["PSo26NSExtensionRequestHandling", "timer"]
 - !private ["PSo26NSExtensionRequestHandling", "timerLabel"]
 - !private ["PSo26NSExtensionRequestHandling", "timer_"]
@@ -428,6 +470,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "PlayerViewController"]
 - ["CSo8NSObject", "SPTAudioStreamingController"]
 - !private ["CSo8NSObject", "SPTAudioStreamingDelegate"]
@@ -436,6 +479,7 @@ depends-member:
 - ["CSo8NSObject", "Timer"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UISlider"]
 - !private ["CSo8NSObject", "albumCoverArtURL"]
 - !private ["CSo8NSObject", "artistName"]
 - ["CSo8NSObject", "audioStreaming"]
@@ -477,6 +521,9 @@ depends-member:
 - ["CSo8NSObject", "skipButtonPressed"]
 - !private ["CSo8NSObject", "skipNext"]
 - !private ["CSo8NSObject", "skipPrevious"]
+- !private ["CSo8NSObject", "sliderVal"]
+- ["CSo8NSObject", "sliderValueChanged"]
+- ["CSo8NSObject", "sliderValueLabel"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "timer"]
 - ["CSo8NSObject", "timerLabel"]
@@ -484,7 +531,9 @@ depends-member:
 - ["CSo8NSObject", "updateAlbum"]
 - ["CSo8NSObject", "updateCounter"]
 - ["CSo8NSObject", "updateName"]
+- !private ["CSo8NSObject", "value"]
 - ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "Int"]
 - !private ["PSo16NSObjectProtocol", "PlayerViewController"]
 - !private ["PSo16NSObjectProtocol", "String"]
 - ["PSo16NSObjectProtocol", "Timer"]
@@ -526,6 +575,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "setTimer"]
 - !private ["PSo16NSObjectProtocol", "skipNext"]
 - !private ["PSo16NSObjectProtocol", "skipPrevious"]
+- !private ["PSo16NSObjectProtocol", "sliderVal"]
+- !private ["PSo16NSObjectProtocol", "sliderValueLabel"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "timer"]
 - !private ["PSo16NSObjectProtocol", "timerLabel"]
@@ -533,10 +584,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "updateAlbum"]
 - !private ["PSo16NSObjectProtocol", "updateCounter"]
 - !private ["PSo16NSObjectProtocol", "updateName"]
+- !private ["PSo16NSObjectProtocol", "value"]
 - !private ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
+- !private ["C9GymJamsV220PlayerViewController", "Int"]
 - !private ["C9GymJamsV220PlayerViewController", "PlayerViewController"]
 - ["C9GymJamsV220PlayerViewController", "SPTAudioStreamingController"]
 - !private ["C9GymJamsV220PlayerViewController", "SPTAudioStreamingDelegate"]
@@ -545,6 +598,7 @@ depends-member:
 - ["C9GymJamsV220PlayerViewController", "Timer"]
 - ["C9GymJamsV220PlayerViewController", "UIImageView"]
 - ["C9GymJamsV220PlayerViewController", "UILabel"]
+- ["C9GymJamsV220PlayerViewController", "UISlider"]
 - ["C9GymJamsV220PlayerViewController", "audioStreaming"]
 - ["C9GymJamsV220PlayerViewController", "audioStreamingDidBecomeActivePlaybackDevice"]
 - ["C9GymJamsV220PlayerViewController", "audioStreamingDidBecomeInactivePlaybackDevice"]
@@ -570,6 +624,9 @@ depends-member:
 - !private ["C9GymJamsV220PlayerViewController", "print"]
 - !private ["C9GymJamsV220PlayerViewController", "setTimer"]
 - ["C9GymJamsV220PlayerViewController", "skipButtonPressed"]
+- !private ["C9GymJamsV220PlayerViewController", "sliderVal"]
+- ["C9GymJamsV220PlayerViewController", "sliderValueChanged"]
+- ["C9GymJamsV220PlayerViewController", "sliderValueLabel"]
 - !private ["C9GymJamsV220PlayerViewController", "timer"]
 - ["C9GymJamsV220PlayerViewController", "timerLabel"]
 - ["C9GymJamsV220PlayerViewController", "timer_"]
@@ -585,6 +642,7 @@ depends-member:
 - !private ["CSo27SPTAudioStreamingController", "setShuffle"]
 - !private ["CSo27SPTAudioStreamingController", "skipNext"]
 - !private ["CSo27SPTAudioStreamingController", "skipPrevious"]
+- !private ["PSo25SPTAudioStreamingDelegate", "Int"]
 - !private ["PSo25SPTAudioStreamingDelegate", "PlayerViewController"]
 - !private ["PSo25SPTAudioStreamingDelegate", "String"]
 - ["PSo25SPTAudioStreamingDelegate", "Timer"]
@@ -607,6 +665,8 @@ depends-member:
 - !private ["PSo25SPTAudioStreamingDelegate", "player"]
 - !private ["PSo25SPTAudioStreamingDelegate", "print"]
 - !private ["PSo25SPTAudioStreamingDelegate", "setTimer"]
+- !private ["PSo25SPTAudioStreamingDelegate", "sliderVal"]
+- !private ["PSo25SPTAudioStreamingDelegate", "sliderValueLabel"]
 - !private ["PSo25SPTAudioStreamingDelegate", "timer"]
 - !private ["PSo25SPTAudioStreamingDelegate", "timerLabel"]
 - !private ["PSo25SPTAudioStreamingDelegate", "timer_"]
@@ -614,6 +674,7 @@ depends-member:
 - !private ["PSo25SPTAudioStreamingDelegate", "updateCounter"]
 - !private ["PSo25SPTAudioStreamingDelegate", "updateName"]
 - ["PSo25SPTAudioStreamingDelegate", ""]
+- !private ["PSo33SPTAudioStreamingPlaybackDelegate", "Int"]
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "PlayerViewController"]
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "String"]
 - ["PSo33SPTAudioStreamingPlaybackDelegate", "Timer"]
@@ -636,6 +697,8 @@ depends-member:
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "player"]
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "print"]
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "setTimer"]
+- !private ["PSo33SPTAudioStreamingPlaybackDelegate", "sliderVal"]
+- !private ["PSo33SPTAudioStreamingPlaybackDelegate", "sliderValueLabel"]
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "timer"]
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "timerLabel"]
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "timer_"]
@@ -648,6 +711,9 @@ depends-member:
 - !private ["CSo16SPTPlaybackTrack", "albumCoverArtURL"]
 - !private ["CSo16SPTPlaybackTrack", "artistName"]
 - !private ["CSo16SPTPlaybackTrack", "name"]
+- !private ["Ps13SignedInteger", "init"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["Ps10Strideable", "init"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
@@ -657,9 +723,12 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "reloadInputViews"]
 - !private ["PSo29UIAccessibilityIdentification", "setImageFromURl"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "value"]
 - !private ["PSo12UIAppearance", "reloadInputViews"]
 - !private ["PSo12UIAppearance", "setImageFromURl"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "value"]
+- !private ["PSo21UIAppearanceContainer", "Int"]
 - !private ["PSo21UIAppearanceContainer", "PlayerViewController"]
 - !private ["PSo21UIAppearanceContainer", "String"]
 - ["PSo21UIAppearanceContainer", "Timer"]
@@ -686,6 +755,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "reloadInputViews"]
 - !private ["PSo21UIAppearanceContainer", "setImageFromURl"]
 - !private ["PSo21UIAppearanceContainer", "setTimer"]
+- !private ["PSo21UIAppearanceContainer", "sliderVal"]
+- !private ["PSo21UIAppearanceContainer", "sliderValueLabel"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "timer"]
 - !private ["PSo21UIAppearanceContainer", "timerLabel"]
@@ -693,8 +764,10 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "updateAlbum"]
 - !private ["PSo21UIAppearanceContainer", "updateCounter"]
 - !private ["PSo21UIAppearanceContainer", "updateName"]
+- !private ["PSo21UIAppearanceContainer", "value"]
 - !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "Int"]
 - !private ["PSo18UIContentContainer", "PlayerViewController"]
 - !private ["PSo18UIContentContainer", "String"]
 - ["PSo18UIContentContainer", "Timer"]
@@ -719,6 +792,8 @@ depends-member:
 - !private ["PSo18UIContentContainer", "player"]
 - !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "setTimer"]
+- !private ["PSo18UIContentContainer", "sliderVal"]
+- !private ["PSo18UIContentContainer", "sliderValueLabel"]
 - !private ["PSo18UIContentContainer", "timer"]
 - !private ["PSo18UIContentContainer", "timerLabel"]
 - !private ["PSo18UIContentContainer", "timer_"]
@@ -728,12 +803,16 @@ depends-member:
 - !private ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["CSo9UIControl", "value"]
 - !private ["PSo17UICoordinateSpace", "reloadInputViews"]
 - !private ["PSo17UICoordinateSpace", "setImageFromURl"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "value"]
 - !private ["PSo13UIDynamicItem", "reloadInputViews"]
 - !private ["PSo13UIDynamicItem", "setImageFromURl"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "value"]
+- !private ["PSo18UIFocusEnvironment", "Int"]
 - !private ["PSo18UIFocusEnvironment", "PlayerViewController"]
 - !private ["PSo18UIFocusEnvironment", "String"]
 - ["PSo18UIFocusEnvironment", "Timer"]
@@ -760,6 +839,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "reloadInputViews"]
 - !private ["PSo18UIFocusEnvironment", "setImageFromURl"]
 - !private ["PSo18UIFocusEnvironment", "setTimer"]
+- !private ["PSo18UIFocusEnvironment", "sliderVal"]
+- !private ["PSo18UIFocusEnvironment", "sliderValueLabel"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "timer"]
 - !private ["PSo18UIFocusEnvironment", "timerLabel"]
@@ -767,14 +848,17 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "updateAlbum"]
 - !private ["PSo18UIFocusEnvironment", "updateCounter"]
 - !private ["PSo18UIFocusEnvironment", "updateName"]
+- !private ["PSo18UIFocusEnvironment", "value"]
 - !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "reloadInputViews"]
 - !private ["PSo11UIFocusItem", "setImageFromURl"]
 - !private ["PSo11UIFocusItem", "text"]
+- !private ["PSo11UIFocusItem", "value"]
 - !private ["CSo11UIImageView", "reloadInputViews"]
 - !private ["CSo11UIImageView", "setImageFromURl"]
 - !private ["CSo7UILabel", "text"]
+- !private ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "PlayerViewController"]
 - ["CSo11UIResponder", "SPTAudioStreamingController"]
 - !private ["CSo11UIResponder", "SPTAudioStreamingDelegate"]
@@ -783,6 +867,7 @@ depends-member:
 - ["CSo11UIResponder", "Timer"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UISlider"]
 - ["CSo11UIResponder", "audioStreaming"]
 - ["CSo11UIResponder", "audioStreamingDidBecomeActivePlaybackDevice"]
 - ["CSo11UIResponder", "audioStreamingDidBecomeInactivePlaybackDevice"]
@@ -809,6 +894,9 @@ depends-member:
 - !private ["CSo11UIResponder", "setImageFromURl"]
 - !private ["CSo11UIResponder", "setTimer"]
 - ["CSo11UIResponder", "skipButtonPressed"]
+- !private ["CSo11UIResponder", "sliderVal"]
+- ["CSo11UIResponder", "sliderValueChanged"]
+- ["CSo11UIResponder", "sliderValueLabel"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "timer"]
 - ["CSo11UIResponder", "timerLabel"]
@@ -816,7 +904,9 @@ depends-member:
 - ["CSo11UIResponder", "updateAlbum"]
 - ["CSo11UIResponder", "updateCounter"]
 - ["CSo11UIResponder", "updateName"]
+- !private ["CSo11UIResponder", "value"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "Int"]
 - !private ["PSo30UIResponderStandardEditActions", "PlayerViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "String"]
 - ["PSo30UIResponderStandardEditActions", "Timer"]
@@ -843,6 +933,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "reloadInputViews"]
 - !private ["PSo30UIResponderStandardEditActions", "setImageFromURl"]
 - !private ["PSo30UIResponderStandardEditActions", "setTimer"]
+- !private ["PSo30UIResponderStandardEditActions", "sliderVal"]
+- !private ["PSo30UIResponderStandardEditActions", "sliderValueLabel"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "timer"]
 - !private ["PSo30UIResponderStandardEditActions", "timerLabel"]
@@ -850,8 +942,11 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "updateAlbum"]
 - !private ["PSo30UIResponderStandardEditActions", "updateCounter"]
 - !private ["PSo30UIResponderStandardEditActions", "updateName"]
+- !private ["PSo30UIResponderStandardEditActions", "value"]
 - !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo8UISlider", "value"]
+- !private ["PSo16UIStateRestoring", "Int"]
 - !private ["PSo16UIStateRestoring", "PlayerViewController"]
 - !private ["PSo16UIStateRestoring", "String"]
 - ["PSo16UIStateRestoring", "Timer"]
@@ -876,6 +971,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "player"]
 - !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "setTimer"]
+- !private ["PSo16UIStateRestoring", "sliderVal"]
+- !private ["PSo16UIStateRestoring", "sliderValueLabel"]
 - !private ["PSo16UIStateRestoring", "timer"]
 - !private ["PSo16UIStateRestoring", "timerLabel"]
 - !private ["PSo16UIStateRestoring", "timer_"]
@@ -884,6 +981,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "updateName"]
 - !private ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "Int"]
 - !private ["PSo18UITraitEnvironment", "PlayerViewController"]
 - !private ["PSo18UITraitEnvironment", "String"]
 - ["PSo18UITraitEnvironment", "Timer"]
@@ -910,6 +1008,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "reloadInputViews"]
 - !private ["PSo18UITraitEnvironment", "setImageFromURl"]
 - !private ["PSo18UITraitEnvironment", "setTimer"]
+- !private ["PSo18UITraitEnvironment", "sliderVal"]
+- !private ["PSo18UITraitEnvironment", "sliderValueLabel"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "timer"]
 - !private ["PSo18UITraitEnvironment", "timerLabel"]
@@ -917,11 +1017,14 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "updateAlbum"]
 - !private ["PSo18UITraitEnvironment", "updateCounter"]
 - !private ["PSo18UITraitEnvironment", "updateName"]
+- !private ["PSo18UITraitEnvironment", "value"]
 - !private ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "reloadInputViews"]
 - !private ["CSo6UIView", "setImageFromURl"]
 - !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "value"]
+- !private ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "PlayerViewController"]
 - ["CSo16UIViewController", "SPTAudioStreamingController"]
 - !private ["CSo16UIViewController", "SPTAudioStreamingDelegate"]
@@ -930,6 +1033,7 @@ depends-member:
 - ["CSo16UIViewController", "Timer"]
 - ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "UISlider"]
 - ["CSo16UIViewController", "audioStreaming"]
 - ["CSo16UIViewController", "audioStreamingDidBecomeActivePlaybackDevice"]
 - ["CSo16UIViewController", "audioStreamingDidBecomeInactivePlaybackDevice"]
@@ -954,6 +1058,9 @@ depends-member:
 - !private ["CSo16UIViewController", "print"]
 - !private ["CSo16UIViewController", "setTimer"]
 - ["CSo16UIViewController", "skipButtonPressed"]
+- !private ["CSo16UIViewController", "sliderVal"]
+- ["CSo16UIViewController", "sliderValueChanged"]
+- ["CSo16UIViewController", "sliderValueLabel"]
 - !private ["CSo16UIViewController", "timer"]
 - ["CSo16UIViewController", "timerLabel"]
 - ["CSo16UIViewController", "timer_"]
@@ -965,13 +1072,16 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reloadInputViews"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setImageFromURl"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "value"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "Int"]
 - !private ["Ps9_Hashable", "PlayerViewController"]
 - !private ["Ps9_Hashable", "String"]
 - ["Ps9_Hashable", "Timer"]
@@ -1014,6 +1124,8 @@ depends-member:
 - !private ["Ps9_Hashable", "setTimer"]
 - !private ["Ps9_Hashable", "skipNext"]
 - !private ["Ps9_Hashable", "skipPrevious"]
+- !private ["Ps9_Hashable", "sliderVal"]
+- !private ["Ps9_Hashable", "sliderValueLabel"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "timer"]
 - !private ["Ps9_Hashable", "timerLabel"]
@@ -1021,12 +1133,19 @@ depends-member:
 - !private ["Ps9_Hashable", "updateAlbum"]
 - !private ["Ps9_Hashable", "updateCounter"]
 - !private ["Ps9_Hashable", "updateName"]
+- !private ["Ps9_Hashable", "value"]
 - !private ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps8_Integer", "init"]
+- !private ["Ps18_IntegerArithmetic", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps14_SignedInteger", "init"]
+- !private ["Ps11_Strideable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
+- !private "Ps17BitwiseOperations"
 - !private "Sb"
 - !private "PSo15CALayerDelegate"
 - "Ps7CVarArg"
@@ -1038,9 +1157,13 @@ depends-nominal:
 - "Ps9Equatable"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
+- !private "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
 - "PSo8NSCoding"
@@ -1058,6 +1181,9 @@ depends-nominal:
 - !private "CSo19SPTPlaybackMetadata"
 - !private "CSo16SPTPlaybackState"
 - !private "CSo16SPTPlaybackTrack"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
 - !private "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
@@ -1067,6 +1193,7 @@ depends-nominal:
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
 - !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "CSo9UIControl"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
@@ -1075,6 +1202,7 @@ depends-nominal:
 - !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
+- !private "CSo8UISlider"
 - "PSo16UIStateRestoring"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
@@ -1082,13 +1210,19 @@ depends-nominal:
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
 - !private "Ps33_ExpressibleByStringInterpolation"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
 - !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -1156,4 +1290,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.apinotesc"
-interface-hash: "cea8e651d8886bf35105daac6a10b53c"
+interface-hash: "c46e6c3baee87c2274a54926eb1993fb"

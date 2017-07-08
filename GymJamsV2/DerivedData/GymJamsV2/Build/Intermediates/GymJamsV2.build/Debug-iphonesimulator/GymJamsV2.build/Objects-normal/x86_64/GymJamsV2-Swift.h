@@ -164,6 +164,7 @@ SWIFT_CLASS("_TtC9GymJamsV211AppDelegate")
 
 @class UIImageView;
 @class UILabel;
+@class UISlider;
 @class SPTAudioStreamingController;
 @class SPTPlaybackMetadata;
 @class NSTimer;
@@ -173,7 +174,9 @@ SWIFT_CLASS("_TtC9GymJamsV211AppDelegate")
 SWIFT_CLASS("_TtC9GymJamsV220PlayerViewController")
 @interface PlayerViewController : UIViewController <SPTAudioStreamingDelegate, SPTAudioStreamingPlaybackDelegate>
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified sliderValueLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified updateAlbum;
+- (IBAction)sliderValueChanged:(UISlider * _Nonnull)sender;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified updateName;
 - (void)audioStreaming:(SPTAudioStreamingController * _Null_unspecified)audioStreaming didChangeMetadata:(SPTPlaybackMetadata * _Null_unspecified)metadata;
 @property (nonatomic, strong) NSTimer * _Nonnull timer_;

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		pApVJnHw/iPuWMa9puJz1GvrE2w=
+		Rdov5QJkVRZOcNyqQNuDeo7ZzHI=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -22,31 +22,31 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		fDE/UO1r+Xi04FkXeQ74Xh2eHEA=
+		RMxNULR0bdxcMjSuFhqIUSikEs0=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		EZrzRL2zU3sh/XGX41dJyA7GfsY=
+		hZtFcka9OsnJYZqFjpXW2kBDdaQ=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Tgf-6e-9oM-view-bOr-bR-v0e.nib</key>
 		<data>
-		QtxqCqk/XIx762Utu87ZGweQJBI=
+		B5bs1NgaVGmsaO9sdBLyktMgvyc=
 		</data>
-		<key>Base.lproj/Main.storyboardc/UITableViewController-Tgf-6e-9oM.nib</key>
+		<key>Base.lproj/Main.storyboardc/UINavigationController-ppa-Uc-xWW.nib</key>
 		<data>
-		5khEADqbQ+w7Xu3MeonmrHKkCX0=
+		vrBjL+2Pn61tuPk7YXIPyCh8tWY=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		jzDE/kWp0VTA+cf8Doo9K+D6wRQ=
+		YRyQDXOlCKlL0EpLsGEaX6IBMcM=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-lIy-YK-1Vx.nib</key>
 		<data>
-		TXsM+BPj0uCuRkkfnS2jmILpCCY=
+		PSczW03bXIJxoxcEHCq6d0akDN0=
 		</data>
 		<key>Base.lproj/Main.storyboardc/lIy-YK-1Vx-view-TAD-Dx-aUh.nib</key>
 		<data>
-		hcSytyKuVkS1asg4+7Kz4q3w0+I=
+		mbsKu3Tku7DvMc+C9anGoajCHXM=
 		</data>
 		<key>Frameworks/SpotifyAudioPlayback.framework/Info.plist</key>
 		<data>
@@ -211,11 +211,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pApVJnHw/iPuWMa9puJz1GvrE2w=
+			Rdov5QJkVRZOcNyqQNuDeo7ZzHI=
 			</data>
 			<key>hash2</key>
 			<data>
-			RveKn8IOBYphQge5f+B4BU/i5bZfPhYtjwgSgzyf9NQ=
+			XtekLx1jvlJgoTSbtfv8ajQqKC2viQ5dvUznrX14vJk=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -255,77 +255,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fDE/UO1r+Xi04FkXeQ74Xh2eHEA=
+			RMxNULR0bdxcMjSuFhqIUSikEs0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Zc9gL64DCPMCbT7kLYDWogrEOx5l9OX9HS5vJ1LdxUA=
+			QdIsAphupxyJQ5oJ5j2j+m54QCs0tBIxSK9nYIj+l1I=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EZrzRL2zU3sh/XGX41dJyA7GfsY=
+			hZtFcka9OsnJYZqFjpXW2kBDdaQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			AIQ3uHcgiJj0l3mzp7sqRf/QD/pZlb5230j7E0SyIug=
+			LJC2N3y/416GHNiv74vmVrSTVUL8oMx6zvvYLohL+ME=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Tgf-6e-9oM-view-bOr-bR-v0e.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QtxqCqk/XIx762Utu87ZGweQJBI=
+			B5bs1NgaVGmsaO9sdBLyktMgvyc=
 			</data>
 			<key>hash2</key>
 			<data>
-			TpjpG5AHFuDsWQMKmOxk1MuMvZWDsKnfa8Hhes/85MQ=
+			1JOSCxWgSQD+UfiIKZWBreZohNvGj4XRenRwitIYhgg=
 			</data>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/UITableViewController-Tgf-6e-9oM.nib</key>
+		<key>Base.lproj/Main.storyboardc/UINavigationController-ppa-Uc-xWW.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5khEADqbQ+w7Xu3MeonmrHKkCX0=
+			vrBjL+2Pn61tuPk7YXIPyCh8tWY=
 			</data>
 			<key>hash2</key>
 			<data>
-			rTv3INRdgMbB7Ofy7OJLcpVUticFRBc8bQwS8BC+RLQ=
+			LYaC5xbkHOJxqIxe4gqSqtPkLeiSlxR3DG9TU/oyl2Y=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jzDE/kWp0VTA+cf8Doo9K+D6wRQ=
+			YRyQDXOlCKlL0EpLsGEaX6IBMcM=
 			</data>
 			<key>hash2</key>
 			<data>
-			e1dNdKoWNnc/iM3tWOVYAhDVLLFfuLYDGak6oK5o5Jg=
+			FZXf7FMGojOlyXE4IwRffV2Z8a03rn6FF6G11lmyGDs=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-lIy-YK-1Vx.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TXsM+BPj0uCuRkkfnS2jmILpCCY=
+			PSczW03bXIJxoxcEHCq6d0akDN0=
 			</data>
 			<key>hash2</key>
 			<data>
-			vQ824wEDuXJ6HxFvyqLCyg90ZtU/Icb+KghkZEj8PLs=
+			7e2NlE/4ru2+Smg9wKkR/OVX/ZZJVbQjDWUhjuXc1AM=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/lIy-YK-1Vx-view-TAD-Dx-aUh.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hcSytyKuVkS1asg4+7Kz4q3w0+I=
+			mbsKu3Tku7DvMc+C9anGoajCHXM=
 			</data>
 			<key>hash2</key>
 			<data>
-			CjniEdlD+8zncyc9JsBuaca38vpbOWFYd5gDu3nAnWA=
+			XDNNK17jHWU6TS0MOZoOi1/4lFDPJHLKw9aZMvfQaMc=
 			</data>
 		</dict>
 		<key>Frameworks/SpotifyAudioPlayback.framework/Info.plist</key>

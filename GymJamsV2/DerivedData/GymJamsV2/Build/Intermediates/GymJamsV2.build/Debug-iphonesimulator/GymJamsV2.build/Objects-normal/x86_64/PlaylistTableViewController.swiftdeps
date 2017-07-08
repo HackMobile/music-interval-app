@@ -4,6 +4,7 @@ provides-top-level:
 - "player"
 - "timer"
 - "counter"
+- "sliderVal"
 - "PlaylistTableViewController"
 provides-nominal:
 - "C9GymJamsV227PlaylistTableViewController"
@@ -68,6 +69,7 @@ depends-top-level:
 - !private "print"
 - !private "sesh"
 - "setTimer"
+- "sliderVal"
 - "timer"
 depends-member:
 - !private ["Ps9AnyObject", "DispatchQueue"]
@@ -137,6 +139,7 @@ depends-member:
 - !private ["Ps9AnyObject", "shared"]
 - !private ["Ps9AnyObject", "sharedInstance"]
 - !private ["Ps9AnyObject", "skipNext"]
+- !private ["Ps9AnyObject", "sliderVal"]
 - !private ["Ps9AnyObject", "smallestImage"]
 - !private ["Ps9AnyObject", "start"]
 - !private ["Ps9AnyObject", "tableView"]
@@ -235,6 +238,7 @@ depends-member:
 - !private ["Ps7CVarArg", "shared"]
 - !private ["Ps7CVarArg", "sharedInstance"]
 - !private ["Ps7CVarArg", "skipNext"]
+- !private ["Ps7CVarArg", "sliderVal"]
 - !private ["Ps7CVarArg", "smallestImage"]
 - !private ["Ps7CVarArg", "start"]
 - !private ["Ps7CVarArg", "subscript"]
@@ -323,6 +327,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
 - !private ["Ps28CustomDebugStringConvertible", "sharedInstance"]
 - !private ["Ps28CustomDebugStringConvertible", "skipNext"]
+- !private ["Ps28CustomDebugStringConvertible", "sliderVal"]
 - !private ["Ps28CustomDebugStringConvertible", "smallestImage"]
 - !private ["Ps28CustomDebugStringConvertible", "start"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
@@ -414,6 +419,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "shared"]
 - !private ["Ps23CustomStringConvertible", "sharedInstance"]
 - !private ["Ps23CustomStringConvertible", "skipNext"]
+- !private ["Ps23CustomStringConvertible", "sliderVal"]
 - !private ["Ps23CustomStringConvertible", "smallestImage"]
 - !private ["Ps23CustomStringConvertible", "start"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
@@ -498,6 +504,7 @@ depends-member:
 - !private ["Ps9Equatable", "shared"]
 - !private ["Ps9Equatable", "sharedInstance"]
 - !private ["Ps9Equatable", "skipNext"]
+- !private ["Ps9Equatable", "sliderVal"]
 - !private ["Ps9Equatable", "smallestImage"]
 - !private ["Ps9Equatable", "start"]
 - !private ["Ps9Equatable", "tableView"]
@@ -586,6 +593,7 @@ depends-member:
 - !private ["Ps8Hashable", "shared"]
 - !private ["Ps8Hashable", "sharedInstance"]
 - !private ["Ps8Hashable", "skipNext"]
+- !private ["Ps8Hashable", "sliderVal"]
 - !private ["Ps8Hashable", "smallestImage"]
 - !private ["Ps8Hashable", "start"]
 - !private ["Ps8Hashable", "tableView"]
@@ -654,6 +662,7 @@ depends-member:
 - !private ["PSo8NSCoding", "sesh"]
 - !private ["PSo8NSCoding", "setImageFromURl"]
 - !private ["PSo8NSCoding", "setTimer"]
+- !private ["PSo8NSCoding", "sliderVal"]
 - !private ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "timer"]
@@ -700,6 +709,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "returnImage"]
 - !private ["PSo26NSExtensionRequestHandling", "sesh"]
 - !private ["PSo26NSExtensionRequestHandling", "setTimer"]
+- !private ["PSo26NSExtensionRequestHandling", "sliderVal"]
 - !private ["PSo26NSExtensionRequestHandling", "tableView"]
 - !private ["PSo26NSExtensionRequestHandling", "timer"]
 - !private ["PSo26NSExtensionRequestHandling", "updateCounter"]
@@ -787,6 +797,7 @@ depends-member:
 - !private ["CSo8NSObject", "shared"]
 - !private ["CSo8NSObject", "sharedInstance"]
 - !private ["CSo8NSObject", "skipNext"]
+- !private ["CSo8NSObject", "sliderVal"]
 - !private ["CSo8NSObject", "smallestImage"]
 - !private ["CSo8NSObject", "start"]
 - ["CSo8NSObject", "tableView"]
@@ -862,6 +873,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "shared"]
 - !private ["PSo16NSObjectProtocol", "sharedInstance"]
 - !private ["PSo16NSObjectProtocol", "skipNext"]
+- !private ["PSo16NSObjectProtocol", "sliderVal"]
 - !private ["PSo16NSObjectProtocol", "smallestImage"]
 - !private ["PSo16NSObjectProtocol", "start"]
 - !private ["PSo16NSObjectProtocol", "tableView"]
@@ -932,6 +944,7 @@ depends-member:
 - ["C9GymJamsV227PlaylistTableViewController", "returnImageUsingCacheWithURLString"]
 - !private ["C9GymJamsV227PlaylistTableViewController", "sesh"]
 - !private ["C9GymJamsV227PlaylistTableViewController", "setTimer"]
+- !private ["C9GymJamsV227PlaylistTableViewController", "sliderVal"]
 - ["C9GymJamsV227PlaylistTableViewController", "tableView"]
 - !private ["C9GymJamsV227PlaylistTableViewController", "timer"]
 - ["C9GymJamsV227PlaylistTableViewController", "updateCounter"]
@@ -991,6 +1004,7 @@ depends-member:
 - !private ["PSo25SPTAudioStreamingDelegate", "returnImage"]
 - !private ["PSo25SPTAudioStreamingDelegate", "sesh"]
 - !private ["PSo25SPTAudioStreamingDelegate", "setTimer"]
+- !private ["PSo25SPTAudioStreamingDelegate", "sliderVal"]
 - !private ["PSo25SPTAudioStreamingDelegate", "tableView"]
 - !private ["PSo25SPTAudioStreamingDelegate", "timer"]
 - !private ["PSo25SPTAudioStreamingDelegate", "updateCounter"]
@@ -1031,6 +1045,7 @@ depends-member:
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "returnImage"]
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "sesh"]
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "setTimer"]
+- !private ["PSo33SPTAudioStreamingPlaybackDelegate", "sliderVal"]
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "tableView"]
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "timer"]
 - !private ["PSo33SPTAudioStreamingPlaybackDelegate", "updateCounter"]
@@ -1137,6 +1152,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "sesh"]
 - !private ["PSo21UIAppearanceContainer", "setImageFromURl"]
 - !private ["PSo21UIAppearanceContainer", "setTimer"]
+- !private ["PSo21UIAppearanceContainer", "sliderVal"]
 - !private ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "timer"]
@@ -1180,6 +1196,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "returnImage"]
 - !private ["PSo18UIContentContainer", "sesh"]
 - !private ["PSo18UIContentContainer", "setTimer"]
+- !private ["PSo18UIContentContainer", "sliderVal"]
 - !private ["PSo18UIContentContainer", "tableView"]
 - !private ["PSo18UIContentContainer", "timer"]
 - !private ["PSo18UIContentContainer", "updateCounter"]
@@ -1251,6 +1268,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "sesh"]
 - !private ["PSo18UIFocusEnvironment", "setImageFromURl"]
 - !private ["PSo18UIFocusEnvironment", "setTimer"]
+- !private ["PSo18UIFocusEnvironment", "sliderVal"]
 - !private ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "timer"]
@@ -1338,6 +1356,7 @@ depends-member:
 - !private ["CSo11UIResponder", "sesh"]
 - ["CSo11UIResponder", "setImageFromURl"]
 - !private ["CSo11UIResponder", "setTimer"]
+- !private ["CSo11UIResponder", "sliderVal"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "timer"]
@@ -1388,6 +1407,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "sesh"]
 - !private ["PSo30UIResponderStandardEditActions", "setImageFromURl"]
 - !private ["PSo30UIResponderStandardEditActions", "setTimer"]
+- !private ["PSo30UIResponderStandardEditActions", "sliderVal"]
 - !private ["PSo30UIResponderStandardEditActions", "tableView"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "timer"]
@@ -1433,6 +1453,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "returnImage"]
 - !private ["PSo20UIScrollViewDelegate", "sesh"]
 - !private ["PSo20UIScrollViewDelegate", "setTimer"]
+- !private ["PSo20UIScrollViewDelegate", "sliderVal"]
 - !private ["PSo20UIScrollViewDelegate", "tableView"]
 - !private ["PSo20UIScrollViewDelegate", "timer"]
 - !private ["PSo20UIScrollViewDelegate", "updateCounter"]
@@ -1475,6 +1496,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "returnImage"]
 - !private ["PSo16UIStateRestoring", "sesh"]
 - !private ["PSo16UIStateRestoring", "setTimer"]
+- !private ["PSo16UIStateRestoring", "sliderVal"]
 - !private ["PSo16UIStateRestoring", "tableView"]
 - !private ["PSo16UIStateRestoring", "timer"]
 - !private ["PSo16UIStateRestoring", "updateCounter"]
@@ -1535,6 +1557,7 @@ depends-member:
 - ["CSo21UITableViewController", "returnImageUsingCacheWithURLString"]
 - !private ["CSo21UITableViewController", "sesh"]
 - !private ["CSo21UITableViewController", "setTimer"]
+- !private ["CSo21UITableViewController", "sliderVal"]
 - ["CSo21UITableViewController", "tableView"]
 - !private ["CSo21UITableViewController", "timer"]
 - ["CSo21UITableViewController", "updateCounter"]
@@ -1577,6 +1600,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "returnImage"]
 - !private ["PSo21UITableViewDataSource", "sesh"]
 - !private ["PSo21UITableViewDataSource", "setTimer"]
+- !private ["PSo21UITableViewDataSource", "sliderVal"]
 - !private ["PSo21UITableViewDataSource", "tableView"]
 - !private ["PSo21UITableViewDataSource", "timer"]
 - !private ["PSo21UITableViewDataSource", "updateCounter"]
@@ -1619,6 +1643,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "returnImage"]
 - !private ["PSo19UITableViewDelegate", "sesh"]
 - !private ["PSo19UITableViewDelegate", "setTimer"]
+- !private ["PSo19UITableViewDelegate", "sliderVal"]
 - !private ["PSo19UITableViewDelegate", "tableView"]
 - !private ["PSo19UITableViewDelegate", "timer"]
 - !private ["PSo19UITableViewDelegate", "updateCounter"]
@@ -1669,6 +1694,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "sesh"]
 - !private ["PSo18UITraitEnvironment", "setImageFromURl"]
 - !private ["PSo18UITraitEnvironment", "setTimer"]
+- !private ["PSo18UITraitEnvironment", "sliderVal"]
 - !private ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "timer"]
@@ -1739,6 +1765,7 @@ depends-member:
 - ["CSo16UIViewController", "returnImageUsingCacheWithURLString"]
 - !private ["CSo16UIViewController", "sesh"]
 - !private ["CSo16UIViewController", "setTimer"]
+- !private ["CSo16UIViewController", "sliderVal"]
 - ["CSo16UIViewController", "tableView"]
 - !private ["CSo16UIViewController", "timer"]
 - ["CSo16UIViewController", "updateCounter"]
@@ -1850,6 +1877,7 @@ depends-member:
 - !private ["Ps9_Hashable", "shared"]
 - !private ["Ps9_Hashable", "sharedInstance"]
 - !private ["Ps9_Hashable", "skipNext"]
+- !private ["Ps9_Hashable", "sliderVal"]
 - !private ["Ps9_Hashable", "smallestImage"]
 - !private ["Ps9_Hashable", "start"]
 - !private ["Ps9_Hashable", "tableView"]
@@ -2069,4 +2097,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.apinotesc"
-interface-hash: "7e7cdb030be9480c632cdb0e475474a3"
+interface-hash: "2fa4de80308ccd804faac9cee207d8fc"
