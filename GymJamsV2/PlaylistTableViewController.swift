@@ -20,6 +20,9 @@ extension UIImageView{
     }
 }
 
+var player: SPTAudioStreamingController? = nil
+
+
 class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlaybackDelegate, SPTAudioStreamingDelegate {
 
     // Mark: properties
@@ -27,8 +30,6 @@ class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlayb
     var playlists = [String]()
     var playlistUris = [URL]()
     var images = [String]()
-    
-    var player: SPTAudioStreamingController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,8 +56,9 @@ class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlayb
             }
             
         })
-        
-        initializePlayer(authSession: sesh!)
+        if (player == nil) {
+            initializePlayer(authSession: sesh!)
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -105,7 +107,7 @@ class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlayb
         print(playlistUris[indexPath.row])
         let uri: String = playlistUris[indexPath.row].absoluteString
         print("uri: " + uri)
-        player?.playSpotifyURI(uri, startingWith: 0, startingWithPosition: 2) { error in
+        player?.playSpotifyURI(uri, startingWith: 0, startingWithPosition: 30) { error in
             print("inside audio callback")
             if error != nil {
                 print("*** failed to play: \(String(describing: error))")
@@ -116,12 +118,14 @@ class PlaylistTableViewController: UITableViewController, SPTAudioStreamingPlayb
     }
     
     func initializePlayer(authSession:SPTSession){
-        if self.player == nil {
-            self.player = SPTAudioStreamingController.sharedInstance()
-            self.player!.playbackDelegate = self
-            self.player!.delegate = self as SPTAudioStreamingDelegate
-            try! player!.start(withClientId: auth.clientID)
-            self.player!.login(withAccessToken: authSession.accessToken)
+        if player == nil {
+            player = SPTAudioStreamingController.sharedInstance()
+            player!.playbackDelegate = self
+            player!.delegate = self as SPTAudioStreamingDelegate
+            if player!.initialized == false {
+                try! player!.start(withClientId: auth.clientID)
+            }
+            player!.login(withAccessToken: authSession.accessToken)
         }
     }
     

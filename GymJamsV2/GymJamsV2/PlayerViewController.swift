@@ -10,11 +10,57 @@ import UIKit
 
 class PlayerViewController: UIViewController {
     
+    @IBAction func playButtonPressed(_ sender: Any) {
+        
+        if (player?.playbackState.isPlaying)! {
+            player?.setIsPlaying(false, callback: {(error) in
+                if error != nil {
+                    print("Error: couldn't skip");
+                } else {
+                    print ("Skipping Previous")
+                }
+            });
+        } else {
+            player?.setIsPlaying(true, callback: {(error) in
+                if error != nil {
+                    print("Error: couldn't skip");
+                } else {
+                    print ("Skipping Previous")
+                }
+            });
+        }
+    }
+    
+    @IBAction func prevButtonPressed(_ sender: Any) {
+        player?.skipPrevious({(error) in
+            if error != nil {
+                print("Error: couldn't skip");
+            } else {
+                print ("Skipping Previous")
+            }
+        });
+    }
+    
+    @IBAction func skipButtonPressed(_ sender: Any) {
+        player?.skipNext({(error) in
+            if error != nil {
+                print("Error: couldn't skip");
+            } else {
+                print ("Skipping next")
+            }
+        });
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //player = SPTAudioStreamingController(clientId: kClientId)
-        
+        player?.setShuffle(true, callback: {(error) in
+            if error != nil {
+                print("Error: couldn't shuffle");
+            } else {
+                print ("Shuffling")
+            }
+        });
         // Do any additional setup after loading the view.
     }
 
@@ -22,7 +68,6 @@ class PlayerViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation

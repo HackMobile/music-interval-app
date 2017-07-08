@@ -1,5 +1,6 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "player"
 - "PlaylistTableViewController"
 provides-nominal:
 - "C9GymJamsV227PlaylistTableViewController"
@@ -9,7 +10,6 @@ provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
 - "initializePlayer"
 - "numberOfSections"
-- "player"
 - "playlistUris"
 - "playlists"
 - "tableView"
@@ -19,6 +19,7 @@ depends-top-level:
 - !private "+"
 - !private "=="
 - "AssignmentPrecedence"
+- !private "BooleanLiteralType"
 - "CastingPrecedence"
 - "IndexPath"
 - "Int"
@@ -40,6 +41,7 @@ depends-top-level:
 - !private "Void"
 - !private "auth"
 - !private "fatalError"
+- "player"
 - !private "print"
 - !private "sesh"
 depends-member:
@@ -71,6 +73,7 @@ depends-member:
 - !private ["Ps9AnyObject", "fatalError"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "initializePlayer"]
+- !private ["Ps9AnyObject", "initialized"]
 - !private ["Ps9AnyObject", "items"]
 - !private ["Ps9AnyObject", "login"]
 - !private ["Ps9AnyObject", "name"]
@@ -134,6 +137,7 @@ depends-member:
 - !private ["Ps7CVarArg", "fatalError"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "initializePlayer"]
+- !private ["Ps7CVarArg", "initialized"]
 - !private ["Ps7CVarArg", "items"]
 - !private ["Ps7CVarArg", "login"]
 - !private ["Ps7CVarArg", "name"]
@@ -192,6 +196,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "fatalError"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "initializePlayer"]
+- !private ["Ps28CustomDebugStringConvertible", "initialized"]
 - !private ["Ps28CustomDebugStringConvertible", "items"]
 - !private ["Ps28CustomDebugStringConvertible", "login"]
 - !private ["Ps28CustomDebugStringConvertible", "name"]
@@ -254,6 +259,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "fatalError"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "initializePlayer"]
+- !private ["Ps23CustomStringConvertible", "initialized"]
 - !private ["Ps23CustomStringConvertible", "items"]
 - !private ["Ps23CustomStringConvertible", "login"]
 - !private ["Ps23CustomStringConvertible", "name"]
@@ -305,6 +311,7 @@ depends-member:
 - !private ["Ps9Equatable", "fatalError"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "initializePlayer"]
+- !private ["Ps9Equatable", "initialized"]
 - !private ["Ps9Equatable", "items"]
 - !private ["Ps9Equatable", "login"]
 - !private ["Ps9Equatable", "name"]
@@ -364,6 +371,7 @@ depends-member:
 - !private ["Ps8Hashable", "fatalError"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "initializePlayer"]
+- !private ["Ps8Hashable", "initialized"]
 - !private ["Ps8Hashable", "items"]
 - !private ["Ps8Hashable", "login"]
 - !private ["Ps8Hashable", "name"]
@@ -466,7 +474,7 @@ depends-member:
 - ["CSo8NSObject", "IndexPath"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "PlaylistTableViewCell"]
-- ["CSo8NSObject", "SPTAudioStreamingController"]
+- !private ["CSo8NSObject", "SPTAudioStreamingController"]
 - !private ["CSo8NSObject", "SPTAudioStreamingDelegate"]
 - !private ["CSo8NSObject", "SPTListPage"]
 - !private ["CSo8NSObject", "SPTPartialPlaylist"]
@@ -501,6 +509,7 @@ depends-member:
 - !private ["CSo8NSObject", "fatalError"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "initializePlayer"]
+- !private ["CSo8NSObject", "initialized"]
 - !private ["CSo8NSObject", "items"]
 - !private ["CSo8NSObject", "login"]
 - !private ["CSo8NSObject", "name"]
@@ -508,7 +517,7 @@ depends-member:
 - ["CSo8NSObject", "numberOfSections"]
 - !private ["CSo8NSObject", "playSpotifyURI"]
 - !private ["CSo8NSObject", "playbackDelegate"]
-- ["CSo8NSObject", "player"]
+- !private ["CSo8NSObject", "player"]
 - ["CSo8NSObject", "playlistUris"]
 - ["CSo8NSObject", "playlists"]
 - !private ["CSo8NSObject", "print"]
@@ -548,6 +557,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "fatalError"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "initializePlayer"]
+- !private ["PSo16NSObjectProtocol", "initialized"]
 - !private ["PSo16NSObjectProtocol", "items"]
 - !private ["PSo16NSObjectProtocol", "login"]
 - !private ["PSo16NSObjectProtocol", "name"]
@@ -575,7 +585,7 @@ depends-member:
 - ["C9GymJamsV227PlaylistTableViewController", "IndexPath"]
 - ["C9GymJamsV227PlaylistTableViewController", "Int"]
 - !private ["C9GymJamsV227PlaylistTableViewController", "PlaylistTableViewCell"]
-- ["C9GymJamsV227PlaylistTableViewController", "SPTAudioStreamingController"]
+- !private ["C9GymJamsV227PlaylistTableViewController", "SPTAudioStreamingController"]
 - !private ["C9GymJamsV227PlaylistTableViewController", "SPTAudioStreamingDelegate"]
 - !private ["C9GymJamsV227PlaylistTableViewController", "SPTListPage"]
 - !private ["C9GymJamsV227PlaylistTableViewController", "SPTPartialPlaylist"]
@@ -607,7 +617,7 @@ depends-member:
 - ["C9GymJamsV227PlaylistTableViewController", "init"]
 - ["C9GymJamsV227PlaylistTableViewController", "initializePlayer"]
 - ["C9GymJamsV227PlaylistTableViewController", "numberOfSections"]
-- ["C9GymJamsV227PlaylistTableViewController", "player"]
+- !private ["C9GymJamsV227PlaylistTableViewController", "player"]
 - ["C9GymJamsV227PlaylistTableViewController", "playlistUris"]
 - ["C9GymJamsV227PlaylistTableViewController", "playlists"]
 - !private ["C9GymJamsV227PlaylistTableViewController", "print"]
@@ -626,6 +636,7 @@ depends-member:
 - !private ["P10Foundation20ReferenceConvertible", "absoluteString"]
 - !private ["P10Foundation20ReferenceConvertible", "row"]
 - !private ["CSo27SPTAudioStreamingController", "delegate"]
+- !private ["CSo27SPTAudioStreamingController", "initialized"]
 - !private ["CSo27SPTAudioStreamingController", "login"]
 - !private ["CSo27SPTAudioStreamingController", "playSpotifyURI"]
 - !private ["CSo27SPTAudioStreamingController", "playbackDelegate"]
@@ -841,7 +852,7 @@ depends-member:
 - ["CSo11UIResponder", "IndexPath"]
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "PlaylistTableViewCell"]
-- ["CSo11UIResponder", "SPTAudioStreamingController"]
+- !private ["CSo11UIResponder", "SPTAudioStreamingController"]
 - !private ["CSo11UIResponder", "SPTAudioStreamingDelegate"]
 - !private ["CSo11UIResponder", "SPTListPage"]
 - !private ["CSo11UIResponder", "SPTPartialPlaylist"]
@@ -874,7 +885,7 @@ depends-member:
 - ["CSo11UIResponder", "initializePlayer"]
 - !private ["CSo11UIResponder", "nameLabel"]
 - ["CSo11UIResponder", "numberOfSections"]
-- ["CSo11UIResponder", "player"]
+- !private ["CSo11UIResponder", "player"]
 - ["CSo11UIResponder", "playlistUris"]
 - ["CSo11UIResponder", "playlists"]
 - !private ["CSo11UIResponder", "print"]
@@ -988,7 +999,7 @@ depends-member:
 - ["CSo21UITableViewController", "IndexPath"]
 - ["CSo21UITableViewController", "Int"]
 - !private ["CSo21UITableViewController", "PlaylistTableViewCell"]
-- ["CSo21UITableViewController", "SPTAudioStreamingController"]
+- !private ["CSo21UITableViewController", "SPTAudioStreamingController"]
 - !private ["CSo21UITableViewController", "SPTAudioStreamingDelegate"]
 - !private ["CSo21UITableViewController", "SPTListPage"]
 - !private ["CSo21UITableViewController", "SPTPartialPlaylist"]
@@ -1019,7 +1030,7 @@ depends-member:
 - ["CSo21UITableViewController", "init"]
 - ["CSo21UITableViewController", "initializePlayer"]
 - ["CSo21UITableViewController", "numberOfSections"]
-- ["CSo21UITableViewController", "player"]
+- !private ["CSo21UITableViewController", "player"]
 - ["CSo21UITableViewController", "playlistUris"]
 - ["CSo21UITableViewController", "playlists"]
 - !private ["CSo21UITableViewController", "print"]
@@ -1131,7 +1142,7 @@ depends-member:
 - ["CSo16UIViewController", "IndexPath"]
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "PlaylistTableViewCell"]
-- ["CSo16UIViewController", "SPTAudioStreamingController"]
+- !private ["CSo16UIViewController", "SPTAudioStreamingController"]
 - !private ["CSo16UIViewController", "SPTAudioStreamingDelegate"]
 - !private ["CSo16UIViewController", "SPTListPage"]
 - !private ["CSo16UIViewController", "SPTPartialPlaylist"]
@@ -1162,7 +1173,7 @@ depends-member:
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "initializePlayer"]
 - ["CSo16UIViewController", "numberOfSections"]
-- ["CSo16UIViewController", "player"]
+- !private ["CSo16UIViewController", "player"]
 - ["CSo16UIViewController", "playlistUris"]
 - ["CSo16UIViewController", "playlists"]
 - !private ["CSo16UIViewController", "print"]
@@ -1225,6 +1236,7 @@ depends-member:
 - !private ["Ps9_Hashable", "fatalError"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "initializePlayer"]
+- !private ["Ps9_Hashable", "initialized"]
 - !private ["Ps9_Hashable", "items"]
 - !private ["Ps9_Hashable", "login"]
 - !private ["Ps9_Hashable", "name"]
@@ -1441,4 +1453,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.apinotesc"
-interface-hash: "1d2251fc0244e81a19683895e44dad38"
+interface-hash: "5ac171f70d85e786b1deb13243359afd"
