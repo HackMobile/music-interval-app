@@ -1,0 +1,801 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PlaylistTableViewController"
+provides-nominal:
+- "C9GymJamsV227PlaylistTableViewController"
+provides-member:
+- ["C9GymJamsV227PlaylistTableViewController", ""]
+provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "numberOfSections"
+- "playlists"
+- "tableView"
+- "viewDidLoad"
+depends-top-level:
+- !private "!="
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "IndexPath"
+- "Int"
+- !private "PlaylistTableViewCell"
+- "PlaylistTableViewController"
+- !private "SPTListPage"
+- !private "SPTPartialPlaylist"
+- !private "SPTPlaylistList"
+- "String"
+- !private "StringLiteralType"
+- "UITableView"
+- "UITableViewCell"
+- "UITableViewController"
+- !private "Void"
+- !private "fatalError"
+- !private "print"
+- !private "sesh"
+depends-member:
+- !private ["Ps9AnyObject", "SPTPlaylistList"]
+- ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "accessToken"]
+- !private ["Ps9AnyObject", "canonicalUsername"]
+- !private ["Ps9AnyObject", "dequeueReusableCell"]
+- !private ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "fatalError"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "items"]
+- !private ["Ps9AnyObject", "name"]
+- !private ["Ps9AnyObject", "nameLabel"]
+- !private ["Ps9AnyObject", "playlists"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "reloadData"]
+- !private ["Ps9AnyObject", "sesh"]
+- !private ["Ps9AnyObject", "tableView"]
+- !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "uri"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- ["Sa", "init"]
+- !private ["Sa", "subscript"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "count"]
+- ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps23BidirectionalCollection", "row"]
+- !private ["Ps23BidirectionalCollection", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
+- !private ["PSo15CALayerDelegate", "nameLabel"]
+- !private ["PSo15CALayerDelegate", "reloadData"]
+- !private ["PSo15CALayerDelegate", "text"]
+- !private ["Ps7CVarArg", "SPTPlaylistList"]
+- ["Ps7CVarArg", "String"]
+- !private ["Ps7CVarArg", "accessToken"]
+- !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "canonicalUsername"]
+- !private ["Ps7CVarArg", "count"]
+- !private ["Ps7CVarArg", "dequeueReusableCell"]
+- !private ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "fatalError"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "items"]
+- !private ["Ps7CVarArg", "name"]
+- !private ["Ps7CVarArg", "nameLabel"]
+- !private ["Ps7CVarArg", "playlists"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "reloadData"]
+- !private ["Ps7CVarArg", "sesh"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps7CVarArg", "tableView"]
+- !private ["Ps7CVarArg", "text"]
+- !private ["Ps7CVarArg", "uri"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "count"]
+- ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "row"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "row"]
+- !private ["Ps28CustomDebugStringConvertible", "SPTPlaylistList"]
+- ["Ps28CustomDebugStringConvertible", "String"]
+- !private ["Ps28CustomDebugStringConvertible", "accessToken"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "canonicalUsername"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
+- !private ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "fatalError"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "items"]
+- !private ["Ps28CustomDebugStringConvertible", "name"]
+- !private ["Ps28CustomDebugStringConvertible", "nameLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "playlists"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "reloadData"]
+- !private ["Ps28CustomDebugStringConvertible", "row"]
+- !private ["Ps28CustomDebugStringConvertible", "sesh"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "tableView"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "uri"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "count"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "row"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "SPTPlaylistList"]
+- ["Ps23CustomStringConvertible", "String"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "accessToken"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "canonicalUsername"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
+- !private ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "fatalError"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "items"]
+- !private ["Ps23CustomStringConvertible", "name"]
+- !private ["Ps23CustomStringConvertible", "nameLabel"]
+- !private ["Ps23CustomStringConvertible", "playlists"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "reloadData"]
+- !private ["Ps23CustomStringConvertible", "row"]
+- !private ["Ps23CustomStringConvertible", "sesh"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "tableView"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "uri"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "SPTPlaylistList"]
+- ["Ps9Equatable", "String"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "accessToken"]
+- !private ["Ps9Equatable", "canonicalUsername"]
+- !private ["Ps9Equatable", "dequeueReusableCell"]
+- !private ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "fatalError"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "items"]
+- !private ["Ps9Equatable", "name"]
+- !private ["Ps9Equatable", "nameLabel"]
+- !private ["Ps9Equatable", "playlists"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "reloadData"]
+- !private ["Ps9Equatable", "row"]
+- !private ["Ps9Equatable", "sesh"]
+- !private ["Ps9Equatable", "tableView"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "uri"]
+- !private ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "count"]
+- ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps25ExpressibleByArrayLiteral", "row"]
+- !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "SPTPlaylistList"]
+- ["Ps8Hashable", "String"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "accessToken"]
+- !private ["Ps8Hashable", "canonicalUsername"]
+- !private ["Ps8Hashable", "dequeueReusableCell"]
+- !private ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "fatalError"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "items"]
+- !private ["Ps8Hashable", "name"]
+- !private ["Ps8Hashable", "nameLabel"]
+- !private ["Ps8Hashable", "playlists"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "reloadData"]
+- !private ["Ps8Hashable", "row"]
+- !private ["Ps8Hashable", "sesh"]
+- !private ["Ps8Hashable", "tableView"]
+- !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "uri"]
+- !private ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["V10Foundation9IndexPath", "row"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "count"]
+- ["Ps17MutableCollection", "init"]
+- !private ["Ps17MutableCollection", "row"]
+- !private ["Ps17MutableCollection", "subscript"]
+- !private ["PSo8NSCoding", "SPTPlaylistList"]
+- ["PSo8NSCoding", "String"]
+- !private ["PSo8NSCoding", "accessToken"]
+- !private ["PSo8NSCoding", "canonicalUsername"]
+- !private ["PSo8NSCoding", "dequeueReusableCell"]
+- !private ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "fatalError"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "nameLabel"]
+- !private ["PSo8NSCoding", "playlists"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "reloadData"]
+- !private ["PSo8NSCoding", "sesh"]
+- !private ["PSo8NSCoding", "tableView"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "SPTPlaylistList"]
+- ["PSo26NSExtensionRequestHandling", "String"]
+- !private ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "fatalError"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "playlists"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- !private ["PSo26NSExtensionRequestHandling", "sesh"]
+- !private ["PSo26NSExtensionRequestHandling", "tableView"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "IndexPath"]
+- ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "PlaylistTableViewCell"]
+- !private ["CSo8NSObject", "SPTListPage"]
+- !private ["CSo8NSObject", "SPTPartialPlaylist"]
+- !private ["CSo8NSObject", "SPTPlaylistList"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UITableView"]
+- ["CSo8NSObject", "UITableViewCell"]
+- !private ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "accessToken"]
+- !private ["CSo8NSObject", "canonicalUsername"]
+- !private ["CSo8NSObject", "dequeueReusableCell"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "fatalError"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "items"]
+- !private ["CSo8NSObject", "name"]
+- !private ["CSo8NSObject", "nameLabel"]
+- ["CSo8NSObject", "numberOfSections"]
+- ["CSo8NSObject", "playlists"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "reloadData"]
+- !private ["CSo8NSObject", "sesh"]
+- ["CSo8NSObject", "tableView"]
+- !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "uri"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "SPTPlaylistList"]
+- ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "accessToken"]
+- !private ["PSo16NSObjectProtocol", "canonicalUsername"]
+- !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
+- !private ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "fatalError"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "items"]
+- !private ["PSo16NSObjectProtocol", "name"]
+- !private ["PSo16NSObjectProtocol", "nameLabel"]
+- !private ["PSo16NSObjectProtocol", "playlists"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "reloadData"]
+- !private ["PSo16NSObjectProtocol", "sesh"]
+- !private ["PSo16NSObjectProtocol", "tableView"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "uri"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "accessToken"]
+- !private ["PSo14NSSecureCoding", "canonicalUsername"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["C9GymJamsV221PlaylistTableViewCell", "nameLabel"]
+- ["C9GymJamsV227PlaylistTableViewController", "IndexPath"]
+- ["C9GymJamsV227PlaylistTableViewController", "Int"]
+- !private ["C9GymJamsV227PlaylistTableViewController", "PlaylistTableViewCell"]
+- !private ["C9GymJamsV227PlaylistTableViewController", "SPTListPage"]
+- !private ["C9GymJamsV227PlaylistTableViewController", "SPTPartialPlaylist"]
+- !private ["C9GymJamsV227PlaylistTableViewController", "SPTPlaylistList"]
+- ["C9GymJamsV227PlaylistTableViewController", "String"]
+- ["C9GymJamsV227PlaylistTableViewController", "UITableView"]
+- ["C9GymJamsV227PlaylistTableViewController", "UITableViewCell"]
+- !private ["C9GymJamsV227PlaylistTableViewController", "Void"]
+- ["C9GymJamsV227PlaylistTableViewController", "deinit"]
+- ["C9GymJamsV227PlaylistTableViewController", "didReceiveMemoryWarning"]
+- !private ["C9GymJamsV227PlaylistTableViewController", "fatalError"]
+- ["C9GymJamsV227PlaylistTableViewController", "init"]
+- ["C9GymJamsV227PlaylistTableViewController", "numberOfSections"]
+- ["C9GymJamsV227PlaylistTableViewController", "playlists"]
+- !private ["C9GymJamsV227PlaylistTableViewController", "print"]
+- !private ["C9GymJamsV227PlaylistTableViewController", "sesh"]
+- ["C9GymJamsV227PlaylistTableViewController", "tableView"]
+- ["C9GymJamsV227PlaylistTableViewController", "viewDidLoad"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "count"]
+- ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps22RandomAccessCollection", "row"]
+- !private ["Ps22RandomAccessCollection", "subscript"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "count"]
+- ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps26RangeReplaceableCollection", "subscript"]
+- !private ["P10Foundation20ReferenceConvertible", "row"]
+- !private ["PSo13SPTJSONObject", "name"]
+- !private ["PSo13SPTJSONObject", "uri"]
+- !private ["CSo17SPTJSONObjectBase", "name"]
+- !private ["CSo17SPTJSONObjectBase", "uri"]
+- !private ["CSo11SPTListPage", "items"]
+- !private ["CSo11SPTListPage", "playlists"]
+- !private ["PSo16SPTPartialObject", "name"]
+- !private ["PSo16SPTPartialObject", "uri"]
+- !private ["CSo18SPTPartialPlaylist", "name"]
+- !private ["CSo18SPTPartialPlaylist", "uri"]
+- !private ["CSo15SPTPlaylistList", "playlists"]
+- !private ["CSo10SPTSession", "accessToken"]
+- !private ["CSo10SPTSession", "canonicalUsername"]
+- !private ["PSo16SPTTrackProvider", "items"]
+- !private ["PSo16SPTTrackProvider", "name"]
+- !private ["PSo16SPTTrackProvider", "playlists"]
+- !private ["PSo16SPTTrackProvider", "uri"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "count"]
+- ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "row"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Vs12StaticString", "init"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCell"]
+- !private ["PSo29UIAccessibilityIdentification", "nameLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "reloadData"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "dequeueReusableCell"]
+- !private ["PSo12UIAppearance", "nameLabel"]
+- !private ["PSo12UIAppearance", "reloadData"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "SPTPlaylistList"]
+- ["PSo21UIAppearanceContainer", "String"]
+- !private ["PSo21UIAppearanceContainer", "dequeueReusableCell"]
+- !private ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "fatalError"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "nameLabel"]
+- !private ["PSo21UIAppearanceContainer", "playlists"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "reloadData"]
+- !private ["PSo21UIAppearanceContainer", "sesh"]
+- !private ["PSo21UIAppearanceContainer", "tableView"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "SPTPlaylistList"]
+- ["PSo18UIContentContainer", "String"]
+- !private ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "fatalError"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "playlists"]
+- !private ["PSo18UIContentContainer", "print"]
+- !private ["PSo18UIContentContainer", "sesh"]
+- !private ["PSo18UIContentContainer", "tableView"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
+- !private ["PSo17UICoordinateSpace", "nameLabel"]
+- !private ["PSo17UICoordinateSpace", "reloadData"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "dequeueReusableCell"]
+- !private ["PSo13UIDynamicItem", "nameLabel"]
+- !private ["PSo13UIDynamicItem", "reloadData"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "SPTPlaylistList"]
+- ["PSo18UIFocusEnvironment", "String"]
+- !private ["PSo18UIFocusEnvironment", "dequeueReusableCell"]
+- !private ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "fatalError"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "nameLabel"]
+- !private ["PSo18UIFocusEnvironment", "playlists"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "reloadData"]
+- !private ["PSo18UIFocusEnvironment", "sesh"]
+- !private ["PSo18UIFocusEnvironment", "tableView"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "dequeueReusableCell"]
+- !private ["PSo11UIFocusItem", "nameLabel"]
+- !private ["PSo11UIFocusItem", "reloadData"]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["PSo27UIGestureRecognizerDelegate", "nameLabel"]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "IndexPath"]
+- ["CSo11UIResponder", "Int"]
+- !private ["CSo11UIResponder", "PlaylistTableViewCell"]
+- !private ["CSo11UIResponder", "SPTListPage"]
+- !private ["CSo11UIResponder", "SPTPartialPlaylist"]
+- !private ["CSo11UIResponder", "SPTPlaylistList"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UITableView"]
+- ["CSo11UIResponder", "UITableViewCell"]
+- !private ["CSo11UIResponder", "Void"]
+- !private ["CSo11UIResponder", "dequeueReusableCell"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "fatalError"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "nameLabel"]
+- ["CSo11UIResponder", "numberOfSections"]
+- ["CSo11UIResponder", "playlists"]
+- !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "reloadData"]
+- !private ["CSo11UIResponder", "sesh"]
+- ["CSo11UIResponder", "tableView"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "SPTPlaylistList"]
+- ["PSo30UIResponderStandardEditActions", "String"]
+- !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCell"]
+- !private ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "fatalError"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "nameLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "playlists"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "reloadData"]
+- !private ["PSo30UIResponderStandardEditActions", "sesh"]
+- !private ["PSo30UIResponderStandardEditActions", "tableView"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo12UIScrollView", "dequeueReusableCell"]
+- !private ["CSo12UIScrollView", "reloadData"]
+- !private ["PSo20UIScrollViewDelegate", "SPTPlaylistList"]
+- ["PSo20UIScrollViewDelegate", "String"]
+- !private ["PSo20UIScrollViewDelegate", "didReceiveMemoryWarning"]
+- !private ["PSo20UIScrollViewDelegate", "fatalError"]
+- !private ["PSo20UIScrollViewDelegate", "init"]
+- !private ["PSo20UIScrollViewDelegate", "playlists"]
+- !private ["PSo20UIScrollViewDelegate", "print"]
+- !private ["PSo20UIScrollViewDelegate", "sesh"]
+- !private ["PSo20UIScrollViewDelegate", "tableView"]
+- !private ["PSo20UIScrollViewDelegate", "viewDidLoad"]
+- ["PSo20UIScrollViewDelegate", ""]
+- !private ["PSo16UIStateRestoring", "SPTPlaylistList"]
+- ["PSo16UIStateRestoring", "String"]
+- !private ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "fatalError"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "playlists"]
+- !private ["PSo16UIStateRestoring", "print"]
+- !private ["PSo16UIStateRestoring", "sesh"]
+- !private ["PSo16UIStateRestoring", "tableView"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo11UITableView", "dequeueReusableCell"]
+- !private ["CSo11UITableView", "reloadData"]
+- !private ["CSo15UITableViewCell", "nameLabel"]
+- ["CSo21UITableViewController", "IndexPath"]
+- ["CSo21UITableViewController", "Int"]
+- !private ["CSo21UITableViewController", "PlaylistTableViewCell"]
+- !private ["CSo21UITableViewController", "SPTListPage"]
+- !private ["CSo21UITableViewController", "SPTPartialPlaylist"]
+- !private ["CSo21UITableViewController", "SPTPlaylistList"]
+- ["CSo21UITableViewController", "String"]
+- ["CSo21UITableViewController", "UITableView"]
+- ["CSo21UITableViewController", "UITableViewCell"]
+- !private ["CSo21UITableViewController", "Void"]
+- ["CSo21UITableViewController", "didReceiveMemoryWarning"]
+- !private ["CSo21UITableViewController", "fatalError"]
+- ["CSo21UITableViewController", "init"]
+- ["CSo21UITableViewController", "numberOfSections"]
+- ["CSo21UITableViewController", "playlists"]
+- !private ["CSo21UITableViewController", "print"]
+- !private ["CSo21UITableViewController", "sesh"]
+- ["CSo21UITableViewController", "tableView"]
+- ["CSo21UITableViewController", "viewDidLoad"]
+- ["CSo21UITableViewController", ""]
+- !private ["PSo21UITableViewDataSource", "SPTPlaylistList"]
+- ["PSo21UITableViewDataSource", "String"]
+- !private ["PSo21UITableViewDataSource", "didReceiveMemoryWarning"]
+- !private ["PSo21UITableViewDataSource", "fatalError"]
+- !private ["PSo21UITableViewDataSource", "init"]
+- !private ["PSo21UITableViewDataSource", "playlists"]
+- !private ["PSo21UITableViewDataSource", "print"]
+- !private ["PSo21UITableViewDataSource", "sesh"]
+- !private ["PSo21UITableViewDataSource", "tableView"]
+- !private ["PSo21UITableViewDataSource", "viewDidLoad"]
+- ["PSo21UITableViewDataSource", ""]
+- !private ["PSo19UITableViewDelegate", "SPTPlaylistList"]
+- ["PSo19UITableViewDelegate", "String"]
+- !private ["PSo19UITableViewDelegate", "didReceiveMemoryWarning"]
+- !private ["PSo19UITableViewDelegate", "fatalError"]
+- !private ["PSo19UITableViewDelegate", "init"]
+- !private ["PSo19UITableViewDelegate", "playlists"]
+- !private ["PSo19UITableViewDelegate", "print"]
+- !private ["PSo19UITableViewDelegate", "sesh"]
+- !private ["PSo19UITableViewDelegate", "tableView"]
+- !private ["PSo19UITableViewDelegate", "viewDidLoad"]
+- ["PSo19UITableViewDelegate", ""]
+- !private ["PSo18UITraitEnvironment", "SPTPlaylistList"]
+- ["PSo18UITraitEnvironment", "String"]
+- !private ["PSo18UITraitEnvironment", "dequeueReusableCell"]
+- !private ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "fatalError"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "nameLabel"]
+- !private ["PSo18UITraitEnvironment", "playlists"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "reloadData"]
+- !private ["PSo18UITraitEnvironment", "sesh"]
+- !private ["PSo18UITraitEnvironment", "tableView"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "dequeueReusableCell"]
+- !private ["CSo6UIView", "nameLabel"]
+- !private ["CSo6UIView", "reloadData"]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "IndexPath"]
+- ["CSo16UIViewController", "Int"]
+- !private ["CSo16UIViewController", "PlaylistTableViewCell"]
+- !private ["CSo16UIViewController", "SPTListPage"]
+- !private ["CSo16UIViewController", "SPTPartialPlaylist"]
+- !private ["CSo16UIViewController", "SPTPlaylistList"]
+- ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UITableView"]
+- ["CSo16UIViewController", "UITableViewCell"]
+- !private ["CSo16UIViewController", "Void"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- !private ["CSo16UIViewController", "fatalError"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "numberOfSections"]
+- ["CSo16UIViewController", "playlists"]
+- !private ["CSo16UIViewController", "print"]
+- !private ["CSo16UIViewController", "sesh"]
+- ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "count"]
+- ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["Ps23_BidirectionalIndexable", "append"]
+- !private ["Ps23_BidirectionalIndexable", "count"]
+- ["Ps23_BidirectionalIndexable", "init"]
+- !private ["Ps23_BidirectionalIndexable", "row"]
+- !private ["Ps23_BidirectionalIndexable", "subscript"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "nameLabel"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reloadData"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
+- ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "SPTPlaylistList"]
+- ["Ps9_Hashable", "String"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "accessToken"]
+- !private ["Ps9_Hashable", "canonicalUsername"]
+- !private ["Ps9_Hashable", "dequeueReusableCell"]
+- !private ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "fatalError"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "items"]
+- !private ["Ps9_Hashable", "name"]
+- !private ["Ps9_Hashable", "nameLabel"]
+- !private ["Ps9_Hashable", "playlists"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "reloadData"]
+- !private ["Ps9_Hashable", "row"]
+- !private ["Ps9_Hashable", "sesh"]
+- !private ["Ps9_Hashable", "tableView"]
+- !private ["Ps9_Hashable", "text"]
+- !private ["Ps9_Hashable", "uri"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps10_Indexable", "append"]
+- !private ["Ps10_Indexable", "count"]
+- ["Ps10_Indexable", "init"]
+- !private ["Ps10_Indexable", "row"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "append"]
+- !private ["Ps14_IndexableBase", "count"]
+- ["Ps14_IndexableBase", "init"]
+- !private ["Ps14_IndexableBase", "row"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["Ps17_MutableIndexable", "append"]
+- !private ["Ps17_MutableIndexable", "count"]
+- ["Ps17_MutableIndexable", "init"]
+- !private ["Ps17_MutableIndexable", "row"]
+- !private ["Ps17_MutableIndexable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "row"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps22_RandomAccessIndexable", "append"]
+- !private ["Ps22_RandomAccessIndexable", "count"]
+- ["Ps22_RandomAccessIndexable", "init"]
+- !private ["Ps22_RandomAccessIndexable", "row"]
+- !private ["Ps22_RandomAccessIndexable", "subscript"]
+- !private ["Ps26_RangeReplaceableIndexable", "append"]
+- !private ["Ps26_RangeReplaceableIndexable", "count"]
+- ["Ps26_RangeReplaceableIndexable", "init"]
+- !private ["Ps26_RangeReplaceableIndexable", "subscript"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- "Ps23BidirectionalCollection"
+- !private "Sb"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "V10Foundation9IndexPath"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "Ps17MutableCollection"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "C9GymJamsV221PlaylistTableViewCell"
+- "C9GymJamsV227PlaylistTableViewController"
+- "Ps22RandomAccessCollection"
+- "Ps26RangeReplaceableCollection"
+- !private "P10Foundation20ReferenceConvertible"
+- !private "PSo13SPTJSONObject"
+- !private "CSo17SPTJSONObjectBase"
+- !private "CSo11SPTListPage"
+- !private "PSo16SPTPartialObject"
+- !private "CSo18SPTPartialPlaylist"
+- !private "CSo15SPTPlaylistList"
+- !private "CSo10SPTSession"
+- !private "PSo16SPTTrackProvider"
+- "Ps8Sequence"
+- !private "Vs12StaticString"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "PSo27UIGestureRecognizerDelegate"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "CSo12UIScrollView"
+- "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- !private "CSo11UITableView"
+- !private "CSo15UITableViewCell"
+- "CSo21UITableViewController"
+- "PSo21UITableViewDataSource"
+- "PSo19UITableViewDelegate"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- "Ps14_ArrayProtocol"
+- "Ps23_BidirectionalIndexable"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- "Ps10_Indexable"
+- "Ps14_IndexableBase"
+- "Ps17_MutableIndexable"
+- "Ps21_ObjectiveCBridgeable"
+- "Ps22_RandomAccessIndexable"
+- "Ps26_RangeReplaceableIndexable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/GymJamsV2-Bridging-Header.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAuthentication.framework/Headers/SpotifyAuthentication.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAuthentication.framework/Headers/SPTAuth.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAuthentication.framework/Headers/SPTSession.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAuthentication.framework/Headers/SPTConnectButton.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAuthentication.framework/Headers/SPTAuthViewController.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAuthentication.framework/Headers/SPTStoreViewController.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/StoreKit.apinotesc"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAuthentication.framework/Headers/SPTEmbeddedImages.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SpotifyAudioPlayback.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SPTCircularBuffer.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SPTCoreAudioController.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AudioToolbox.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SPTAudioStreamingController.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SPTAudioPlaybackTypes.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SPTDiskCache.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SPTDiskCaching.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SPTPlaybackMetadata.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SpPlaybackEvent.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SPTPlaybackState.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyAudioPlayback.framework/Headers/SPTAudioStreamingController_ErrorCodes.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SpotifyMetadata.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTJSONDecoding.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTRequest.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTPartialObject.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTAlbum.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTTrackProvider.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTPartialAlbum.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTArtist.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTPartialArtist.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTPartialPlaylist.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTImage.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTPartialTrack.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTPlaylistList.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTPlaylistSnapshot.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTMetadataTypes.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTListPage.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTTrack.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTPlaylistTrack.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTSavedTrack.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTUser.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTFeaturedPlaylistList.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTFollow.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTBrowse.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTYourMusic.h"
+- "/Users/Kyle/Desktop/music-interval-app/GymJamsV2/SpotifyMetadata.framework/Headers/SPTSearch.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.apinotesc"
+interface-hash: "539fa88598bd455ea4452ca474adf9d4"

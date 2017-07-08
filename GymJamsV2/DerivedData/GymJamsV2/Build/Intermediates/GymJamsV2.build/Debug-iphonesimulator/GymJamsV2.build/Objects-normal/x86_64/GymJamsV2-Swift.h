@@ -162,24 +162,57 @@ SWIFT_CLASS("_TtC9GymJamsV211AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class SPTSession;
-@class SPTAudioStreamingController;
-@class UIButton;
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC9GymJamsV214ViewController")
-@interface ViewController : UIViewController <SPTAudioStreamingDelegate, SPTAudioStreamingPlaybackDelegate>
-@property (nonatomic, strong) SPTAuth * _Nonnull auth;
-@property (nonatomic, strong) SPTSession * _Null_unspecified session;
+SWIFT_CLASS("_TtC9GymJamsV220PlayerViewController")
+@interface PlayerViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UILabel;
+
+SWIFT_CLASS("_TtC9GymJamsV221PlaylistTableViewCell")
+@interface PlaylistTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class SPTAudioStreamingController;
+@class UITableView;
+@class SPTSession;
+
+SWIFT_CLASS("_TtC9GymJamsV227PlaylistTableViewController")
+@interface PlaylistTableViewController : UITableViewController <SPTAudioStreamingDelegate, SPTAudioStreamingPlaybackDelegate>
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull playlists;
+@property (nonatomic, copy) NSArray<NSURL *> * _Nonnull playlistUris;
 @property (nonatomic, strong) SPTAudioStreamingController * _Nullable player;
-@property (nonatomic, copy) NSURL * _Nullable loginUrl;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)initializePlayerWithAuthSession:(SPTSession * _Nonnull)authSession;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIButton;
+
+SWIFT_CLASS("_TtC9GymJamsV214ViewController")
+@interface ViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loginBtn;
 - (IBAction)loginBtnPressed:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)updateAfterFirstLogin;
-- (void)initializePlayerWithAuthSession:(SPTSession * _Nonnull)authSession;
-- (void)audioStreamingDidLogin:(SPTAudioStreamingController * _Null_unspecified)audioStreaming;
 - (void)didReceiveMemoryWarning;
 - (void)setup;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
