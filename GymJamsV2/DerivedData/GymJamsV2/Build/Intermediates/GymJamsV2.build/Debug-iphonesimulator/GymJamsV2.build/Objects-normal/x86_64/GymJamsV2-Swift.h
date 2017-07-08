@@ -162,20 +162,25 @@ SWIFT_CLASS("_TtC9GymJamsV211AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
 @class SPTAudioStreamingController;
 @class SPTPlaybackMetadata;
-@class UILabel;
+@class NSTimer;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC9GymJamsV220PlayerViewController")
 @interface PlayerViewController : UIViewController <SPTAudioStreamingDelegate, SPTAudioStreamingPlaybackDelegate>
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified updateAlbum;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified updateName;
 - (void)audioStreaming:(SPTAudioStreamingController * _Null_unspecified)audioStreaming didChangeMetadata:(SPTPlaybackMetadata * _Null_unspecified)metadata;
+@property (nonatomic, strong) NSTimer * _Nonnull timer_;
 - (IBAction)playButtonPressed:(id _Nonnull)sender;
 - (IBAction)prevButtonPressed:(id _Nonnull)sender;
 - (IBAction)skipButtonPressed:(id _Nonnull)sender;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timerLabel;
 - (void)viewDidLoad;
+- (void)updateCounter;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -209,6 +214,7 @@ SWIFT_CLASS("_TtC9GymJamsV227PlaylistTableViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)updateCounter;
 - (void)initializePlayerWithAuthSession:(SPTSession * _Nonnull)authSession;
 @property (nonatomic, readonly, strong) NSCache<id, id> * _Nonnull imageCache;
 @property (nonatomic, strong) UIImage * _Nonnull returnImage;

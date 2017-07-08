@@ -10,6 +10,16 @@ import UIKit
 
 class PlayerViewController: UIViewController, SPTAudioStreamingPlaybackDelegate, SPTAudioStreamingDelegate{
     
+    @IBOutlet weak var sliderValueLabel: UILabel!
+    @IBOutlet weak var updateAlbum: UILabel!
+    @IBAction func sliderValueChanged(_ sender: UISlider) {
+        var currentValue = Int(sender.value)
+        
+        sliderValueLabel.text = "\(currentValue)"
+        sliderVal = currentValue
+    }
+    @IBOutlet weak var updateName: UILabel!
+    
     func audioStreaming(_ audioStreaming: SPTAudioStreamingController!, didChange metadata: SPTPlaybackMetadata!) {
         player?.seek(to: 30, callback: {(error) in
             if error != nil {
@@ -18,6 +28,11 @@ class PlayerViewController: UIViewController, SPTAudioStreamingPlaybackDelegate,
                 print ("Skipping Previous")
             }
         });
+        updateName.text = metadata.currentTrack?.name;
+        updateAlbum.text = metadata.currentTrack?.artistName;
+        
+        var cover = metadata.currentTrack?.albumCoverArtURL;
+        
     }
     
     var timer_ = Timer()
@@ -26,19 +41,21 @@ class PlayerViewController: UIViewController, SPTAudioStreamingPlaybackDelegate,
         if (player?.playbackState.isPlaying)! {
             player?.setIsPlaying(false, callback: {(error) in
                 if error != nil {
-                    print("Error: couldn't skip");
+                    print("Error: couldn't pause");
                 } else {
-                    print ("Skipping Previous")
+                    print ("Pausing")
                 }
             });
+            timer.invalidate()
         } else {
             player?.setIsPlaying(true, callback: {(error) in
                 if error != nil {
-                    print("Error: couldn't skip");
+                    print("Error: couldn't start");
                 } else {
-                    print ("Skipping Previous")
+                    print ("Starting")
                 }
             });
+            setTimer()
         }
     }
     
@@ -50,6 +67,7 @@ class PlayerViewController: UIViewController, SPTAudioStreamingPlaybackDelegate,
                 print ("Skipping Previous")
             }
         });
+        counter = sliderVal
     }
     
     @IBAction func skipButtonPressed(_ sender: Any) {
@@ -60,6 +78,7 @@ class PlayerViewController: UIViewController, SPTAudioStreamingPlaybackDelegate,
                 print ("Skipping next")
             }
         });
+        counter = sliderVal
     }
     
     @IBOutlet weak var timerLabel: UILabel!
