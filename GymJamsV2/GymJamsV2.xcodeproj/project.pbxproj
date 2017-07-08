@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270121621F11079C0020BC87 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270121611F11079C0020BC87 /* PlayerViewController.swift */; };
 		9DA11B9D1F10B19400655FC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA11B9C1F10B19400655FC7 /* AppDelegate.swift */; };
 		9DA11B9F1F10B19400655FC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA11B9E1F10B19400655FC7 /* ViewController.swift */; };
 		9DA11BA21F10B19400655FC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA11BA01F10B19400655FC7 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		270121611F11079C0020BC87 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		9DA11B991F10B19400655FC7 /* GymJamsV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymJamsV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA11B9C1F10B19400655FC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DA11B9E1F10B19400655FC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				9DA11BAB1F10B19400655FC7 /* Info.plist */,
 				9DA11BA31F10B19400655FC7 /* GymJamsV2.xcdatamodeld */,
 				9DA11BB11F10B20B00655FC7 /* GymJamsV2-Bridging-Header.h */,
+				270121611F11079C0020BC87 /* PlayerViewController.swift */,
 			);
 			path = GymJamsV2;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				9DA11B9F1F10B19400655FC7 /* ViewController.swift in Sources */,
 				9DA11B9D1F10B19400655FC7 /* AppDelegate.swift in Sources */,
 				9DA11BA51F10B19400655FC7 /* GymJamsV2.xcdatamodeld in Sources */,
+				270121621F11079C0020BC87 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
