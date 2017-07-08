@@ -162,6 +162,7 @@ SWIFT_CLASS("_TtC9GymJamsV211AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
 @class UILabel;
 @class SPTAudioStreamingController;
 @class SPTPlaybackMetadata;
@@ -171,6 +172,7 @@ SWIFT_CLASS("_TtC9GymJamsV211AppDelegate")
 
 SWIFT_CLASS("_TtC9GymJamsV220PlayerViewController")
 @interface PlayerViewController : UIViewController <SPTAudioStreamingDelegate, SPTAudioStreamingPlaybackDelegate>
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified updateAlbum;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified updateName;
 - (void)audioStreaming:(SPTAudioStreamingController * _Null_unspecified)audioStreaming didChangeMetadata:(SPTPlaybackMetadata * _Null_unspecified)metadata;
@@ -186,7 +188,6 @@ SWIFT_CLASS("_TtC9GymJamsV220PlayerViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImageView;
 
 SWIFT_CLASS("_TtC9GymJamsV221PlaylistTableViewCell")
 @interface PlaylistTableViewCell : UITableViewCell

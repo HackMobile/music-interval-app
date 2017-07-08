@@ -9,6 +9,7 @@
 import UIKit
 
 class PlayerViewController: UIViewController, SPTAudioStreamingPlaybackDelegate, SPTAudioStreamingDelegate{
+    @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var updateAlbum: UILabel!
     @IBOutlet weak var updateName: UILabel!
@@ -25,7 +26,8 @@ class PlayerViewController: UIViewController, SPTAudioStreamingPlaybackDelegate,
         updateAlbum.text = metadata.currentTrack?.artistName;
         
         var cover = metadata.currentTrack?.albumCoverArtURL;
-        
+        imageView.setImageFromURl(stringImageUrl: cover!)
+        imageView.reloadInputViews()
     }
     
     var timer_ = Timer()
